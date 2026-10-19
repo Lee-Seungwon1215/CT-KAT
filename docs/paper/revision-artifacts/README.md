@@ -31,4 +31,5 @@ Other files:
 - `v10_reports.tgz` contains the dudect backend reports of the final campaign and of the control
   rehearsals that qualified it.
 
-The raw timing traces of the V10 campaign (about 3.3 GB) are not stored in this repository.
+The full V10 measurement tree with the raw timing traces (about 3.3 GB) is not stored in this
+repository.

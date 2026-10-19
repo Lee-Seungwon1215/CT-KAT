@@ -19,9 +19,12 @@ manuscript. The results can be checked at three levels.
 
    ```bash
    git checkout paper-revision-2026-10
-   uv sync --frozen          # or: python -m pip install .
+   uv sync --frozen
    uv run bash docs/paper/revision-artifacts/reproduce_tables.sh
    ```
+
+   Without uv, install the package with `python -m pip install .` and run
+   `bash docs/paper/revision-artifacts/reproduce_tables.sh`.
 
    The script rebuilds Table 6, Table 7, Tables A13–A16, and the numbers of the naive pass/fail
    comparison in Section 5.3 from the recorded results, and checks that they match the committed
@@ -29,8 +32,8 @@ manuscript. The results can be checked at three levels.
    maps every table to its data and script.
 
 2. **Re-run the structural and instruction analyses** (Linux x86-64 with GCC, Clang, and
-   Valgrind). The structural test, binary inspection, and build matrix run through the `ctkat`
-   commands in [Quick start](#quick-start), using the configurations in `examples/`.
+   Valgrind). `ctkat screen` in [Quick start](#quick-start) runs the structural test, build
+   matrix, and binary inspection for any configuration in `examples/`.
    [`structural_coverage/coverage.py`](docs/paper/revision-artifacts/structural_coverage/coverage.py)
    re-measures the coverage of Table 6, and
    [`mlkem_root_cause/README.md`](docs/paper/revision-artifacts/mlkem_root_cause/README.md)
@@ -45,8 +48,8 @@ manuscript. The results can be checked at three levels.
    by cycle.
 
 The dudect reports, named analysis, and binary contracts of the paper campaign are included in
-`docs/paper/revision-artifacts/`. The raw timing traces (about 3.3 GB) are not stored in this
-repository.
+`docs/paper/revision-artifacts/`. The full measurement tree with the raw timing traces (about
+3.3 GB) is not stored in this repository.
 
 ## What CT-KAT does
 
@@ -59,14 +62,15 @@ For each configured harness, CT-KAT
    that change with the build,
 4. scans the emitted assembly for variable-latency instructions such as division (`asm-scan`),
 5. measures timing with two input classes and analyses the raw traces with the pinned official
-   dudect backend (`dudect`), together with A/A, preparation-only, and injected-delay controls,
-   and
+   dudect backend (`dudect`). Under the timing protocol used in the paper, every measurement also
+   runs an equivalent-input (A/A) control, a preparation-only control, and injected-delay
+   controls, and
 6. combines the evidence into one of five statuses.
 
 | Status | Meaning | Value in result files |
 |---|---|---|
 | Risk Identified | A valid test exceeds its risk threshold, or reviewed risk evidence exists | `risk-detected` |
-| Further Review Required | A suspicious result remains, but its interpretation awaits human review | `needs-review` |
+| Further Review Required | A suspicious result remains, but its public/secret relationship or human review is incomplete | `needs-review` |
 | Inconclusive | Functional behavior, environment, sample size, or controls are insufficient | `inconclusive` |
 | Tool Error | A testing tool did not finish normally | `tool-error` |
 | No Issue Observed under Tested Conditions | Every required test is valid and no risk signal was observed | `no-finding-observed` |
@@ -79,7 +83,6 @@ for the tested binary, inputs, host, and analysis scope.
 ```bash
 python -m pip install .
 ctkat --version
-ctkat infer --header tests/fixtures/headers/kem.h
 ```
 
 The structural test requires Linux with Valgrind. On Linux:
@@ -88,6 +91,10 @@ The structural test requires Linux with Valgrind. On Linux:
 ctkat run --config examples/toy_password/ctkat.yaml
 ctkat screen --config examples/pqc_mlkem768/ctkat.yaml
 ```
+
+`ctkat run` is a quick check on a small example. `ctkat screen` runs the full pipeline (build,
+known-answer tests, structural test, build matrix, assembly scan, timing, and final status) and
+writes a summary in CSV, JSON, and Markdown.
 
 On macOS or Windows, use the provided Docker image:
 
@@ -117,5 +124,6 @@ exact commit or tag.
 
 ## License
 
-CT-KAT is released under the MIT License (see [LICENSE](LICENSE)). Third-party code under
-`examples/` keeps its own license, as listed in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+CT-KAT is released under the MIT License (see [LICENSE](LICENSE)). Third-party code, such as the
+vendored dudect backend and the implementations under `examples/`, keeps its own license, as listed
+in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).

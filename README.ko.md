@@ -1082,7 +1082,8 @@ exit 0을 던졌음 (F7/F8). CI는 `ctkat <stage> --config ... && deploy`
 재생성: `python scripts/render_readme_corpus.py --write`
 <!-- END CTKAT CORPUS SNAPSHOT -->
 
-이 표는 committed evidence schema v2 결과다. 과거 `timing FAIL + robust`
+이 표는 committed evidence schema v2 결과다. 논문에 보고한 상태는 V10 타이밍 결과로 다시 접은 것으로,
+`docs/paper/revision-artifacts/status/corpus_summary_v10.csv`에 있다. 과거 `timing FAIL + robust`
 행은 이제 `confounded / signal / inconclusive`이고, power calibration이 없는
 raw timing PASS도 `insufficient-power`라서 clean 근거로 쓰이지 않는다.
 v1.2 원본과 결정론적 v2 migration snapshot은
