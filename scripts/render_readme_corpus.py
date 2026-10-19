@@ -14,7 +14,7 @@ import hashlib
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-DEFAULT_README = ROOT / "README.md"
+DEFAULT_README = ROOT / "README.ko.md"
 DEFAULT_CSV = ROOT / "docs" / "corpus" / "corpus_summary.csv"
 BEGIN = "<!-- BEGIN CTKAT CORPUS SNAPSHOT -->"
 END = "<!-- END CTKAT CORPUS SNAPSHOT -->"
