@@ -39,7 +39,9 @@ manuscript. The results can be checked at three levels.
    [`mlkem_root_cause/README.md`](docs/paper/revision-artifacts/mlkem_root_cause/README.md)
    describes how to rebuild and rerun the root-cause experiment of Table A16.
 
-3. **Repeat the timing campaign** (a dedicated physical x86-64 Linux host). The frozen plan is
+3. **Repeat the timing campaign** (a dedicated physical x86-64 Linux host). Start from the
+   measurement commit at which the V10 final run was executed (`git checkout 1aeadb9`). The frozen
+   plan is
    [`docs/measurement/paper_native_campaign_v10.yaml`](docs/measurement/paper_native_campaign_v10.yaml),
    and [`docs/artifact/README.md`](docs/artifact/README.md) gives the single-host procedure,
    including the control rehearsals that qualify a host before the final run. Timing depends on
