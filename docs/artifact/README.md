@@ -23,6 +23,11 @@ source manifest and automated-audit provenance cannot diverge.
 
 ## Current v10 single-host result profile
 
+The V10 final run was completed on host-a on 2026-08-17 for all four components. The tables,
+analysis, and binary contracts derived from it are in
+[`../paper/revision-artifacts/`](../paper/revision-artifacts/); the committed corpus is updated
+only after the automated audit and artifact-integrity gates.
+
 The current paper campaign is `paper_native_campaign_v10.yaml`. It supersedes
 the two-host/reviewer execution gate below without deleting that stronger
 historical workflow. First obtain two blocker-free V3 operational control rehearsals from

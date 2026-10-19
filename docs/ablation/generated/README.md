@@ -12,4 +12,5 @@ Do not edit by hand; run `python3 scripts/run_ablation.py --write`.
 
 - The first three stages quantify candidate-generation burden, not tool accuracy.
 - The reviewed fold is the only stage that reports final evidence states.
+- The reviewed fold counts the committed corpus, which does not yet include the V10 timing results; the statuses reported in the paper are in `docs/paper/revision-artifacts/status/corpus_summary_v10.csv`.
 - The native timing ablation is missing by design and is represented as pending, never zero.

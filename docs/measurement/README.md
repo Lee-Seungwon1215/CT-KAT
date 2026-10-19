@@ -6,6 +6,11 @@
 결과는 해당 host 범위에서만 승격하며 cross-host 재현성과 독립 사람 리뷰를
 주장하지 않는다. 기존 v5 two-host 계획은 stronger historical profile로 보존한다.
 
+V10 final은 2026-08-17에 host-a에서 네 component 모두 완료했다. 그 결과로 만든 논문 표,
+분석, 측정 바이너리 확인 파일은 [`../paper/revision-artifacts/`](../paper/revision-artifacts/)에
+있다. 결과는 committed corpus에 자동으로 승격하지 않으며, 자동 감사와 산출물 무결성 관문을
+통과한 뒤에 승격한다.
+
 ## 장시간 final 전 control 리허설
 
 긴 final을 디버거처럼 여러 번 태우지 않도록

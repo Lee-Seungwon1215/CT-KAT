@@ -5,7 +5,8 @@ reproducing CT-KAT. Superseded scratchpads remain local-only.
 
 ## Current source of truth
 
-- `../README.md` — user-facing overview, CLI usage, examples, limitations.
+- `../README.md` — English overview, paper reproduction, and quick start.
+- `../README.ko.md` — full Korean guide: CLI usage, examples, and limitations.
 - `accepted_variable_time.md` — legacy-class bridge for reviewed CT findings.
 - `corpus_schema.md` — evidence schema v2, overall fold, and corpus CSV contract.
 - `reviews/` — stable human-review artifacts referenced by `review_id`.
@@ -14,8 +15,10 @@ reproducing CT-KAT. Superseded scratchpads remain local-only.
   effect curve, and same-trace parity artifact.
 - `measurement/` — frozen paper-native-v10 single-host campaign, bare-metal preflight,
   resumable execution, artifact validation, and corpus-promotion boundary.
-- `paper/` — premeasurement outline, claim/evidence matrix, and generated
-  corpus/ablation/campaign/review readiness tables.
+- `paper/` — pre-measurement outline, claim/evidence matrix, and generated
+  corpus/ablation/campaign/review readiness tables, plus `revision-artifacts/`
+  with the data and scripts behind the tables of the revised manuscript (V10
+  results).
 - `artifact/` — current single-host bundle/template plus preserved two-host
   profiles, hashes, and blind-rerun checklist.
 - `baselines/` — same-source/input official dudect, patched TIMECOP, and
@@ -24,7 +27,7 @@ reproducing CT-KAT. Superseded scratchpads remain local-only.
 - `ground_truth/kyberslash/` — frozen KS1/KS2/combined/historical sources,
   exact diffs, provenance, deterministic KEM equivalence, and TIMECOP evidence
   boundaries.
-- `corpus/` — committed v2 corpus, deterministic correctness snapshot,
+- `corpus/` — committed v2 corpus (V10 timing results not yet promoted), deterministic correctness snapshot,
   migration manifest, frozen v1.2 archive, and independent-upstream expansion
   contract.
 
@@ -34,4 +37,5 @@ Old audit ledgers, original design prompts, KyberSlash brainstorming notes,
 agent prompting guides, and superseded drafts are intentionally excluded from
 git under `.local_archive/` or the repository-root `/paper/`. They are useful
 history, but not source of truth for current behavior. The tracked `docs/paper/`
-tree is the current premeasurement paper source of truth.
+tree holds the pre-measurement paper record and, in `revision-artifacts/`, the
+final single-host results reported in the revised manuscript.

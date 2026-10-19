@@ -172,6 +172,10 @@ def build() -> tuple[dict[Path, str], dict[str, Any]]:
         "",
         "Do not edit by hand; run `python3 scripts/build_paper_artifacts.py --write`.",
         "",
+        "This is the pre-measurement record. The final single-host (V10) results reported in the "
+        "revised manuscript are in `docs/paper/revision-artifacts/`; they enter the committed corpus "
+        "only after the automated audit and artifact-integrity gates.",
+        "",
         "## Corpus state",
         "",
         f"The committed screening corpus contains {len(summary)} target/harness pairs: "

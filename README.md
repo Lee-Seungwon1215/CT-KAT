@@ -51,6 +51,16 @@ The dudect reports, named analysis, and binary contracts of the paper campaign a
 `docs/paper/revision-artifacts/`. The full measurement tree with the raw timing traces (about
 3.3 GB) is not stored in this repository.
 
+### Status of the committed corpus
+
+The final single-host timing campaign (V10) was completed on 2026-08-17. The project does not
+promote measured results into the committed corpus automatically. The V10 timing results enter
+`docs/corpus/` only after the automated audit and artifact-integrity gates have passed. Until then,
+`docs/corpus/corpus_summary.csv` and the generated pre-measurement tables in `docs/paper/generated/`
+and `docs/ablation/generated/` keep the timing rows of an earlier experimental backend. The
+statuses reported in the paper are the V10 refresh in
+[`docs/paper/revision-artifacts/status/corpus_summary_v10.csv`](docs/paper/revision-artifacts/status/corpus_summary_v10.csv).
+
 ## What CT-KAT does
 
 For each configured harness, CT-KAT
@@ -113,7 +123,7 @@ The full list of commands and configuration options is in [README.ko.md](README.
 | `examples/` | Configurations and pinned sources for every evaluated target |
 | `scripts/` | Campaign runners, consistency checks, and analysis scripts |
 | `docs/measurement/` | Frozen timing campaigns, including the paper campaign (V10) |
-| `docs/corpus/` | Committed corpus evidence |
+| `docs/corpus/` | Committed corpus evidence (before promotion of the V10 timing results) |
 | `docs/paper/revision-artifacts/` | Data and scripts behind the tables of the revised manuscript |
 | `tests/` | Test suite |
 

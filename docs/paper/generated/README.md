@@ -2,6 +2,8 @@
 
 Do not edit by hand; run `python3 scripts/build_paper_artifacts.py --write`.
 
+This is the pre-measurement record. The final single-host (V10) results reported in the revised manuscript are in `docs/paper/revision-artifacts/`; they enter the committed corpus only after the automated audit and artifact-integrity gates.
+
 ## Corpus state
 
 The committed screening corpus contains 25 target/harness pairs: 6 risk-detected, 5 needs-review, 10 inconclusive, and 4 no-finding-observed. Correctness is not run for 4 pairs; these cannot fold to clean.

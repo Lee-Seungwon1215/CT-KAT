@@ -27,7 +27,7 @@ check() {  # check LABEL EXPECTED ACTUAL
 }
 
 # Table 7 and Tables A13-A14: statuses re-folded with the final (V10) timing results.
-"$PY" "$HERE/status/refresh_corpus_status.py" "$REPO" \
+"$PY" "$HERE/status/refresh_corpus_status.py" "$REPO" "$REPO/docs/corpus/corpus_summary.csv" \
     "$HERE/v10_named_analysis/paper_native_axis_results.csv" "$WORK/corpus_summary_v10.csv" > /dev/null
 check "Table 7, Tables A13-A14: corpus statuses" "$HERE/status/corpus_summary_v10.csv" "$WORK/corpus_summary_v10.csv"
 "$PY" "$HERE/status/build_appendix.py" "$WORK/corpus_summary_v10.csv" "$WORK/tables_status.tex"

@@ -566,11 +566,13 @@ C와 Python Welch `|Δt| ≤ 1e-9`다.
 
 ### Native corpus timing campaign
 
-현재 corpus에서 timing evidence가 있는 6개 target/8개 axis를
-timing-harness-v2로 다시 재기 위한 실행 계획은
+committed corpus에서 timing evidence가 있는 6개 target/8개 axis를
+timing-harness-v2로 다시 재는 계획은
 [`docs/measurement/native_timing_v5_campaign.yaml`](docs/measurement/native_timing_v5_campaign.yaml)에
-동결돼 있다. macOS/ARM이나 Docker/QEMU에서 가짜 결론을 만드는 대신, 지금
-checkout에서 가능한 준비 상태는 다음 명령으로 계속 검사한다.
+동결돼 있으며, V10의 core component로 2026-08-17에 단일 호스트 final을 마쳤다. 그 결과로
+만든 논문 표와 분석은 [`docs/paper/revision-artifacts/`](docs/paper/revision-artifacts/)에 있고,
+corpus 승격은 감사·무결성 관문 이후에 한다. macOS/ARM이나 Docker/QEMU에서 가짜 결론을
+만드는 대신, 지금 checkout에서 가능한 준비 상태는 다음 명령으로 계속 검사한다.
 이 v5 계획은 기존 corpus key와 맞추기 위해 KEM 하니스 ID `kem_dec`은
 유지하지만, machine axis는 `sk`가 아닌 `valid_tuple`로 고정한다.
 
@@ -1082,7 +1084,9 @@ exit 0을 던졌음 (F7/F8). CI는 `ctkat <stage> --config ... && deploy`
 재생성: `python scripts/render_readme_corpus.py --write`
 <!-- END CTKAT CORPUS SNAPSHOT -->
 
-이 표는 committed evidence schema v2 결과다. 논문에 보고한 상태는 V10 타이밍 결과로 다시 접은 것으로,
+이 표는 committed evidence schema v2 결과이며, V10 측정 결과를 승격하기 전의 코퍼스다. 측정 결과는
+코퍼스에 자동으로 승격하지 않고 자동 감사와 산출물 무결성 관문을 통과한 뒤에 승격하므로, 타이밍이 있는
+8개 축은 아직 이전 실험용 백엔드의 값이다. 논문에 보고한 상태(V10)는
 `docs/paper/revision-artifacts/status/corpus_summary_v10.csv`에 있다. 과거 `timing FAIL + robust`
 행은 이제 `confounded / signal / inconclusive`이고, power calibration이 없는
 raw timing PASS도 `insufficient-power`라서 clean 근거로 쓰이지 않는다.
