@@ -417,7 +417,6 @@ versioning while the public API is stabilizing.
   Docker, corpus drift, and third-party provenance checks.
 - Trusted/untrusted config execution profiles and explicit shell opt-in.
 - Machine-checkable third-party inventory and human-readable notices.
-- Rejection-review recovery roadmap.
 
 ### Changed
 
@@ -437,13 +436,13 @@ versioning while the public API is stabilizing.
 
 - Initial research prototype.
 
-[0.10.0a1]: https://github.com/Lee-Seungwon1215/WISA_proj/compare/5aab795...main
-[0.9.0a1]: https://github.com/Lee-Seungwon1215/WISA_proj/compare/2a78049...5aab795
-[0.8.0a1]: https://github.com/Lee-Seungwon1215/WISA_proj/compare/679eaf5...2a78049
-[0.7.0a1]: https://github.com/Lee-Seungwon1215/WISA_proj/compare/b44340d...679eaf5
-[0.6.0a1]: https://github.com/Lee-Seungwon1215/WISA_proj/compare/186f8ef...b44340d
-[0.5.0a1]: https://github.com/Lee-Seungwon1215/WISA_proj/compare/9768d83...186f8ef
-[0.4.0a1]: https://github.com/Lee-Seungwon1215/WISA_proj/compare/abaf92f...9768d83
-[0.3.0a1]: https://github.com/Lee-Seungwon1215/WISA_proj/compare/619d73c...abaf92f
-[0.2.0a1]: https://github.com/Lee-Seungwon1215/WISA_proj/compare/b1ccd4d...619d73c
-[0.1.0]: https://github.com/Lee-Seungwon1215/WISA_proj/commits/20a20f72a65216bb2e4edafc0b054789281f3455
+[0.10.0a1]: https://github.com/Lee-Seungwon1215/CT-KAT/compare/5aab795...main
+[0.9.0a1]: https://github.com/Lee-Seungwon1215/CT-KAT/compare/2a78049...5aab795
+[0.8.0a1]: https://github.com/Lee-Seungwon1215/CT-KAT/compare/679eaf5...2a78049
+[0.7.0a1]: https://github.com/Lee-Seungwon1215/CT-KAT/compare/b44340d...679eaf5
+[0.6.0a1]: https://github.com/Lee-Seungwon1215/CT-KAT/compare/186f8ef...b44340d
+[0.5.0a1]: https://github.com/Lee-Seungwon1215/CT-KAT/compare/9768d83...186f8ef
+[0.4.0a1]: https://github.com/Lee-Seungwon1215/CT-KAT/compare/abaf92f...9768d83
+[0.3.0a1]: https://github.com/Lee-Seungwon1215/CT-KAT/compare/619d73c...abaf92f
+[0.2.0a1]: https://github.com/Lee-Seungwon1215/CT-KAT/compare/b1ccd4d...619d73c
+[0.1.0]: https://github.com/Lee-Seungwon1215/CT-KAT/commits/20a20f72a65216bb2e4edafc0b054789281f3455

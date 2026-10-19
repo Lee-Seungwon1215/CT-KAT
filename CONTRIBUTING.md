@@ -67,6 +67,4 @@ python -m twine check dist/*
 
 ## Commit scope
 
-Keep changes reviewable. The project roadmap in
-`docs/ROADMAP_REJECTION_RECOVERY.md` defines the intended dependency order and
-Go/No-Go gates.
+Keep changes reviewable.

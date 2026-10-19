@@ -116,12 +116,12 @@ fail-closed로 요구하며, 사람 리뷰가 없어도 네이티브 engineering
 판정한다. 락파일, Ruff 포맷/린트, mypy도 이 프로필에서 다시 확인한다. 실제 Linux
 측정 호스트에서는 `--profile native-engineering-ready`를 사용해 고정된 timing
 backend calibration까지 통과시킨 뒤 engineering run을 시작한다.
-현재 v6 측정은 한 대의 physical x86_64 Linux host에서 수행한다. final 명령은
+논문 측정(V10)은 한 대의 physical x86_64 Linux host에서 수행한다. final 명령은
 `--final-gate single-host`를 사용하며 clean commit과 모든 frozen input hash를
 결과에 묶는다. 두 번째 host와 독립 2인 review는 필수 gate에서 제거했고, 그 대신
 논문 주장을 해당 host/CPU/compiler/protocol 범위로 제한한다. 이를 hardware
 replication이나 independent review로 표현하면 안 된다.
-실험 동결본은 `docs/measurement/paper_native_campaign_v6.yaml`, 분석 계약은
+실험 동결본은 `docs/measurement/paper_native_campaign_v10.yaml`, 분석 계약은
 `docs/measurement/PAPER_NATIVE_ANALYSIS_V2.md`, 단일 host bundle 절차는
 `docs/artifact/`에 있다. 기존 `measurement-ready`/blind/paper-ready profile은
 v5 two-host/reviewer workflow를 재개할 때 쓰는 stronger historical profile이다.
@@ -162,7 +162,7 @@ docker compose run --rm ctkat-dev bash -c \
 ## Project structure
 
 ```
-WISA/
+CT-KAT/
 ├── ctkat/                      # framework package
 │   ├── cli.py                  # typer CLI (run / ct / kat / dudect / infer / parse)
 │   ├── config.py               # pydantic yaml schema

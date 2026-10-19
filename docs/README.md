@@ -27,9 +27,6 @@ reproducing CT-KAT. Superseded scratchpads remain local-only.
 - `corpus/` — committed v2 corpus, deterministic correctness snapshot,
   migration manifest, frozen v1.2 archive, and independent-upstream expansion
   contract.
-- `ROADMAP_REJECTION_RECOVERY.md` — rejection-review adjudication and the
-  dependency-ordered completion plan, including the KyberSlash and Falcon
-  workstreams.
 
 ## Local-only archive
 

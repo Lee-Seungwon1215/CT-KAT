@@ -16,7 +16,7 @@ Do not open a public issue for a vulnerability that could expose a user,
 invalidate published evidence, or enable command execution. Use the
 repository's private GitHub security-advisory form:
 
-<https://github.com/Lee-Seungwon1215/WISA_proj/security/advisories/new>
+<https://github.com/Lee-Seungwon1215/CT-KAT/security/advisories/new>
 
 Include the affected commit/version, platform, minimal reproducer, expected
 behavior, and impact. If the advisory form is unavailable, contact the
