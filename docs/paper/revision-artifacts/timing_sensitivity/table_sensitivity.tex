@@ -1,0 +1,46 @@
+\begin{table}[h]
+\centering
+\caption{Sensitivity of every timing condition. Delays are the injected positive-control ladder; MDD, in cycles, is the largest over the three processes of $(10+z_{0.80})\cdot\mathrm{SE}$, the smallest class-mean difference the $|t|>10$ rule detects with probability 0.80; $(5/\tau)^2$ is the dudect estimate of the measurements needed to reach $|t|=5$ at the observed effect. The null-control columns give the largest $|t|$ over the three processes for two comparisons that contain no true difference, one between two classes of equivalent inputs (Inputs) and one that times only the preparation code (Setup). Both use the same maximum-of-102 procedure as the target.}
+\label{tab:sensitivity}
+\scriptsize
+\setlength{\tabcolsep}{2pt}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.13\linewidth}>{\raggedright\arraybackslash}p{0.25\linewidth}rrrrrr@{}}
+\toprule
+ & & & & \multicolumn{2}{c}{\textbf{Null controls}} & & \\
+\cmidrule(lr){5-6}
+\textbf{Group} & \textbf{Target (input axis)} & \textbf{Delays (ticks)} & \textbf{$|t|$} & \textbf{Inputs} & \textbf{Setup} & \textbf{$(5/\tau)^2$} & \textbf{MDD} \\
+\midrule
+Core & PQClean Falcon-512 (secret key) & 512/8,192/131,072 & 0.99 & 1.69 & 1.48 & $7.07\times10^{5}$ & 38,420 \\
+Core & PQClean ML-DSA-44 (secret key) & 65,536/262,144/1,048,576 & 2.01 & 3.79 & 2.97 & $1.29\times10^{5}$ & $3.46\times10^{5}$ \\
+Core & PQClean ML-DSA-65 (secret key) & 65,536/262,144/1,048,576 & 1.82 & 0.10 & 0.72 & $1.53\times10^{5}$ & $5.57\times10^{5}$ \\
+Core & PQClean ML-DSA-87 (secret key) & 65,536/262,144/1,048,576 & 2.35 & 1.55 & 2.07 & 91,596 & $5.94\times10^{5}$ \\
+Core & PQClean ML-KEM-768 (key and ciphertext (mixed)) & 64/512/16,384 & 256.93 & 0.96 & 1.89 & 9 & 682 \\
+Core & PQClean ML-KEM-768 (ciphertext only) & 64/512/16,384 & 1.64 & 0.88 & 0.88 & $2.40\times10^{5}$ & 817 \\
+Core & PQClean ML-KEM-768 (internal) & 64/512/16,384 & 2.22 & 2.50 & 1.28 & $1.07\times10^{5}$ & 700 \\
+Core & PQClean SLH-DSA-SHA2-128f (secret key) & 4,096/65,536/1,048,576 & 1.76 & 2.29 & 0.54 & $2.21\times10^{5}$ & 83,069 \\
+\midrule
+KyberSlash & KS1 site, patched (operand bin) & 64/512/16,384 & 1.69 & 1.29 & 1.68 & $1.81\times10^{5}$ & 111 \\
+KyberSlash & KS1 site, vulnerable (operand bin) & 64/512/16,384 & 2.13 & 1.38 & 1.07 & $1.34\times10^{5}$ & 111 \\
+KyberSlash & KS2 poly site, patched (operand bin) & 64/512/16,384 & 1.15 & 0.64 & 1.52 & $5.46\times10^{5}$ & 1 \\
+KyberSlash & KS2 poly site, vulnerable (operand bin) & 64/512/16,384 & 2.71 & 1.43 & 1.02 & 99,615 & 68 \\
+KyberSlash & KS2 polyvec site, patched (operand bin) & 64/512/16,384 & 1.42 & 1.11 & 1.01 & $3.64\times10^{5}$ & 355 \\
+KyberSlash & KS2 polyvec site, vulnerable (operand bin) & 64/512/16,384 & 1.93 & 1.08 & 1.39 & $1.35\times10^{5}$ & 331 \\
+KyberSlash & PQClean ML-KEM-768 (chosen ciphertext) & 64/512/16,384 & 2.45 & 1.61 & 1.49 & $1.25\times10^{5}$ & 4,465 \\
+KyberSlash & ML-KEM-768 with KS1 and KS2 (chosen ciphertext) & 64/512/16,384 & 2.30 & 1.63 & 2.30 & $1.42\times10^{5}$ & 4,544 \\
+KyberSlash & ML-KEM-768 with KS1 (chosen ciphertext) & 64/512/16,384 & 1.89 & 2.02 & 1.33 & $2.09\times10^{5}$ & 4,465 \\
+KyberSlash & ML-KEM-768 with KS2 (chosen ciphertext) & 64/512/16,384 & 1.69 & 1.15 & 0.26 & $2.61\times10^{5}$ & 4,496 \\
+\midrule
+Falcon/FN-DSA & c-fn-dsa-1024, integer-emulated (secret key) & 65,536/262,144/1,048,576 & 1.68 & 0.95 & 2.35 & $2.65\times10^{5}$ & $4.09\times10^{5}$ \\
+Falcon/FN-DSA & c-fn-dsa-1024, native arithmetic (secret key) & 512/8,192/65,536 & 1.48 & 1.24 & 1.71 & $3.42\times10^{5}$ & 32,162 \\
+Falcon/FN-DSA & c-fn-dsa-512, integer-emulated (secret key) & 512/8,192/131,072 & 2.87 & 0.98 & 0.38 & 91,334 & 84,111 \\
+Falcon/FN-DSA & c-fn-dsa-512, native arithmetic (secret key) & 512/8,192/65,536 & 1.64 & 2.46 & 1.10 & $2.78\times10^{5}$ & 12,017 \\
+Falcon/FN-DSA & PQClean Falcon-1024 (secret key) & 512/8,192/131,072 & 1.81 & 1.28 & 1.17 & $1.52\times10^{5}$ & 49,837 \\
+Falcon/FN-DSA & PQClean Falcon-512 (secret key) & 512/8,192/131,072 & 2.15 & 0.50 & 0.58 & $1.62\times10^{5}$ & 40,006 \\
+\midrule
+mlkem/mldsa-native & mldsa-native-65, portable (secret key) & 65,536/262,144/1,048,576 & 1.99 & 0.03 & 0.72 & $1.27\times10^{5}$ & $3.93\times10^{5}$ \\
+mlkem/mldsa-native & mldsa-native-65, optimized (secret key) & 65,536/262,144/1,048,576 & 2.20 & 0.09 & 0.69 & $1.04\times10^{5}$ & 91,476 \\
+mlkem/mldsa-native & mlkem-native-768, portable (key and ciphertext (mixed)) & 64/512/16,384 & 351.50 & 1.83 & 2.30 & 5 & 581 \\
+mlkem/mldsa-native & mlkem-native-768, optimized (key and ciphertext (mixed)) & 64/512/16,384 & 100.96 & 0.83 & 1.21 & 68 & 359 \\
+\bottomrule
+\end{tabular}
+\end{table}

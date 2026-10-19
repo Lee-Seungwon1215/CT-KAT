@@ -1,0 +1,169 @@
+{
+  "binary": {
+    "bytes": 533816,
+    "path": "/home/test/ctkat-native/measurement_runs/host-a/control-rehearsals/v3-b/falcon-v4/pqclean_falcon1024_reference/generated/timing_sign",
+    "sha256": "23130ca04d8f9f5f075191be6cc4c2a1f4fb1a9c90075733492f9dd48f253b73"
+  },
+  "comparison_group": "falcon-1024-full-sign-gcc-O2",
+  "compiler": {
+    "cflags": [
+      "-std=c99",
+      "-O2",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-fno-lto"
+    ],
+    "compile_command": "gcc -std=c99 -O2 -g -fno-omit-frame-pointer -fno-lto -I/home/test/ctkat-native/examples/pqc_falcon1024/clean -I/home/test/ctkat-native/examples/pqc_mlkem768/common /home/test/ctkat-native/measurement_runs/host-a/control-rehearsals/v3-b/falcon-v4/pqclean_falcon1024_reference/generated/.timing_sign.c.xysj1uy8.c /home/test/ctkat-native/examples/pqc_falcon1024/clean/codec.c /home/test/ctkat-native/examples/pqc_falcon1024/clean/common.c /home/test/ctkat-native/examples/pqc_falcon1024/clean/fft.c /home/test/ctkat-native/examples/pqc_falcon1024/clean/fpr.c /home/test/ctkat-native/examples/pqc_falcon1024/clean/keygen.c /home/test/ctkat-native/examples/pqc_falcon1024/clean/pqclean.c /home/test/ctkat-native/examples/pqc_falcon1024/clean/rng.c /home/test/ctkat-native/examples/pqc_falcon1024/clean/sign.c /home/test/ctkat-native/examples/pqc_falcon1024/clean/vrfy.c /home/test/ctkat-native/examples/pqc_mlkem768/common/fips202.c -o /home/test/ctkat-native/measurement_runs/host-a/control-rehearsals/v3-b/falcon-v4/pqclean_falcon1024_reference/generated/.timing_sign._8nrqu1n.tmp",
+    "executable": {
+      "bytes": 1023032,
+      "path": "/usr/bin/x86_64-linux-gnu-gcc-13",
+      "sha256": "1b99826121ae6682a634e5efe09bd3e3df58ce58e0b28f849114ab5b89139c26",
+      "version_command": [
+        "/usr/bin/x86_64-linux-gnu-gcc-13",
+        "--version"
+      ]
+    },
+    "requested_command": "gcc",
+    "version": "x86_64-linux-gnu-gcc-13 (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0"
+  },
+  "config": {
+    "bytes": 1063,
+    "path": "/home/test/ctkat-native/examples/pqc_falcon1024/ctkat_timing.yaml",
+    "sha256": "558adc9b540370ab8dfe9c6533bf6462998f8f7a19893be4b5f9643cd0d830da"
+  },
+  "contract_id": "falcon-signing-linked-binary-v1",
+  "contract_manifest": {
+    "bytes": 4793,
+    "path": "/home/test/ctkat-native/examples/falcon_comparator_support/timing_binary_contracts_v1.yaml",
+    "sha256": "80836994eea332d2b2621495630e3ed6a0683a8edd9a43c8f34b69801aac8718"
+  },
+  "contract_target": "pqclean_falcon1024_reference",
+  "created_at": "2026-08-14T13:56:20.626338Z",
+  "disassembly": {
+    "command": [
+      "/usr/bin/x86_64-linux-gnu-objdump",
+      "-d",
+      "/home/test/ctkat-native/measurement_runs/host-a/control-rehearsals/v3-b/falcon-v4/pqclean_falcon1024_reference/generated/timing_sign"
+    ],
+    "file_header_artifact": "timing_sign.objdump-file-header.txt",
+    "file_header_command": [
+      "/usr/bin/x86_64-linux-gnu-objdump",
+      "-f",
+      "/home/test/ctkat-native/measurement_runs/host-a/control-rehearsals/v3-b/falcon-v4/pqclean_falcon1024_reference/generated/timing_sign"
+    ],
+    "file_header_path": "/home/test/ctkat-native/measurement_runs/host-a/control-rehearsals/v3-b/falcon-v4/pqclean_falcon1024_reference/reports/binary_contract/timing_sign.objdump-file-header.txt",
+    "file_header_sha256": "f69160607cf020aaf9e23b8a17f4ada479d932b3069f731bffc5bbf683ce85f2",
+    "full_artifact": "timing_sign.objdump.txt",
+    "full_path": "/home/test/ctkat-native/measurement_runs/host-a/control-rehearsals/v3-b/falcon-v4/pqclean_falcon1024_reference/reports/binary_contract/timing_sign.objdump.txt",
+    "full_sha256": "a97980eca401decaa5b336a6467b97d06524890b1a3a0b861eb01fd8cf4d1387",
+    "symbols": {
+      "PQCLEAN_FALCON1024_CLEAN_sampler": {
+        "call_targets": [
+          "PQCLEAN_FALCON1024_CLEAN_fpr_scaled",
+          "PQCLEAN_FALCON1024_CLEAN_fpr_add",
+          "PQCLEAN_FALCON1024_CLEAN_fpr_mul",
+          "PQCLEAN_FALCON1024_CLEAN_fpr_mul",
+          "PQCLEAN_FALCON1024_CLEAN_gaussian0_sampler",
+          "PQCLEAN_FALCON1024_CLEAN_fpr_scaled",
+          "PQCLEAN_FALCON1024_CLEAN_fpr_add",
+          "PQCLEAN_FALCON1024_CLEAN_fpr_mul",
+          "PQCLEAN_FALCON1024_CLEAN_fpr_mul",
+          "PQCLEAN_FALCON1024_CLEAN_fpr_scaled",
+          "PQCLEAN_FALCON1024_CLEAN_fpr_mul",
+          "PQCLEAN_FALCON1024_CLEAN_fpr_add",
+          "PQCLEAN_FALCON1024_CLEAN_fpr_mul",
+          "PQCLEAN_FALCON1024_CLEAN_fpr_scaled",
+          "PQCLEAN_FALCON1024_CLEAN_fpr_mul",
+          "PQCLEAN_FALCON1024_CLEAN_fpr_add",
+          "PQCLEAN_FALCON1024_CLEAN_fpr_expm_p63",
+          "PQCLEAN_FALCON1024_CLEAN_prng_refill",
+          "PQCLEAN_FALCON1024_CLEAN_prng_refill"
+        ],
+        "division_count": 0,
+        "division_helper_lines": [],
+        "division_lines": [],
+        "expected_division_count": null,
+        "expected_present": true,
+        "floating_point_arithmetic_count": 0,
+        "floating_point_arithmetic_lines": [],
+        "present": true,
+        "tail_targets": [
+          "PQCLEAN_FALCON1024_CLEAN_sampler+0x295",
+          "PQCLEAN_FALCON1024_CLEAN_sampler+0x11e"
+        ]
+      }
+    },
+    "tool": {
+      "bytes": 390848,
+      "path": "/usr/bin/x86_64-linux-gnu-objdump",
+      "sha256": "325c4205a4c658a9d1e1ebc469ae55975a2b897a3d3c1e79d9b158612d37f745",
+      "version": "GNU objdump (GNU Binutils for Ubuntu) 2.42",
+      "version_command": [
+        "/usr/bin/x86_64-linux-gnu-objdump",
+        "--version"
+      ]
+    }
+  },
+  "errors": [],
+  "evidence_boundary": "Exact PQClean Falcon-1024 reference linked binary. Its fpr type is a uint64_t software representation, so the namespaced sampler must contain exactly zero hardware floating-point arithmetic instructions. This is a build-scope fact, not a constant-time or leakage verdict.",
+  "generated_source": {
+    "bytes": 19194,
+    "path": "/home/test/ctkat-native/measurement_runs/host-a/control-rehearsals/v3-b/falcon-v4/pqclean_falcon1024_reference/generated/timing_sign.c",
+    "sha256": "763b8282ab039349a668ad04b54318d8da37258214df430d1bf8efcad35009c1"
+  },
+  "kind": "ctkat-timing-binary-contract-report",
+  "linked_sources": [
+    {
+      "bytes": 14415,
+      "path": "/home/test/ctkat-native/examples/pqc_falcon1024/clean/codec.c",
+      "sha256": "e78d284b4b2ca578397a8d2183f2902d78e9ae6c7e5b9a47728aac64852ff3fa"
+    },
+    {
+      "bytes": 8898,
+      "path": "/home/test/ctkat-native/examples/pqc_falcon1024/clean/common.c",
+      "sha256": "2dbdeca0d53274fb5b146f316241e8617759b2853ebb9eb937f3dd3116419183"
+    },
+    {
+      "bytes": 19982,
+      "path": "/home/test/ctkat-native/examples/pqc_falcon1024/clean/fft.c",
+      "sha256": "b686783aca2a283ea6173fd69d557697a0ae814785811521c1a114b45b8bc918"
+    },
+    {
+      "bytes": 69023,
+      "path": "/home/test/ctkat-native/examples/pqc_falcon1024/clean/fpr.c",
+      "sha256": "7e3d9cccd9c579d844fd32fcb84fdfbdb3d7c78fa6ecb64be095d7fddff04031"
+    },
+    {
+      "bytes": 138576,
+      "path": "/home/test/ctkat-native/examples/pqc_falcon1024/clean/keygen.c",
+      "sha256": "44fab9ad867026889d48000db1c1ec22afc11f5948a969ea0e2261f985de55a5"
+    },
+    {
+      "bytes": 10346,
+      "path": "/home/test/ctkat-native/examples/pqc_falcon1024/clean/pqclean.c",
+      "sha256": "18921a63fa8ebe066d0050a6fe86520b54dd9635ce2503000804ebf738ab7449"
+    },
+    {
+      "bytes": 5905,
+      "path": "/home/test/ctkat-native/examples/pqc_falcon1024/clean/rng.c",
+      "sha256": "7abd4ea80b6eb0090879fffad7ebda07cf06e67d69a6a11045d3325b5b9ac933"
+    },
+    {
+      "bytes": 39300,
+      "path": "/home/test/ctkat-native/examples/pqc_falcon1024/clean/sign.c",
+      "sha256": "c3a415b803aa1131139118dd9ec6db108c1f35fcde3ea3590a14131fc44cac1c"
+    },
+    {
+      "bytes": 30331,
+      "path": "/home/test/ctkat-native/examples/pqc_falcon1024/clean/vrfy.c",
+      "sha256": "cd8d3920a7c54a7db566bce68485ff6ce02e0eb57378a6a36defde00eb62bd47"
+    },
+    {
+      "bytes": 29026,
+      "path": "/home/test/ctkat-native/examples/pqc_mlkem768/common/fips202.c",
+      "sha256": "4871baddebf2d4771d86b5088719123e2e43addce1a3c0eca75b4d18970ffc1f"
+    }
+  ],
+  "passed": true,
+  "schema_version": "1.0"
+}

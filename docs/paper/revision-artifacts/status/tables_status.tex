@@ -1,0 +1,105 @@
+\section{Final Status of Each Evaluation Target}
+%\section{각 평가 대상의 최종 상태}
+\label{app:target-results}
+
+% [번역] 표 A11과 A12는 본문에서 상태별로 요약한 25개 대상–연산 쌍을 나열하며, 각 최종 상태 옆에 그 상태를 만든 층별 결과를 함께 보인다. 동일한 구현이라도 테스트한 연산이나 두 입력 클래스의 구성 방식이 다르면 별개의 쌍으로 구분된다. 타이밍 열은 V10 단일 호스트 측정의 committed-corpus 구성 요소에서 가져왔으며, 이 구성 요소에 타이밍 축이 없는 쌍은 미실행으로 표시한다.
+Tables~\ref{tab:target-results-a} and~\ref{tab:target-results-b} list the 25 target--operation pairs that are summarized by status in the main text, together with the outcome of each evidence layer that produced the final status. Pairs remain distinct when either the tested operation or the construction of the two input classes differs, even for the same implementation. The timing column is taken from the committed-corpus component of the single-host V10 campaign; pairs without a timing axis in that component are marked as not run.
+
+% [번역] 표 A11: 25개 대상–연산 쌍의 최종 상태와 층별 결과 (1)
+% [번역]   F: 기능 검증(P 통과), S: 구조 테스트(F 발견, N 없음), I: 의심 명령어 스캔과 피연산자 출처(N 후보 없음, Pub 공개, Sec 비밀, Mix 혼합, Unr 미상), T: V10 타이밍(S 신호, N 신호 없음, (m) 혼합 입력 비교), R: 검토(Rev 완료, Pend 대기, Exp 만료), --: 미실행 또는 불필요
+% [번역]   번호 | 대상 및 테스트 | F | S | I | T | R | 최종 상태
+% [번역]    1 | PQClean ML-KEM-512, 역캡슐화 | P | N | Pub | -- | Rev | 테스트 조건에서 문제 미관찰
+% [번역]    2 | PQClean ML-KEM-512, 내부 비교 | P | N | Pub | -- | Rev | 테스트 조건에서 문제 미관찰
+% [번역]    3 | PQClean ML-KEM-768, 키·암호문 비교 | P | N | Pub | S(m) | Rev | 위험 확인
+% [번역]    4 | PQClean ML-KEM-768, 암호문 단독 비교 | P | -- | -- | N | Rev | 테스트 조건에서 문제 미관찰
+% [번역]    5 | PQClean ML-KEM-768, 내부 비교 | P | N | Pub | N | Rev | 테스트 조건에서 문제 미관찰
+% [번역]    6 | PQClean ML-KEM-1024, 역캡슐화 | P | N | Pub | -- | Rev | 테스트 조건에서 문제 미관찰
+% [번역]    7 | PQClean ML-KEM-1024, 내부 비교 | P | N | Pub | -- | Rev | 테스트 조건에서 문제 미관찰
+% [번역]    8 | 입력 의존 작업량 대조군 | -- | F | N | -- | Rev | 위험 확인
+% [번역]    9 | 입력 독립 작업량 대조군 | -- | N | N | -- | -- | 판단 불가
+% [번역]   10 | 빌드 민감 대조군 | -- | F | N | -- | -- | 위험 확인
+% [번역]   11 | 빌드 독립 대조군 | -- | N | N | -- | -- | 판단 불가
+% [번역]   12 | PQClean ML-KEM-768, KyberSlash KS1 | P | N | Sec | -- | Rev | 위험 확인
+% [번역]   13 | PQClean ML-KEM-768, KyberSlash KS2 | P | N | Sec | -- | Rev | 위험 확인
+% [번역]   14 | PQClean ML-KEM-768, KyberSlash KS1/KS2 | P | N | Sec | -- | Rev | 위험 확인
+% [번역]   15 | Kyber 참조 구현, 역캡슐화 | P | F | Sec | -- | Rev | 위험 확인
+\begin{table}[h]
+\centering
+\caption{Final statuses of the 25 target--operation pairs (1), with the outcome of each evidence layer. F: functional validation (P, pass); S: structural test (F, finding; N, no finding); I: suspicious-instruction scan and operand attribution (N, no candidate; Pub, public; Sec, secret; Mix, mixed; Unr, unresolved); T: V10 timing (S, signal; N, no signal; \textsuperscript{m}, mixed-input contrast); R: review (Rev, reviewed; Pend, pending; Exp, expired); --, not run or not needed.}
+\label{tab:target-results-a}
+\scriptsize
+\renewcommand{\arraystretch}{1.3}
+\setlength{\tabcolsep}{2.5pt}
+\begin{tabular}{@{}
+    >{\raggedright\arraybackslash}p{0.04\linewidth}
+    >{\raggedright\arraybackslash}p{0.36\linewidth}
+    ccccc
+    >{\raggedleft\arraybackslash}p{0.25\linewidth}
+@{}}
+\toprule
+\textbf{No.} & \textbf{Target and Test} & \textbf{F} & \textbf{S} & \textbf{I} & \textbf{T} & \textbf{R} & \textbf{Final Status} \\
+\midrule
+1  & PQClean ML-KEM-512, decapsulation & P & N & Pub & -- & Rev & No Issue Observed under Tested Conditions \\
+2  & PQClean ML-KEM-512, internal comparison & P & N & Pub & -- & Rev & No Issue Observed under Tested Conditions \\
+3  & PQClean ML-KEM-768, key-and-ciphertext comparison & P & N & Pub & S\textsuperscript{m} & Rev & Risk Identified \\
+4  & PQClean ML-KEM-768, ciphertext-only comparison & P & -- & -- & N & Rev & No Issue Observed under Tested Conditions \\
+5  & PQClean ML-KEM-768, internal comparison & P & N & Pub & N & Rev & No Issue Observed under Tested Conditions \\
+6  & PQClean ML-KEM-1024, decapsulation & P & N & Pub & -- & Rev & No Issue Observed under Tested Conditions \\
+7  & PQClean ML-KEM-1024, internal comparison & P & N & Pub & -- & Rev & No Issue Observed under Tested Conditions \\
+\midrule
+8  & Input-dependent-work control & -- & F & N & -- & Rev & Risk Identified \\
+9  & Input-independent-work control & -- & N & N & -- & -- & Inconclusive \\
+10 & Build-sensitive control & -- & F & N & -- & -- & Risk Identified \\
+11 & Build-independent control & -- & N & N & -- & -- & Inconclusive \\
+\midrule
+12 & PQClean ML-KEM-768, KyberSlash KS1 & P & N & Sec & -- & Rev & Risk Identified \\
+13 & PQClean ML-KEM-768, KyberSlash KS2 & P & N & Sec & -- & Rev & Risk Identified \\
+14 & PQClean ML-KEM-768, KyberSlash KS1/KS2 & P & N & Sec & -- & Rev & Risk Identified \\
+15 & Kyber reference, decapsulation & P & F & Sec & -- & Rev & Risk Identified \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% [번역] 표 A12: 25개 대상–연산 쌍의 최종 상태와 층별 결과 (2)
+% [번역]   F: 기능 검증(P 통과), S: 구조 테스트(F 발견, N 없음), I: 의심 명령어 스캔과 피연산자 출처(N 후보 없음, Pub 공개, Sec 비밀, Mix 혼합, Unr 미상), T: V10 타이밍(S 신호, N 신호 없음, (m) 혼합 입력 비교), R: 검토(Rev 완료, Pend 대기, Exp 만료), --: 미실행 또는 불필요
+% [번역]   번호 | 대상 및 테스트 | F | S | I | T | R | 최종 상태
+% [번역]   16 | PQClean Falcon-512, 서명 | P | F | Unr | N | Pend | 추가 검토 필요
+% [번역]   17 | PQClean Falcon-1024, 서명 | P | F | Unr | -- | Pend | 추가 검토 필요
+% [번역]   18 | c-fn-dsa-512, 네이티브 산술 서명 | P | F | N | -- | Pend | 추가 검토 필요
+% [번역]   19 | c-fn-dsa-512, 정수 에뮬레이션 서명 | P | F | N | -- | Pend | 추가 검토 필요
+% [번역]   20 | c-fn-dsa-1024, 네이티브 산술 서명 | P | F | N | -- | Pend | 추가 검토 필요
+% [번역]   21 | c-fn-dsa-1024, 정수 에뮬레이션 서명 | P | F | N | -- | Pend | 추가 검토 필요
+% [번역]   22 | PQClean ML-DSA-44, 서명 | P | F | Sec | N | Exp | 추가 검토 필요
+% [번역]   23 | PQClean ML-DSA-65, 서명 | P | F | Sec | N | Exp | 추가 검토 필요
+% [번역]   24 | PQClean ML-DSA-87, 서명 | P | F | Sec | N | Exp | 추가 검토 필요
+% [번역]   25 | PQClean SLH-DSA-SHA2-128f, 서명 | P | F | Mix | N | Exp | 추가 검토 필요
+\begin{table}[h]
+\centering
+\caption{Final statuses of the 25 target--operation pairs (2), with the outcome of each evidence layer. Layer abbreviations as in Table~\ref{tab:target-results-a}.}
+\label{tab:target-results-b}
+\scriptsize
+\renewcommand{\arraystretch}{1.3}
+\setlength{\tabcolsep}{2.5pt}
+\begin{tabular}{@{}
+    >{\raggedright\arraybackslash}p{0.04\linewidth}
+    >{\raggedright\arraybackslash}p{0.36\linewidth}
+    ccccc
+    >{\raggedleft\arraybackslash}p{0.25\linewidth}
+@{}}
+\toprule
+\textbf{No.} & \textbf{Target and Test} & \textbf{F} & \textbf{S} & \textbf{I} & \textbf{T} & \textbf{R} & \textbf{Final Status} \\
+\midrule
+16 & PQClean Falcon-512, signing & P & F & Unr & N & Pend & Further Review Required \\
+17 & PQClean Falcon-1024, signing & P & F & Unr & -- & Pend & Further Review Required \\
+18 & c-fn-dsa-512, native-arithmetic signing & P & F & N & -- & Pend & Further Review Required \\
+19 & c-fn-dsa-512, integer-emulated signing & P & F & N & -- & Pend & Further Review Required \\
+20 & c-fn-dsa-1024, native-arithmetic signing & P & F & N & -- & Pend & Further Review Required \\
+21 & c-fn-dsa-1024, integer-emulated signing & P & F & N & -- & Pend & Further Review Required \\
+\midrule
+22 & PQClean ML-DSA-44, signing & P & F & Sec & N & Exp & Further Review Required \\
+23 & PQClean ML-DSA-65, signing & P & F & Sec & N & Exp & Further Review Required \\
+24 & PQClean ML-DSA-87, signing & P & F & Sec & N & Exp & Further Review Required \\
+25 & PQClean SLH-DSA-SHA2-128f, signing & P & F & Mix & N & Exp & Further Review Required \\
+\bottomrule
+\end{tabular}
+\end{table}

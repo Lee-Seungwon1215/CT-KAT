@@ -1,0 +1,6 @@
+
+/home/test/ctkat-native/measurement_runs/host-a/control-rehearsals/v3-b/smoke/kyberslash-contrast/kyberslash_operand_ks1_vulnerable/operand_bin/generated/timing_operand_bin:     file format elf64-x86-64
+architecture: i386:x86-64, flags 0x00000150:
+HAS_SYMS, DYNAMIC, D_PAGED
+start address 0x0000000000001580
+

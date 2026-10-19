@@ -1,0 +1,14 @@
+current order reproduces stored overall for all 25 pairs
+
+A. Tool Error before Risk: 0 changed
+
+B. Inconclusive (correctness not-run, partial/invalid) before Risk: 2 changed
+  #8  toy_lookup/leaky: risk-detected -> inconclusive
+  #10 ct_matrix_flip/leaky: risk-detected -> inconclusive
+
+C. Review gates before Risk: 3 changed
+  #8  toy_lookup/leaky: risk-detected -> inconclusive
+  #10 ct_matrix_flip/leaky: risk-detected -> inconclusive
+  #15 pqcrystals_kyber768_ref_a621b8d/kem_dec: risk-detected -> needs-review
+
+D. Risk before functional failure: 0 changed

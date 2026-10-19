@@ -1,0 +1,38 @@
+\begin{table}[h]
+\centering
+\caption{Coverage of the structural-test operation call. Each structural harness was rebuilt with GCC coverage instrumentation (\texttt{-O0}); counters were reset immediately before the call to the target operation and recorded immediately after it, so input preparation is excluded. Lines and branches are counted within the functions of the target sources that the operation executes.}
+\label{tab:structural-coverage}
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.04\linewidth}>{\raggedright\arraybackslash}p{0.46\linewidth}rrr@{}}
+\toprule
+\textbf{No.} & \textbf{Target and Test} & \textbf{Functions} & \textbf{Lines (\%)} & \textbf{Branches (\%)} \\
+\midrule
+1 & PQClean ML-KEM-512, decapsulation & 70 & 98.1 & 91.3 \\
+2 & PQClean ML-KEM-512, internal comparison & 70 & 98.1 & 91.3 \\
+3 & PQClean ML-KEM-768, key-and-ciphertext comparison & 68 & 98.1 & 91.1 \\
+4 & PQClean ML-KEM-768, ciphertext-only comparison & \multicolumn{3}{c}{structural test not run} \\
+5 & PQClean ML-KEM-768, internal comparison & 68 & 98.1 & 91.1 \\
+6 & PQClean ML-KEM-1024, decapsulation & 68 & 98.6 & 92.6 \\
+7 & PQClean ML-KEM-1024, internal comparison & 68 & 98.1 & 91.2 \\
+8 & Input-dependent-work control & 1 & 100.0 & 100.0 \\
+9 & Input-independent-work control & 1 & 100.0 & 100.0 \\
+10 & Build-sensitive control & 1 & 100.0 & 100.0 \\
+11 & Build-independent control & 1 & 100.0 & 100.0 \\
+12 & PQClean ML-KEM-768, KyberSlash KS1 & 68 & 98.5 & 92.5 \\
+13 & PQClean ML-KEM-768, KyberSlash KS2 & 68 & 98.5 & 92.5 \\
+14 & PQClean ML-KEM-768, KyberSlash KS1/KS2 & 68 & 98.0 & 91.1 \\
+15 & Kyber reference, decapsulation & 58 & 98.8 & 94.6 \\
+16 & PQClean Falcon-512, signing & 55 & 97.5 & 83.3 \\
+17 & PQClean Falcon-1024, signing & 55 & 97.5 & 83.3 \\
+18 & c-fn-dsa-512, native-arithmetic signing & 51 & 91.8 & 68.2 \\
+19 & c-fn-dsa-512, integer-emulated signing & 64 & 94.0 & 71.9 \\
+20 & c-fn-dsa-1024, native-arithmetic signing & 51 & 91.8 & 68.2 \\
+21 & c-fn-dsa-1024, integer-emulated signing & 64 & 94.0 & 71.9 \\
+22 & PQClean ML-DSA-44, signing & 76 & 97.4 & 89.7 \\
+23 & PQClean ML-DSA-65, signing & 76 & 97.3 & 89.7 \\
+24 & PQClean ML-DSA-87, signing & 76 & 96.6 & 87.3 \\
+25 & PQClean SLH-DSA-SHA2-128f, signing & 44 & 96.8 & 87.1 \\
+\bottomrule
+\end{tabular}
+\end{table}

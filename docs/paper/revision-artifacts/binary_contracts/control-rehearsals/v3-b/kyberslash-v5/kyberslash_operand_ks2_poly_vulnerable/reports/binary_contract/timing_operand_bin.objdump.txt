@@ -1,0 +1,961 @@
+
+/home/test/ctkat-native/measurement_runs/host-a/control-rehearsals/v3-b/kyberslash-v5/kyberslash_operand_ks2_poly_vulnerable/generated/timing_operand_bin:     file format elf64-x86-64
+
+
+Disassembly of section .init:
+
+0000000000001000 <_init>:
+    1000:	f3 0f 1e fa          	endbr64
+    1004:	48 83 ec 08          	sub    $0x8,%rsp
+    1008:	48 8b 05 d9 2f 00 00 	mov    0x2fd9(%rip),%rax        # 3fe8 <__gmon_start__@Base>
+    100f:	48 85 c0             	test   %rax,%rax
+    1012:	74 02                	je     1016 <_init+0x16>
+    1014:	ff d0                	call   *%rax
+    1016:	48 83 c4 08          	add    $0x8,%rsp
+    101a:	c3                   	ret
+
+Disassembly of section .plt:
+
+0000000000001020 <.plt>:
+    1020:	ff 35 72 2f 00 00    	push   0x2f72(%rip)        # 3f98 <_GLOBAL_OFFSET_TABLE_+0x8>
+    1026:	ff 25 74 2f 00 00    	jmp    *0x2f74(%rip)        # 3fa0 <_GLOBAL_OFFSET_TABLE_+0x10>
+    102c:	0f 1f 40 00          	nopl   0x0(%rax)
+    1030:	f3 0f 1e fa          	endbr64
+    1034:	68 00 00 00 00       	push   $0x0
+    1039:	e9 e2 ff ff ff       	jmp    1020 <_init+0x20>
+    103e:	66 90                	xchg   %ax,%ax
+    1040:	f3 0f 1e fa          	endbr64
+    1044:	68 01 00 00 00       	push   $0x1
+    1049:	e9 d2 ff ff ff       	jmp    1020 <_init+0x20>
+    104e:	66 90                	xchg   %ax,%ax
+    1050:	f3 0f 1e fa          	endbr64
+    1054:	68 02 00 00 00       	push   $0x2
+    1059:	e9 c2 ff ff ff       	jmp    1020 <_init+0x20>
+    105e:	66 90                	xchg   %ax,%ax
+    1060:	f3 0f 1e fa          	endbr64
+    1064:	68 03 00 00 00       	push   $0x3
+    1069:	e9 b2 ff ff ff       	jmp    1020 <_init+0x20>
+    106e:	66 90                	xchg   %ax,%ax
+    1070:	f3 0f 1e fa          	endbr64
+    1074:	68 04 00 00 00       	push   $0x4
+    1079:	e9 a2 ff ff ff       	jmp    1020 <_init+0x20>
+    107e:	66 90                	xchg   %ax,%ax
+    1080:	f3 0f 1e fa          	endbr64
+    1084:	68 05 00 00 00       	push   $0x5
+    1089:	e9 92 ff ff ff       	jmp    1020 <_init+0x20>
+    108e:	66 90                	xchg   %ax,%ax
+
+Disassembly of section .plt.got:
+
+0000000000001090 <__cxa_finalize@plt>:
+    1090:	f3 0f 1e fa          	endbr64
+    1094:	ff 25 5e 2f 00 00    	jmp    *0x2f5e(%rip)        # 3ff8 <__cxa_finalize@GLIBC_2.2.5>
+    109a:	66 0f 1f 44 00 00    	nopw   0x0(%rax,%rax,1)
+
+Disassembly of section .plt.sec:
+
+00000000000010a0 <__errno_location@plt>:
+    10a0:	f3 0f 1e fa          	endbr64
+    10a4:	ff 25 fe 2e 00 00    	jmp    *0x2efe(%rip)        # 3fa8 <__errno_location@GLIBC_2.2.5>
+    10aa:	66 0f 1f 44 00 00    	nopw   0x0(%rax,%rax,1)
+
+00000000000010b0 <__stack_chk_fail@plt>:
+    10b0:	f3 0f 1e fa          	endbr64
+    10b4:	ff 25 f6 2e 00 00    	jmp    *0x2ef6(%rip)        # 3fb0 <__stack_chk_fail@GLIBC_2.4>
+    10ba:	66 0f 1f 44 00 00    	nopw   0x0(%rax,%rax,1)
+
+00000000000010c0 <strtoull@plt>:
+    10c0:	f3 0f 1e fa          	endbr64
+    10c4:	ff 25 ee 2e 00 00    	jmp    *0x2eee(%rip)        # 3fb8 <strtoull@GLIBC_2.2.5>
+    10ca:	66 0f 1f 44 00 00    	nopw   0x0(%rax,%rax,1)
+
+00000000000010d0 <strcmp@plt>:
+    10d0:	f3 0f 1e fa          	endbr64
+    10d4:	ff 25 e6 2e 00 00    	jmp    *0x2ee6(%rip)        # 3fc0 <strcmp@GLIBC_2.2.5>
+    10da:	66 0f 1f 44 00 00    	nopw   0x0(%rax,%rax,1)
+
+00000000000010e0 <__printf_chk@plt>:
+    10e0:	f3 0f 1e fa          	endbr64
+    10e4:	ff 25 de 2e 00 00    	jmp    *0x2ede(%rip)        # 3fc8 <__printf_chk@GLIBC_2.3.4>
+    10ea:	66 0f 1f 44 00 00    	nopw   0x0(%rax,%rax,1)
+
+00000000000010f0 <__fprintf_chk@plt>:
+    10f0:	f3 0f 1e fa          	endbr64
+    10f4:	ff 25 d6 2e 00 00    	jmp    *0x2ed6(%rip)        # 3fd0 <__fprintf_chk@GLIBC_2.3.4>
+    10fa:	66 0f 1f 44 00 00    	nopw   0x0(%rax,%rax,1)
+
+Disassembly of section .text:
+
+0000000000001100 <main>:
+    1100:	f3 0f 1e fa          	endbr64
+    1104:	55                   	push   %rbp
+    1105:	48 89 e5             	mov    %rsp,%rbp
+    1108:	41 57                	push   %r15
+    110a:	41 56                	push   %r14
+    110c:	41 55                	push   %r13
+    110e:	41 54                	push   %r12
+    1110:	53                   	push   %rbx
+    1111:	48 89 f3             	mov    %rsi,%rbx
+    1114:	48 81 ec 38 01 00 00 	sub    $0x138,%rsp
+    111b:	64 48 8b 04 25 28 00 	mov    %fs:0x28,%rax
+    1122:	00 00 
+    1124:	48 89 45 c8          	mov    %rax,-0x38(%rbp)
+    1128:	31 c0                	xor    %eax,%eax
+    112a:	48 8d 85 f0 fe ff ff 	lea    -0x110(%rbp),%rax
+    1131:	48 89 c2             	mov    %rax,%rdx
+    1134:	48 89 85 b8 fe ff ff 	mov    %rax,-0x148(%rbp)
+    113b:	e8 eb 06 00 00       	call   182b <ctkat_parse_options>
+    1140:	85 c0                	test   %eax,%eax
+    1142:	74 27                	je     116b <main+0x6b>
+    1144:	48 8b 0b             	mov    (%rbx),%rcx
+    1147:	48 8b 3d d2 2e 00 00 	mov    0x2ed2(%rip),%rdi        # 4020 <stderr@GLIBC_2.2.5>
+    114e:	48 8d 15 40 10 00 00 	lea    0x1040(%rip),%rdx        # 2195 <_IO_stdin_used+0x195>
+    1155:	31 c0                	xor    %eax,%eax
+    1157:	be 02 00 00 00       	mov    $0x2,%esi
+    115c:	bb 02 00 00 00       	mov    $0x2,%ebx
+    1161:	e8 8a ff ff ff       	call   10f0 <__fprintf_chk@plt>
+    1166:	e9 e8 03 00 00       	jmp    1553 <main+0x453>
+    116b:	bf ee ff c0 00       	mov    $0xc0ffee,%edi
+    1170:	4c 8d a5 28 ff ff ff 	lea    -0xd8(%rbp),%r12
+    1177:	e8 24 05 00 00       	call   16a0 <ctkat_prng_init>
+    117c:	48 8d 85 48 ff ff ff 	lea    -0xb8(%rbp),%rax
+    1183:	4c 89 e7             	mov    %r12,%rdi
+    1186:	48 89 c6             	mov    %rax,%rsi
+    1189:	48 89 85 d8 fe ff ff 	mov    %rax,-0x128(%rbp)
+    1190:	e8 60 0a 00 00       	call   1bf5 <CTKAT_KS_crypto_kem_keypair>
+    1195:	48 8d 15 57 10 00 00 	lea    0x1057(%rip),%rdx        # 21f3 <_IO_stdin_used+0x1f3>
+    119c:	89 c1                	mov    %eax,%ecx
+    119e:	85 c0                	test   %eax,%eax
+    11a0:	75 26                	jne    11c8 <main+0xc8>
+    11a2:	48 8d 9d 10 ff ff ff 	lea    -0xf0(%rbp),%rbx
+    11a9:	48 8d b5 68 ff ff ff 	lea    -0x98(%rbp),%rsi
+    11b0:	4c 89 e2             	mov    %r12,%rdx
+    11b3:	48 89 df             	mov    %rbx,%rdi
+    11b6:	e8 6f 0a 00 00       	call   1c2a <CTKAT_KS_crypto_kem_enc>
+    11bb:	89 c1                	mov    %eax,%ecx
+    11bd:	85 c0                	test   %eax,%eax
+    11bf:	74 24                	je     11e5 <main+0xe5>
+    11c1:	48 8d 15 67 10 00 00 	lea    0x1067(%rip),%rdx        # 222f <_IO_stdin_used+0x22f>
+    11c8:	48 8b 3d 51 2e 00 00 	mov    0x2e51(%rip),%rdi        # 4020 <stderr@GLIBC_2.2.5>
+    11cf:	be 02 00 00 00       	mov    $0x2,%esi
+    11d4:	31 c0                	xor    %eax,%eax
+    11d6:	bb 04 00 00 00       	mov    $0x4,%ebx
+    11db:	e8 10 ff ff ff       	call   10f0 <__fprintf_chk@plt>
+    11e0:	e9 6e 03 00 00       	jmp    1553 <main+0x453>
+    11e5:	48 89 df             	mov    %rbx,%rdi
+    11e8:	be 80 06 00 00       	mov    $0x680,%esi
+    11ed:	4c 8d 6d 88          	lea    -0x78(%rbp),%r13
+    11f1:	e8 9e 05 00 00       	call   1794 <ctkat_store_u16_le>
+    11f6:	48 8b 95 d8 fe ff ff 	mov    -0x128(%rbp),%rdx
+    11fd:	48 89 de             	mov    %rbx,%rsi
+    1200:	4c 89 ef             	mov    %r13,%rdi
+    1203:	31 db                	xor    %ebx,%ebx
+    1205:	4c 8d a5 18 ff ff ff 	lea    -0xe8(%rbp),%r12
+    120c:	e8 69 0a 00 00       	call   1c7a <CTKAT_KS_crypto_kem_dec>
+    1211:	89 c1                	mov    %eax,%ecx
+    1213:	85 c0                	test   %eax,%eax
+    1215:	74 1f                	je     1236 <main+0x136>
+    1217:	48 8b 3d 02 2e 00 00 	mov    0x2e02(%rip),%rdi        # 4020 <stderr@GLIBC_2.2.5>
+    121e:	48 8d 15 4c 10 00 00 	lea    0x104c(%rip),%rdx        # 2271 <_IO_stdin_used+0x271>
+    1225:	be 02 00 00 00       	mov    $0x2,%esi
+    122a:	31 c0                	xor    %eax,%eax
+    122c:	e8 bf fe ff ff       	call   10f0 <__fprintf_chk@plt>
+    1231:	e9 8d 00 00 00       	jmp    12c3 <main+0x1c3>
+    1236:	48 8b 85 10 ff ff ff 	mov    -0xf0(%rbp),%rax
+    123d:	89 de                	mov    %ebx,%esi
+    123f:	4c 89 e7             	mov    %r12,%rdi
+    1242:	48 89 85 18 ff ff ff 	mov    %rax,-0xe8(%rbp)
+    1249:	e8 46 05 00 00       	call   1794 <ctkat_store_u16_le>
+    124e:	48 8b 95 d8 fe ff ff 	mov    -0x128(%rbp),%rdx
+    1255:	4c 89 e6             	mov    %r12,%rsi
+    1258:	4c 89 ef             	mov    %r13,%rdi
+    125b:	e8 1a 0a 00 00       	call   1c7a <CTKAT_KS_crypto_kem_dec>
+    1260:	8d b3 c1 0c 00 00    	lea    0xcc1(%rbx),%esi
+    1266:	4c 89 e7             	mov    %r12,%rdi
+    1269:	89 85 d0 fe ff ff    	mov    %eax,-0x130(%rbp)
+    126f:	48 8b 85 10 ff ff ff 	mov    -0xf0(%rbp),%rax
+    1276:	48 89 85 18 ff ff ff 	mov    %rax,-0xe8(%rbp)
+    127d:	e8 12 05 00 00       	call   1794 <ctkat_store_u16_le>
+    1282:	48 8b 95 d8 fe ff ff 	mov    -0x128(%rbp),%rdx
+    1289:	4c 89 e6             	mov    %r12,%rsi
+    128c:	4c 89 ef             	mov    %r13,%rdi
+    128f:	e8 e6 09 00 00       	call   1c7a <CTKAT_KS_crypto_kem_dec>
+    1294:	44 8b 85 d0 fe ff ff 	mov    -0x130(%rbp),%r8d
+    129b:	41 89 c1             	mov    %eax,%r9d
+    129e:	44 89 c0             	mov    %r8d,%eax
+    12a1:	44 09 c8             	or     %r9d,%eax
+    12a4:	74 27                	je     12cd <main+0x1cd>
+    12a6:	48 8b 3d 73 2d 00 00 	mov    0x2d73(%rip),%rdi        # 4020 <stderr@GLIBC_2.2.5>
+    12ad:	48 89 d9             	mov    %rbx,%rcx
+    12b0:	be 02 00 00 00       	mov    $0x2,%esi
+    12b5:	31 c0                	xor    %eax,%eax
+    12b7:	48 8d 15 f5 0f 00 00 	lea    0xff5(%rip),%rdx        # 22b3 <_IO_stdin_used+0x2b3>
+    12be:	e8 2d fe ff ff       	call   10f0 <__fprintf_chk@plt>
+    12c3:	bb 05 00 00 00       	mov    $0x5,%ebx
+    12c8:	e9 86 02 00 00       	jmp    1553 <main+0x453>
+    12cd:	48 ff c3             	inc    %rbx
+    12d0:	48 83 fb 40          	cmp    $0x40,%rbx
+    12d4:	0f 85 5c ff ff ff    	jne    1236 <main+0x136>
+    12da:	48 8d 85 20 ff ff ff 	lea    -0xe0(%rbp),%rax
+    12e1:	45 31 e4             	xor    %r12d,%r12d
+    12e4:	48 89 85 d0 fe ff ff 	mov    %rax,-0x130(%rbp)
+    12eb:	48 8b 95 10 ff ff ff 	mov    -0xf0(%rbp),%rdx
+    12f2:	4c 89 e0             	mov    %r12,%rax
+    12f5:	48 8b bd d0 fe ff ff 	mov    -0x130(%rbp),%rdi
+    12fc:	83 e0 3f             	and    $0x3f,%eax
+    12ff:	48 89 95 20 ff ff ff 	mov    %rdx,-0xe0(%rbp)
+    1306:	44 89 e2             	mov    %r12d,%edx
+    1309:	8d b0 c1 0c 00 00    	lea    0xcc1(%rax),%esi
+    130f:	83 e2 01             	and    $0x1,%edx
+    1312:	31 c6                	xor    %eax,%esi
+    1314:	f7 da                	neg    %edx
+    1316:	21 d6                	and    %edx,%esi
+    1318:	31 c6                	xor    %eax,%esi
+    131a:	0f b7 f6             	movzwl %si,%esi
+    131d:	e8 72 04 00 00       	call   1794 <ctkat_store_u16_le>
+    1322:	48 8b 95 d8 fe ff ff 	mov    -0x128(%rbp),%rdx
+    1329:	48 8b b5 d0 fe ff ff 	mov    -0x130(%rbp),%rsi
+    1330:	48 8d 7d a8          	lea    -0x58(%rbp),%rdi
+    1334:	e8 41 09 00 00       	call   1c7a <CTKAT_KS_crypto_kem_dec>
+    1339:	89 c3                	mov    %eax,%ebx
+    133b:	85 c0                	test   %eax,%eax
+    133d:	74 25                	je     1364 <main+0x264>
+    133f:	48 8b 3d da 2c 00 00 	mov    0x2cda(%rip),%rdi        # 4020 <stderr@GLIBC_2.2.5>
+    1346:	41 89 c0             	mov    %eax,%r8d
+    1349:	4c 89 e1             	mov    %r12,%rcx
+    134c:	31 c0                	xor    %eax,%eax
+    134e:	48 8d 15 af 0f 00 00 	lea    0xfaf(%rip),%rdx        # 2304 <_IO_stdin_used+0x304>
+    1355:	be 02 00 00 00       	mov    $0x2,%esi
+    135a:	e8 91 fd ff ff       	call   10f0 <__fprintf_chk@plt>
+    135f:	e9 5f ff ff ff       	jmp    12c3 <main+0x1c3>
+    1364:	49 ff c4             	inc    %r12
+    1367:	49 81 fc e8 03 00 00 	cmp    $0x3e8,%r12
+    136e:	0f 85 77 ff ff ff    	jne    12eb <main+0x1eb>
+    1374:	48 8b 05 85 24 04 00 	mov    0x42485(%rip),%rax        # 43800 <ctkat_randombytes_calls>
+    137b:	45 31 f6             	xor    %r14d,%r14d
+    137e:	45 31 e4             	xor    %r12d,%r12d
+    1381:	45 31 ff             	xor    %r15d,%r15d
+    1384:	48 8b bd f0 fe ff ff 	mov    -0x110(%rbp),%rdi
+    138b:	48 89 85 b0 fe ff ff 	mov    %rax,-0x150(%rbp)
+    1392:	e8 09 03 00 00       	call   16a0 <ctkat_prng_init>
+    1397:	48 8b bd 08 ff ff ff 	mov    -0xf8(%rbp),%rdi
+    139e:	49 39 fe             	cmp    %rdi,%r14
+    13a1:	0f 83 4a 01 00 00    	jae    14f1 <main+0x3f1>
+    13a7:	e8 70 03 00 00       	call   171c <ctkat_label_next>
+    13ac:	48 c1 e8 20          	shr    $0x20,%rax
+    13b0:	48 89 85 c8 fe ff ff 	mov    %rax,-0x138(%rbp)
+    13b7:	8b 85 c8 fe ff ff    	mov    -0x138(%rbp),%eax
+    13bd:	83 e0 01             	and    $0x1,%eax
+    13c0:	89 85 c4 fe ff ff    	mov    %eax,-0x13c(%rbp)
+    13c6:	e8 5d 03 00 00       	call   1728 <ctkat_select_next>
+    13cb:	8b 95 f8 fe ff ff    	mov    -0x108(%rbp),%edx
+    13d1:	8b 8d c4 fe ff ff    	mov    -0x13c(%rbp),%ecx
+    13d7:	83 e0 3f             	and    $0x3f,%eax
+    13da:	48 8b b5 10 ff ff ff 	mov    -0xf0(%rbp),%rsi
+    13e1:	48 8b bd d0 fe ff ff 	mov    -0x130(%rbp),%rdi
+    13e8:	f7 c2 fd ff ff ff    	test   $0xfffffffd,%edx
+    13ee:	41 0f 45 cf          	cmovne %r15d,%ecx
+    13f2:	48 89 b5 20 ff ff ff 	mov    %rsi,-0xe0(%rbp)
+    13f9:	8d b0 c1 0c 00 00    	lea    0xcc1(%rax),%esi
+    13ff:	31 c6                	xor    %eax,%esi
+    1401:	f7 d9                	neg    %ecx
+    1403:	21 ce                	and    %ecx,%esi
+    1405:	31 c6                	xor    %eax,%esi
+    1407:	0f b7 f6             	movzwl %si,%esi
+    140a:	e8 85 03 00 00       	call   1794 <ctkat_store_u16_le>
+    140f:	83 fa 02             	cmp    $0x2,%edx
+    1412:	75 11                	jne    1425 <main+0x325>
+    1414:	48 8b bd d0 fe ff ff 	mov    -0x130(%rbp),%rdi
+    141b:	be 80 06 00 00       	mov    $0x680,%esi
+    1420:	e8 6f 03 00 00       	call   1794 <ctkat_store_u16_le>
+    1425:	0f ae f0             	mfence
+    1428:	48 8d bd e0 fe ff ff 	lea    -0x120(%rbp),%rdi
+    142f:	44 89 bd e4 fe ff ff 	mov    %r15d,-0x11c(%rbp)
+    1436:	e8 61 05 00 00       	call   199c <ctkat_now>
+    143b:	48 8b 95 d8 fe ff ff 	mov    -0x128(%rbp),%rdx
+    1442:	48 8b b5 d0 fe ff ff 	mov    -0x130(%rbp),%rsi
+    1449:	48 8d 7d a8          	lea    -0x58(%rbp),%rdi
+    144d:	48 89 85 a8 fe ff ff 	mov    %rax,-0x158(%rbp)
+    1454:	e8 21 08 00 00       	call   1c7a <CTKAT_KS_crypto_kem_dec>
+    1459:	41 89 c5             	mov    %eax,%r13d
+    145c:	83 bd f8 fe ff ff 03 	cmpl   $0x3,-0x108(%rbp)
+    1463:	75 15                	jne    147a <main+0x37a>
+    1465:	f6 85 c8 fe ff ff 01 	testb  $0x1,-0x138(%rbp)
+    146c:	74 0c                	je     147a <main+0x37a>
+    146e:	48 8b bd 00 ff ff ff 	mov    -0x100(%rbp),%rdi
+    1475:	e8 6c 05 00 00       	call   19e6 <ctkat_inject_delay>
+    147a:	48 8d bd e4 fe ff ff 	lea    -0x11c(%rbp),%rdi
+    1481:	e8 16 05 00 00       	call   199c <ctkat_now>
+    1486:	48 8d 7d a8          	lea    -0x58(%rbp),%rdi
+    148a:	48 89 c1             	mov    %rax,%rcx
+    148d:	44 89 e8             	mov    %r13d,%eax
+    1490:	48 89 85 e8 fe ff ff 	mov    %rax,-0x118(%rbp)
+    1497:	31 c0                	xor    %eax,%eax
+    1499:	48 8b b5 e8 fe ff ff 	mov    -0x118(%rbp),%rsi
+    14a0:	0f b6 14 38          	movzbl (%rax,%rdi,1),%edx
+    14a4:	48 ff c0             	inc    %rax
+    14a7:	48 31 f2             	xor    %rsi,%rdx
+    14aa:	48 89 95 e8 fe ff ff 	mov    %rdx,-0x118(%rbp)
+    14b1:	48 83 f8 20          	cmp    $0x20,%rax
+    14b5:	75 e2                	jne    1499 <main+0x399>
+    14b7:	48 8b 85 e8 fe ff ff 	mov    -0x118(%rbp),%rax
+    14be:	44 8b 8d e4 fe ff ff 	mov    -0x11c(%rbp),%r9d
+    14c5:	44 8b 85 e0 fe ff ff 	mov    -0x120(%rbp),%r8d
+    14cc:	4c 89 f7             	mov    %r14,%rdi
+    14cf:	48 8b 95 a8 fe ff ff 	mov    -0x158(%rbp),%rdx
+    14d6:	8b b5 c4 fe ff ff    	mov    -0x13c(%rbp),%esi
+    14dc:	e8 93 06 00 00       	call   1b74 <ctkat_store_timing.constprop.0>
+    14e1:	41 83 fd 01          	cmp    $0x1,%r13d
+    14e5:	49 83 dc ff          	sbb    $0xffffffffffffffff,%r12
+    14e9:	49 ff c6             	inc    %r14
+    14ec:	e9 a6 fe ff ff       	jmp    1397 <main+0x297>
+    14f1:	e8 57 05 00 00       	call   1a4d <ctkat_emit_trace>
+    14f6:	be 02 00 00 00       	mov    $0x2,%esi
+    14fb:	31 c0                	xor    %eax,%eax
+    14fd:	4c 89 e1             	mov    %r12,%rcx
+    1500:	48 8b 3d 19 2b 00 00 	mov    0x2b19(%rip),%rdi        # 4020 <stderr@GLIBC_2.2.5>
+    1507:	41 b8 ee ff c0 00    	mov    $0xc0ffee,%r8d
+    150d:	48 8d 15 35 0e 00 00 	lea    0xe35(%rip),%rdx        # 2349 <_IO_stdin_used+0x349>
+    1514:	e8 d7 fb ff ff       	call   10f0 <__fprintf_chk@plt>
+    1519:	48 8b b5 b0 fe ff ff 	mov    -0x150(%rbp),%rsi
+    1520:	48 8b bd b8 fe ff ff 	mov    -0x148(%rbp),%rdi
+    1527:	e8 de 05 00 00       	call   1b0a <ctkat_emit_metadata>
+    152c:	4d 85 e4             	test   %r12,%r12
+    152f:	74 22                	je     1553 <main+0x453>
+    1531:	4c 89 e1             	mov    %r12,%rcx
+    1534:	be 02 00 00 00       	mov    $0x2,%esi
+    1539:	31 c0                	xor    %eax,%eax
+    153b:	bb 06 00 00 00       	mov    $0x6,%ebx
+    1540:	48 8b 3d d9 2a 00 00 	mov    0x2ad9(%rip),%rdi        # 4020 <stderr@GLIBC_2.2.5>
+    1547:	48 8d 15 a5 0f 00 00 	lea    0xfa5(%rip),%rdx        # 24f3 <_IO_stdin_used+0x4f3>
+    154e:	e8 9d fb ff ff       	call   10f0 <__fprintf_chk@plt>
+    1553:	48 8b 45 c8          	mov    -0x38(%rbp),%rax
+    1557:	64 48 2b 04 25 28 00 	sub    %fs:0x28,%rax
+    155e:	00 00 
+    1560:	74 05                	je     1567 <main+0x467>
+    1562:	e8 49 fb ff ff       	call   10b0 <__stack_chk_fail@plt>
+    1567:	48 81 c4 38 01 00 00 	add    $0x138,%rsp
+    156e:	89 d8                	mov    %ebx,%eax
+    1570:	5b                   	pop    %rbx
+    1571:	41 5c                	pop    %r12
+    1573:	41 5d                	pop    %r13
+    1575:	41 5e                	pop    %r14
+    1577:	41 5f                	pop    %r15
+    1579:	5d                   	pop    %rbp
+    157a:	c3                   	ret
+    157b:	0f 1f 44 00 00       	nopl   0x0(%rax,%rax,1)
+
+0000000000001580 <_start>:
+    1580:	f3 0f 1e fa          	endbr64
+    1584:	31 ed                	xor    %ebp,%ebp
+    1586:	49 89 d1             	mov    %rdx,%r9
+    1589:	5e                   	pop    %rsi
+    158a:	48 89 e2             	mov    %rsp,%rdx
+    158d:	48 83 e4 f0          	and    $0xfffffffffffffff0,%rsp
+    1591:	50                   	push   %rax
+    1592:	54                   	push   %rsp
+    1593:	45 31 c0             	xor    %r8d,%r8d
+    1596:	31 c9                	xor    %ecx,%ecx
+    1598:	48 8d 3d 61 fb ff ff 	lea    -0x49f(%rip),%rdi        # 1100 <main>
+    159f:	ff 15 33 2a 00 00    	call   *0x2a33(%rip)        # 3fd8 <__libc_start_main@GLIBC_2.34>
+    15a5:	f4                   	hlt
+    15a6:	66 2e 0f 1f 84 00 00 	cs nopw 0x0(%rax,%rax,1)
+    15ad:	00 00 00 
+
+00000000000015b0 <deregister_tm_clones>:
+    15b0:	48 8d 3d 61 2a 00 00 	lea    0x2a61(%rip),%rdi        # 4018 <__TMC_END__>
+    15b7:	48 8d 05 5a 2a 00 00 	lea    0x2a5a(%rip),%rax        # 4018 <__TMC_END__>
+    15be:	48 39 f8             	cmp    %rdi,%rax
+    15c1:	74 15                	je     15d8 <deregister_tm_clones+0x28>
+    15c3:	48 8b 05 16 2a 00 00 	mov    0x2a16(%rip),%rax        # 3fe0 <_ITM_deregisterTMCloneTable@Base>
+    15ca:	48 85 c0             	test   %rax,%rax
+    15cd:	74 09                	je     15d8 <deregister_tm_clones+0x28>
+    15cf:	ff e0                	jmp    *%rax
+    15d1:	0f 1f 80 00 00 00 00 	nopl   0x0(%rax)
+    15d8:	c3                   	ret
+    15d9:	0f 1f 80 00 00 00 00 	nopl   0x0(%rax)
+
+00000000000015e0 <register_tm_clones>:
+    15e0:	48 8d 3d 31 2a 00 00 	lea    0x2a31(%rip),%rdi        # 4018 <__TMC_END__>
+    15e7:	48 8d 35 2a 2a 00 00 	lea    0x2a2a(%rip),%rsi        # 4018 <__TMC_END__>
+    15ee:	48 29 fe             	sub    %rdi,%rsi
+    15f1:	48 89 f0             	mov    %rsi,%rax
+    15f4:	48 c1 ee 3f          	shr    $0x3f,%rsi
+    15f8:	48 c1 f8 03          	sar    $0x3,%rax
+    15fc:	48 01 c6             	add    %rax,%rsi
+    15ff:	48 d1 fe             	sar    $1,%rsi
+    1602:	74 14                	je     1618 <register_tm_clones+0x38>
+    1604:	48 8b 05 e5 29 00 00 	mov    0x29e5(%rip),%rax        # 3ff0 <_ITM_registerTMCloneTable@Base>
+    160b:	48 85 c0             	test   %rax,%rax
+    160e:	74 08                	je     1618 <register_tm_clones+0x38>
+    1610:	ff e0                	jmp    *%rax
+    1612:	66 0f 1f 44 00 00    	nopw   0x0(%rax,%rax,1)
+    1618:	c3                   	ret
+    1619:	0f 1f 80 00 00 00 00 	nopl   0x0(%rax)
+
+0000000000001620 <__do_global_dtors_aux>:
+    1620:	f3 0f 1e fa          	endbr64
+    1624:	80 3d fd 29 00 00 00 	cmpb   $0x0,0x29fd(%rip)        # 4028 <completed.0>
+    162b:	75 2b                	jne    1658 <__do_global_dtors_aux+0x38>
+    162d:	55                   	push   %rbp
+    162e:	48 83 3d c2 29 00 00 	cmpq   $0x0,0x29c2(%rip)        # 3ff8 <__cxa_finalize@GLIBC_2.2.5>
+    1635:	00 
+    1636:	48 89 e5             	mov    %rsp,%rbp
+    1639:	74 0c                	je     1647 <__do_global_dtors_aux+0x27>
+    163b:	48 8b 3d c6 29 00 00 	mov    0x29c6(%rip),%rdi        # 4008 <__dso_handle>
+    1642:	e8 49 fa ff ff       	call   1090 <__cxa_finalize@plt>
+    1647:	e8 64 ff ff ff       	call   15b0 <deregister_tm_clones>
+    164c:	c6 05 d5 29 00 00 01 	movb   $0x1,0x29d5(%rip)        # 4028 <completed.0>
+    1653:	5d                   	pop    %rbp
+    1654:	c3                   	ret
+    1655:	0f 1f 00             	nopl   (%rax)
+    1658:	c3                   	ret
+    1659:	0f 1f 80 00 00 00 00 	nopl   0x0(%rax)
+
+0000000000001660 <frame_dummy>:
+    1660:	f3 0f 1e fa          	endbr64
+    1664:	e9 77 ff ff ff       	jmp    15e0 <register_tm_clones>
+
+0000000000001669 <ctkat_xorshift64>:
+    1669:	48 8b 07             	mov    (%rdi),%rax
+    166c:	48 89 c2             	mov    %rax,%rdx
+    166f:	48 c1 e2 0d          	shl    $0xd,%rdx
+    1673:	48 31 c2             	xor    %rax,%rdx
+    1676:	48 89 d0             	mov    %rdx,%rax
+    1679:	48 c1 e8 07          	shr    $0x7,%rax
+    167d:	48 31 d0             	xor    %rdx,%rax
+    1680:	48 89 c1             	mov    %rax,%rcx
+    1683:	48 c1 e1 11          	shl    $0x11,%rcx
+    1687:	48 89 ca             	mov    %rcx,%rdx
+    168a:	48 31 c2             	xor    %rax,%rdx
+    168d:	48 39 c1             	cmp    %rax,%rcx
+    1690:	b8 ee ff c0 00       	mov    $0xc0ffee,%eax
+    1695:	48 0f 44 d0          	cmove  %rax,%rdx
+    1699:	48 89 17             	mov    %rdx,(%rdi)
+    169c:	48 89 d0             	mov    %rdx,%rax
+    169f:	c3                   	ret
+
+00000000000016a0 <ctkat_prng_init>:
+    16a0:	55                   	push   %rbp
+    16a1:	48 89 e5             	mov    %rsp,%rbp
+    16a4:	48 85 ff             	test   %rdi,%rdi
+    16a7:	75 05                	jne    16ae <ctkat_prng_init+0xe>
+    16a9:	bf ee ff c0 00       	mov    $0xc0ffee,%edi
+    16ae:	48 b8 32 56 5f 4c 45 	movabs $0x4c4142454c5f5632,%rax
+    16b5:	42 41 4c 
+    16b8:	be 08 00 00 00       	mov    $0x8,%esi
+    16bd:	4c 8d 05 54 21 04 00 	lea    0x42154(%rip),%r8        # 43818 <ctkat_label_state>
+    16c4:	48 31 f8             	xor    %rdi,%rax
+    16c7:	48 89 05 4a 21 04 00 	mov    %rax,0x4214a(%rip)        # 43818 <ctkat_label_state>
+    16ce:	48 b8 32 56 54 43 45 	movabs $0x53454c4543545632,%rax
+    16d5:	4c 45 53 
+    16d8:	48 31 f8             	xor    %rdi,%rax
+    16db:	48 89 05 2e 21 04 00 	mov    %rax,0x4212e(%rip)        # 43810 <ctkat_select_state>
+    16e2:	48 b8 32 56 4d 4f 44 	movabs $0x52414e444f4d5632,%rax
+    16e9:	4e 41 52 
+    16ec:	48 31 c7             	xor    %rax,%rdi
+    16ef:	48 89 3d 12 21 04 00 	mov    %rdi,0x42112(%rip)        # 43808 <ctkat_random_state>
+    16f6:	4c 89 c7             	mov    %r8,%rdi
+    16f9:	e8 6b ff ff ff       	call   1669 <ctkat_xorshift64>
+    16fe:	48 8d 3d 0b 21 04 00 	lea    0x4210b(%rip),%rdi        # 43810 <ctkat_select_state>
+    1705:	e8 5f ff ff ff       	call   1669 <ctkat_xorshift64>
+    170a:	48 8d 3d f7 20 04 00 	lea    0x420f7(%rip),%rdi        # 43808 <ctkat_random_state>
+    1711:	e8 53 ff ff ff       	call   1669 <ctkat_xorshift64>
+    1716:	ff ce                	dec    %esi
+    1718:	75 dc                	jne    16f6 <ctkat_prng_init+0x56>
+    171a:	5d                   	pop    %rbp
+    171b:	c3                   	ret
+
+000000000000171c <ctkat_label_next>:
+    171c:	48 8d 3d f5 20 04 00 	lea    0x420f5(%rip),%rdi        # 43818 <ctkat_label_state>
+    1723:	e9 41 ff ff ff       	jmp    1669 <ctkat_xorshift64>
+
+0000000000001728 <ctkat_select_next>:
+    1728:	48 8d 3d e1 20 04 00 	lea    0x420e1(%rip),%rdi        # 43810 <ctkat_select_state>
+    172f:	e9 35 ff ff ff       	jmp    1669 <ctkat_xorshift64>
+
+0000000000001734 <ctkat_rand_bytes>:
+    1734:	49 89 f8             	mov    %rdi,%r8
+    1737:	48 01 fe             	add    %rdi,%rsi
+    173a:	48 8d 3d c7 20 04 00 	lea    0x420c7(%rip),%rdi        # 43808 <ctkat_random_state>
+    1741:	49 39 f0             	cmp    %rsi,%r8
+    1744:	75 01                	jne    1747 <ctkat_rand_bytes+0x13>
+    1746:	c3                   	ret
+    1747:	55                   	push   %rbp
+    1748:	48 89 e5             	mov    %rsp,%rbp
+    174b:	e8 19 ff ff ff       	call   1669 <ctkat_xorshift64>
+    1750:	49 ff c0             	inc    %r8
+    1753:	41 88 40 ff          	mov    %al,-0x1(%r8)
+    1757:	49 39 f0             	cmp    %rsi,%r8
+    175a:	75 ef                	jne    174b <ctkat_rand_bytes+0x17>
+    175c:	5d                   	pop    %rbp
+    175d:	c3                   	ret
+
+000000000000175e <ctkat_mode_name>:
+    175e:	48 8d 05 a9 08 00 00 	lea    0x8a9(%rip),%rax        # 200e <_IO_stdin_used+0xe>
+    1765:	83 ff 02             	cmp    $0x2,%edi
+    1768:	74 29                	je     1793 <ctkat_mode_name+0x35>
+    176a:	77 12                	ja     177e <ctkat_mode_name+0x20>
+    176c:	85 ff                	test   %edi,%edi
+    176e:	48 8d 05 8f 08 00 00 	lea    0x88f(%rip),%rax        # 2004 <_IO_stdin_used+0x4>
+    1775:	48 8d 15 8f 08 00 00 	lea    0x88f(%rip),%rdx        # 200b <_IO_stdin_used+0xb>
+    177c:	eb 11                	jmp    178f <ctkat_mode_name+0x31>
+    177e:	83 ff 03             	cmp    $0x3,%edi
+    1781:	48 8d 05 8e 08 00 00 	lea    0x88e(%rip),%rax        # 2016 <_IO_stdin_used+0x16>
+    1788:	48 8d 15 90 08 00 00 	lea    0x890(%rip),%rdx        # 201f <_IO_stdin_used+0x1f>
+    178f:	48 0f 45 c2          	cmovne %rdx,%rax
+    1793:	c3                   	ret
+
+0000000000001794 <ctkat_store_u16_le>:
+    1794:	66 89 37             	mov    %si,(%rdi)
+    1797:	c3                   	ret
+
+0000000000001798 <ctkat_parse_u64>:
+    1798:	55                   	push   %rbp
+    1799:	48 89 e5             	mov    %rsp,%rbp
+    179c:	41 55                	push   %r13
+    179e:	49 89 f5             	mov    %rsi,%r13
+    17a1:	41 54                	push   %r12
+    17a3:	48 83 ec 20          	sub    $0x20,%rsp
+    17a7:	48 89 7d d8          	mov    %rdi,-0x28(%rbp)
+    17ab:	64 48 8b 04 25 28 00 	mov    %fs:0x28,%rax
+    17b2:	00 00 
+    17b4:	48 89 45 e8          	mov    %rax,-0x18(%rbp)
+    17b8:	31 c0                	xor    %eax,%eax
+    17ba:	31 c0                	xor    %eax,%eax
+    17bc:	48 89 45 e0          	mov    %rax,-0x20(%rbp)
+    17c0:	e8 db f8 ff ff       	call   10a0 <__errno_location@plt>
+    17c5:	48 8b 7d d8          	mov    -0x28(%rbp),%rdi
+    17c9:	31 d2                	xor    %edx,%edx
+    17cb:	89 10                	mov    %edx,(%rax)
+    17cd:	48 85 ff             	test   %rdi,%rdi
+    17d0:	75 05                	jne    17d7 <ctkat_parse_u64+0x3f>
+    17d2:	83 c8 ff             	or     $0xffffffff,%eax
+    17d5:	eb 36                	jmp    180d <ctkat_parse_u64+0x75>
+    17d7:	49 89 c4             	mov    %rax,%r12
+    17da:	8a 07                	mov    (%rdi),%al
+    17dc:	3c 2d                	cmp    $0x2d,%al
+    17de:	74 f2                	je     17d2 <ctkat_parse_u64+0x3a>
+    17e0:	84 c0                	test   %al,%al
+    17e2:	74 ee                	je     17d2 <ctkat_parse_u64+0x3a>
+    17e4:	48 8d 75 e0          	lea    -0x20(%rbp),%rsi
+    17e8:	ba 0a 00 00 00       	mov    $0xa,%edx
+    17ed:	e8 ce f8 ff ff       	call   10c0 <strtoull@plt>
+    17f2:	41 83 3c 24 22       	cmpl   $0x22,(%r12)
+    17f7:	74 d9                	je     17d2 <ctkat_parse_u64+0x3a>
+    17f9:	48 8b 55 e0          	mov    -0x20(%rbp),%rdx
+    17fd:	48 85 d2             	test   %rdx,%rdx
+    1800:	74 d0                	je     17d2 <ctkat_parse_u64+0x3a>
+    1802:	80 3a 00             	cmpb   $0x0,(%rdx)
+    1805:	75 cb                	jne    17d2 <ctkat_parse_u64+0x3a>
+    1807:	49 89 45 00          	mov    %rax,0x0(%r13)
+    180b:	31 c0                	xor    %eax,%eax
+    180d:	48 8b 55 e8          	mov    -0x18(%rbp),%rdx
+    1811:	64 48 2b 14 25 28 00 	sub    %fs:0x28,%rdx
+    1818:	00 00 
+    181a:	74 05                	je     1821 <ctkat_parse_u64+0x89>
+    181c:	e8 8f f8 ff ff       	call   10b0 <__stack_chk_fail@plt>
+    1821:	48 83 c4 20          	add    $0x20,%rsp
+    1825:	41 5c                	pop    %r12
+    1827:	41 5d                	pop    %r13
+    1829:	5d                   	pop    %rbp
+    182a:	c3                   	ret
+
+000000000000182b <ctkat_parse_options>:
+    182b:	55                   	push   %rbp
+    182c:	31 c9                	xor    %ecx,%ecx
+    182e:	45 31 c0             	xor    %r8d,%r8d
+    1831:	48 89 e5             	mov    %rsp,%rbp
+    1834:	41 55                	push   %r13
+    1836:	41 54                	push   %r12
+    1838:	53                   	push   %rbx
+    1839:	48 83 ec 18          	sub    $0x18,%rsp
+    183d:	64 48 8b 04 25 28 00 	mov    %fs:0x28,%rax
+    1844:	00 00 
+    1846:	48 89 45 d8          	mov    %rax,-0x28(%rbp)
+    184a:	31 c0                	xor    %eax,%eax
+    184c:	48 c7 02 ee ff c0 00 	movq   $0xc0ffee,(%rdx)
+    1853:	89 4a 08             	mov    %ecx,0x8(%rdx)
+    1856:	4c 89 42 10          	mov    %r8,0x10(%rdx)
+    185a:	48 c7 42 18 10 27 00 	movq   $0x2710,0x18(%rdx)
+    1861:	00 
+    1862:	83 ff 01             	cmp    $0x1,%edi
+    1865:	0f 84 10 01 00 00    	je     197b <ctkat_parse_options+0x150>
+    186b:	49 89 f4             	mov    %rsi,%r12
+    186e:	48 89 d3             	mov    %rdx,%rbx
+    1871:	83 ff 02             	cmp    $0x2,%edi
+    1874:	75 23                	jne    1899 <ctkat_parse_options+0x6e>
+    1876:	48 8b 7e 08          	mov    0x8(%rsi),%rdi
+    187a:	48 89 d6             	mov    %rdx,%rsi
+    187d:	e8 16 ff ff ff       	call   1798 <ctkat_parse_u64>
+    1882:	85 c0                	test   %eax,%eax
+    1884:	74 08                	je     188e <ctkat_parse_options+0x63>
+    1886:	83 c8 ff             	or     $0xffffffff,%eax
+    1889:	e9 ef 00 00 00       	jmp    197d <ctkat_parse_options+0x152>
+    188e:	48 83 3b 01          	cmpq   $0x1,(%rbx)
+    1892:	19 c0                	sbb    %eax,%eax
+    1894:	e9 e4 00 00 00       	jmp    197d <ctkat_parse_options+0x152>
+    1899:	83 ff 05             	cmp    $0x5,%edi
+    189c:	75 e8                	jne    1886 <ctkat_parse_options+0x5b>
+    189e:	48 8b 7e 08          	mov    0x8(%rsi),%rdi
+    18a2:	48 89 d6             	mov    %rdx,%rsi
+    18a5:	e8 ee fe ff ff       	call   1798 <ctkat_parse_u64>
+    18aa:	85 c0                	test   %eax,%eax
+    18ac:	75 d8                	jne    1886 <ctkat_parse_options+0x5b>
+    18ae:	48 83 3b 00          	cmpq   $0x0,(%rbx)
+    18b2:	74 d2                	je     1886 <ctkat_parse_options+0x5b>
+    18b4:	4d 8b 6c 24 10       	mov    0x10(%r12),%r13
+    18b9:	48 8d 35 44 07 00 00 	lea    0x744(%rip),%rsi        # 2004 <_IO_stdin_used+0x4>
+    18c0:	4c 89 ef             	mov    %r13,%rdi
+    18c3:	e8 08 f8 ff ff       	call   10d0 <strcmp@plt>
+    18c8:	85 c0                	test   %eax,%eax
+    18ca:	74 40                	je     190c <ctkat_parse_options+0xe1>
+    18cc:	48 8d 35 38 07 00 00 	lea    0x738(%rip),%rsi        # 200b <_IO_stdin_used+0xb>
+    18d3:	4c 89 ef             	mov    %r13,%rdi
+    18d6:	e8 f5 f7 ff ff       	call   10d0 <strcmp@plt>
+    18db:	85 c0                	test   %eax,%eax
+    18dd:	74 31                	je     1910 <ctkat_parse_options+0xe5>
+    18df:	48 8d 35 28 07 00 00 	lea    0x728(%rip),%rsi        # 200e <_IO_stdin_used+0xe>
+    18e6:	4c 89 ef             	mov    %r13,%rdi
+    18e9:	e8 e2 f7 ff ff       	call   10d0 <strcmp@plt>
+    18ee:	85 c0                	test   %eax,%eax
+    18f0:	74 25                	je     1917 <ctkat_parse_options+0xec>
+    18f2:	48 8d 35 1d 07 00 00 	lea    0x71d(%rip),%rsi        # 2016 <_IO_stdin_used+0x16>
+    18f9:	4c 89 ef             	mov    %r13,%rdi
+    18fc:	e8 cf f7 ff ff       	call   10d0 <strcmp@plt>
+    1901:	85 c0                	test   %eax,%eax
+    1903:	75 81                	jne    1886 <ctkat_parse_options+0x5b>
+    1905:	b8 03 00 00 00       	mov    $0x3,%eax
+    190a:	eb 10                	jmp    191c <ctkat_parse_options+0xf1>
+    190c:	31 c0                	xor    %eax,%eax
+    190e:	eb 0c                	jmp    191c <ctkat_parse_options+0xf1>
+    1910:	b8 01 00 00 00       	mov    $0x1,%eax
+    1915:	eb 05                	jmp    191c <ctkat_parse_options+0xf1>
+    1917:	b8 02 00 00 00       	mov    $0x2,%eax
+    191c:	89 43 08             	mov    %eax,0x8(%rbx)
+    191f:	49 8b 7c 24 18       	mov    0x18(%r12),%rdi
+    1924:	31 c0                	xor    %eax,%eax
+    1926:	48 8d 73 10          	lea    0x10(%rbx),%rsi
+    192a:	48 89 45 d0          	mov    %rax,-0x30(%rbp)
+    192e:	e8 65 fe ff ff       	call   1798 <ctkat_parse_u64>
+    1933:	85 c0                	test   %eax,%eax
+    1935:	0f 85 4b ff ff ff    	jne    1886 <ctkat_parse_options+0x5b>
+    193b:	49 8b 7c 24 20       	mov    0x20(%r12),%rdi
+    1940:	48 8d 75 d0          	lea    -0x30(%rbp),%rsi
+    1944:	e8 4f fe ff ff       	call   1798 <ctkat_parse_u64>
+    1949:	85 c0                	test   %eax,%eax
+    194b:	0f 85 35 ff ff ff    	jne    1886 <ctkat_parse_options+0x5b>
+    1951:	83 7b 08 03          	cmpl   $0x3,0x8(%rbx)
+    1955:	74 0b                	je     1962 <ctkat_parse_options+0x137>
+    1957:	48 83 7b 10 00       	cmpq   $0x0,0x10(%rbx)
+    195c:	0f 85 24 ff ff ff    	jne    1886 <ctkat_parse_options+0x5b>
+    1962:	48 8b 45 d0          	mov    -0x30(%rbp),%rax
+    1966:	48 3d 10 27 00 00    	cmp    $0x2710,%rax
+    196c:	0f 87 14 ff ff ff    	ja     1886 <ctkat_parse_options+0x5b>
+    1972:	48 85 c0             	test   %rax,%rax
+    1975:	74 04                	je     197b <ctkat_parse_options+0x150>
+    1977:	48 89 43 18          	mov    %rax,0x18(%rbx)
+    197b:	31 c0                	xor    %eax,%eax
+    197d:	48 8b 55 d8          	mov    -0x28(%rbp),%rdx
+    1981:	64 48 2b 14 25 28 00 	sub    %fs:0x28,%rdx
+    1988:	00 00 
+    198a:	74 05                	je     1991 <ctkat_parse_options+0x166>
+    198c:	e8 1f f7 ff ff       	call   10b0 <__stack_chk_fail@plt>
+    1991:	48 83 c4 18          	add    $0x18,%rsp
+    1995:	5b                   	pop    %rbx
+    1996:	41 5c                	pop    %r12
+    1998:	41 5d                	pop    %r13
+    199a:	5d                   	pop    %rbp
+    199b:	c3                   	ret
+
+000000000000199c <ctkat_now>:
+    199c:	55                   	push   %rbp
+    199d:	31 d2                	xor    %edx,%edx
+    199f:	48 89 e5             	mov    %rsp,%rbp
+    19a2:	48 83 ec 10          	sub    $0x10,%rsp
+    19a6:	64 48 8b 04 25 28 00 	mov    %fs:0x28,%rax
+    19ad:	00 00 
+    19af:	48 89 45 f8          	mov    %rax,-0x8(%rbp)
+    19b3:	31 c0                	xor    %eax,%eax
+    19b5:	89 55 f4             	mov    %edx,-0xc(%rbp)
+    19b8:	0f ae e8             	lfence
+    19bb:	0f 01 f9             	rdtscp
+    19be:	89 4d f4             	mov    %ecx,-0xc(%rbp)
+    19c1:	48 c1 e2 20          	shl    $0x20,%rdx
+    19c5:	48 09 d0             	or     %rdx,%rax
+    19c8:	0f ae e8             	lfence
+    19cb:	8b 55 f4             	mov    -0xc(%rbp),%edx
+    19ce:	89 17                	mov    %edx,(%rdi)
+    19d0:	48 8b 55 f8          	mov    -0x8(%rbp),%rdx
+    19d4:	64 48 2b 14 25 28 00 	sub    %fs:0x28,%rdx
+    19db:	00 00 
+    19dd:	74 05                	je     19e4 <ctkat_now+0x48>
+    19df:	e8 cc f6 ff ff       	call   10b0 <__stack_chk_fail@plt>
+    19e4:	c9                   	leave
+    19e5:	c3                   	ret
+
+00000000000019e6 <ctkat_inject_delay>:
+    19e6:	55                   	push   %rbp
+    19e7:	48 89 e5             	mov    %rsp,%rbp
+    19ea:	41 55                	push   %r13
+    19ec:	41 54                	push   %r12
+    19ee:	53                   	push   %rbx
+    19ef:	48 83 ec 18          	sub    $0x18,%rsp
+    19f3:	64 48 8b 04 25 28 00 	mov    %fs:0x28,%rax
+    19fa:	00 00 
+    19fc:	48 89 45 d8          	mov    %rax,-0x28(%rbp)
+    1a00:	31 c0                	xor    %eax,%eax
+    1a02:	48 85 ff             	test   %rdi,%rdi
+    1a05:	74 27                	je     1a2e <ctkat_inject_delay+0x48>
+    1a07:	4c 8d 65 d4          	lea    -0x2c(%rbp),%r12
+    1a0b:	48 89 fb             	mov    %rdi,%rbx
+    1a0e:	4c 89 e7             	mov    %r12,%rdi
+    1a11:	e8 86 ff ff ff       	call   199c <ctkat_now>
+    1a16:	49 89 c5             	mov    %rax,%r13
+    1a19:	4c 89 e7             	mov    %r12,%rdi
+    1a1c:	e8 7b ff ff ff       	call   199c <ctkat_now>
+    1a21:	4c 39 e8             	cmp    %r13,%rax
+    1a24:	72 08                	jb     1a2e <ctkat_inject_delay+0x48>
+    1a26:	4c 29 e8             	sub    %r13,%rax
+    1a29:	48 39 d8             	cmp    %rbx,%rax
+    1a2c:	72 eb                	jb     1a19 <ctkat_inject_delay+0x33>
+    1a2e:	48 8b 45 d8          	mov    -0x28(%rbp),%rax
+    1a32:	64 48 2b 04 25 28 00 	sub    %fs:0x28,%rax
+    1a39:	00 00 
+    1a3b:	74 05                	je     1a42 <ctkat_inject_delay+0x5c>
+    1a3d:	e8 6e f6 ff ff       	call   10b0 <__stack_chk_fail@plt>
+    1a42:	48 83 c4 18          	add    $0x18,%rsp
+    1a46:	5b                   	pop    %rbx
+    1a47:	41 5c                	pop    %r12
+    1a49:	41 5d                	pop    %r13
+    1a4b:	5d                   	pop    %rbp
+    1a4c:	c3                   	ret
+
+0000000000001a4d <ctkat_emit_trace>:
+    1a4d:	55                   	push   %rbp
+    1a4e:	48 8d 35 ee 05 00 00 	lea    0x5ee(%rip),%rsi        # 2043 <_IO_stdin_used+0x43>
+    1a55:	31 c0                	xor    %eax,%eax
+    1a57:	48 89 e5             	mov    %rsp,%rbp
+    1a5a:	41 55                	push   %r13
+    1a5c:	4c 8d 2d 5d 5e 01 00 	lea    0x15e5d(%rip),%r13        # 178c0 <drop_buf>
+    1a63:	41 54                	push   %r12
+    1a65:	49 89 fc             	mov    %rdi,%r12
+    1a68:	bf 02 00 00 00       	mov    $0x2,%edi
+    1a6d:	53                   	push   %rbx
+    1a6e:	31 db                	xor    %ebx,%ebx
+    1a70:	51                   	push   %rcx
+    1a71:	e8 6a f6 ff ff       	call   10e0 <__printf_chk@plt>
+    1a76:	4c 39 e3             	cmp    %r12,%rbx
+    1a79:	0f 84 80 00 00 00    	je     1aff <ctkat_emit_trace+0xb2>
+    1a7f:	41 8a 54 1d 00       	mov    0x0(%r13,%rbx,1),%dl
+    1a84:	48 8d 05 9c 05 00 00 	lea    0x59c(%rip),%rax        # 2027 <_IO_stdin_used+0x27>
+    1a8b:	80 fa 01             	cmp    $0x1,%dl
+    1a8e:	74 15                	je     1aa5 <ctkat_emit_trace+0x58>
+    1a90:	80 fa 02             	cmp    $0x2,%dl
+    1a93:	48 8d 05 9b 05 00 00 	lea    0x59b(%rip),%rax        # 2035 <_IO_stdin_used+0x35>
+    1a9a:	48 8d 15 51 07 00 00 	lea    0x751(%rip),%rdx        # 21f2 <_IO_stdin_used+0x1f2>
+    1aa1:	48 0f 45 c2          	cmovne %rdx,%rax
+    1aa5:	48 8d 15 b4 bd 02 00 	lea    0x2bdb4(%rip),%rdx        # 2d860 <classes_buf>
+    1aac:	48 8d 35 d4 05 00 00 	lea    0x5d4(%rip),%rsi        # 2087 <_IO_stdin_used+0x87>
+    1ab3:	bf 02 00 00 00       	mov    $0x2,%edi
+    1ab8:	0f b6 0c 1a          	movzbl (%rdx,%rbx,1),%ecx
+    1abc:	52                   	push   %rdx
+    1abd:	48 8d 15 7c 25 00 00 	lea    0x257c(%rip),%rdx        # 4040 <output_length_buf>
+    1ac4:	ff 34 da             	push   (%rdx,%rbx,8)
+    1ac7:	48 89 da             	mov    %rbx,%rdx
+    1aca:	50                   	push   %rax
+    1acb:	48 8d 05 0e 85 01 00 	lea    0x1850e(%rip),%rax        # 19fe0 <aux_end_buf>
+    1ad2:	8b 04 98             	mov    (%rax,%rbx,4),%eax
+    1ad5:	50                   	push   %rax
+    1ad6:	48 8d 05 43 21 02 00 	lea    0x22143(%rip),%rax        # 23c20 <aux_start_buf>
+    1add:	44 8b 0c 98          	mov    (%rax,%rbx,4),%r9d
+    1ae1:	48 8d 05 98 e4 02 00 	lea    0x2e498(%rip),%rax        # 2ff80 <cycles_buf>
+    1ae8:	4c 8b 04 d8          	mov    (%rax,%rbx,8),%r8
+    1aec:	31 c0                	xor    %eax,%eax
+    1aee:	48 ff c3             	inc    %rbx
+    1af1:	e8 ea f5 ff ff       	call   10e0 <__printf_chk@plt>
+    1af6:	48 83 c4 20          	add    $0x20,%rsp
+    1afa:	e9 77 ff ff ff       	jmp    1a76 <ctkat_emit_trace+0x29>
+    1aff:	48 8d 65 e8          	lea    -0x18(%rbp),%rsp
+    1b03:	5b                   	pop    %rbx
+    1b04:	41 5c                	pop    %r12
+    1b06:	41 5d                	pop    %r13
+    1b08:	5d                   	pop    %rbp
+    1b09:	c3                   	ret
+
+0000000000001b0a <ctkat_emit_metadata>:
+    1b0a:	55                   	push   %rbp
+    1b0b:	48 8b 05 ee 1c 04 00 	mov    0x41cee(%rip),%rax        # 43800 <ctkat_randombytes_calls>
+    1b12:	49 89 f1             	mov    %rsi,%r9
+    1b15:	4c 8d 05 96 05 00 00 	lea    0x596(%rip),%r8        # 20b2 <_IO_stdin_used+0xb2>
+    1b1c:	48 8d 15 7e 05 00 00 	lea    0x57e(%rip),%rdx        # 20a1 <_IO_stdin_used+0xa1>
+    1b23:	48 85 c0             	test   %rax,%rax
+    1b26:	4c 0f 45 c2          	cmovne %rdx,%r8
+    1b2a:	48 89 e5             	mov    %rsp,%rbp
+    1b2d:	31 f6                	xor    %esi,%esi
+    1b2f:	4c 39 c8             	cmp    %r9,%rax
+    1b32:	72 06                	jb     1b3a <ctkat_emit_metadata+0x30>
+    1b34:	4c 29 c8             	sub    %r9,%rax
+    1b37:	48 89 c6             	mov    %rax,%rsi
+    1b3a:	4c 8b 5f 18          	mov    0x18(%rdi),%r11
+    1b3e:	4c 8b 57 10          	mov    0x10(%rdi),%r10
+    1b42:	8b 7f 08             	mov    0x8(%rdi),%edi
+    1b45:	e8 14 fc ff ff       	call   175e <ctkat_mode_name>
+    1b4a:	41 53                	push   %r11
+    1b4c:	48 8b 3d cd 24 00 00 	mov    0x24cd(%rip),%rdi        # 4020 <stderr@GLIBC_2.2.5>
+    1b53:	48 8d 15 69 05 00 00 	lea    0x569(%rip),%rdx        # 20c3 <_IO_stdin_used+0xc3>
+    1b5a:	41 52                	push   %r10
+    1b5c:	48 89 c1             	mov    %rax,%rcx
+    1b5f:	31 c0                	xor    %eax,%eax
+    1b61:	6a 40                	push   $0x40
+    1b63:	56                   	push   %rsi
+    1b64:	be 02 00 00 00       	mov    $0x2,%esi
+    1b69:	e8 82 f5 ff ff       	call   10f0 <__fprintf_chk@plt>
+    1b6e:	48 83 c4 20          	add    $0x20,%rsp
+    1b72:	c9                   	leave
+    1b73:	c3                   	ret
+
+0000000000001b74 <ctkat_store_timing.constprop.0>:
+    1b74:	48 89 f8             	mov    %rdi,%rax
+    1b77:	48 39 d1             	cmp    %rdx,%rcx
+    1b7a:	72 17                	jb     1b93 <ctkat_store_timing.constprop.0+0x1f>
+    1b7c:	48 29 d1             	sub    %rdx,%rcx
+    1b7f:	41 83 f8 ff          	cmp    $0xffffffff,%r8d
+    1b83:	0f 95 c2             	setne  %dl
+    1b86:	45 39 c8             	cmp    %r9d,%r8d
+    1b89:	40 0f 95 c7          	setne  %dil
+    1b8d:	21 fa                	and    %edi,%edx
+    1b8f:	01 d2                	add    %edx,%edx
+    1b91:	eb 04                	jmp    1b97 <ctkat_store_timing.constprop.0+0x23>
+    1b93:	31 c9                	xor    %ecx,%ecx
+    1b95:	b2 01                	mov    $0x1,%dl
+    1b97:	48 8d 3d c2 bc 02 00 	lea    0x2bcc2(%rip),%rdi        # 2d860 <classes_buf>
+    1b9e:	40 88 34 07          	mov    %sil,(%rdi,%rax,1)
+    1ba2:	48 8d 35 77 20 02 00 	lea    0x22077(%rip),%rsi        # 23c20 <aux_start_buf>
+    1ba9:	44 89 04 86          	mov    %r8d,(%rsi,%rax,4)
+    1bad:	48 8d 35 2c 84 01 00 	lea    0x1842c(%rip),%rsi        # 19fe0 <aux_end_buf>
+    1bb4:	44 89 0c 86          	mov    %r9d,(%rsi,%rax,4)
+    1bb8:	48 8d 35 81 24 00 00 	lea    0x2481(%rip),%rsi        # 4040 <output_length_buf>
+    1bbf:	48 c7 04 c6 20 00 00 	movq   $0x20,(%rsi,%rax,8)
+    1bc6:	00 
+    1bc7:	48 8d 35 b2 e3 02 00 	lea    0x2e3b2(%rip),%rsi        # 2ff80 <cycles_buf>
+    1bce:	48 89 0c c6          	mov    %rcx,(%rsi,%rax,8)
+    1bd2:	48 8d 0d e7 5c 01 00 	lea    0x15ce7(%rip),%rcx        # 178c0 <drop_buf>
+    1bd9:	88 14 01             	mov    %dl,(%rcx,%rax,1)
+    1bdc:	c3                   	ret
+
+0000000000001bdd <randombytes>:
+    1bdd:	f3 0f 1e fa          	endbr64
+    1be1:	55                   	push   %rbp
+    1be2:	48 ff 05 17 1c 04 00 	incq   0x41c17(%rip)        # 43800 <ctkat_randombytes_calls>
+    1be9:	48 89 e5             	mov    %rsp,%rbp
+    1bec:	e8 43 fb ff ff       	call   1734 <ctkat_rand_bytes>
+    1bf1:	31 c0                	xor    %eax,%eax
+    1bf3:	5d                   	pop    %rbp
+    1bf4:	c3                   	ret
+
+0000000000001bf5 <CTKAT_KS_crypto_kem_keypair>:
+    1bf5:	f3 0f 1e fa          	endbr64
+    1bf9:	55                   	push   %rbp
+    1bfa:	48 89 e5             	mov    %rsp,%rbp
+    1bfd:	53                   	push   %rbx
+    1bfe:	48 89 f3             	mov    %rsi,%rbx
+    1c01:	be 20 00 00 00       	mov    $0x20,%esi
+    1c06:	51                   	push   %rcx
+    1c07:	e8 d1 ff ff ff       	call   1bdd <randombytes>
+    1c0c:	89 c2                	mov    %eax,%edx
+    1c0e:	83 c8 ff             	or     $0xffffffff,%eax
+    1c11:	85 d2                	test   %edx,%edx
+    1c13:	75 11                	jne    1c26 <CTKAT_KS_crypto_kem_keypair+0x31>
+    1c15:	be 20 00 00 00       	mov    $0x20,%esi
+    1c1a:	48 89 df             	mov    %rbx,%rdi
+    1c1d:	e8 bb ff ff ff       	call   1bdd <randombytes>
+    1c22:	f7 d8                	neg    %eax
+    1c24:	19 c0                	sbb    %eax,%eax
+    1c26:	5a                   	pop    %rdx
+    1c27:	5b                   	pop    %rbx
+    1c28:	5d                   	pop    %rbp
+    1c29:	c3                   	ret
+
+0000000000001c2a <CTKAT_KS_crypto_kem_enc>:
+    1c2a:	f3 0f 1e fa          	endbr64
+    1c2e:	55                   	push   %rbp
+    1c2f:	48 89 e5             	mov    %rsp,%rbp
+    1c32:	41 55                	push   %r13
+    1c34:	49 89 d5             	mov    %rdx,%r13
+    1c37:	41 54                	push   %r12
+    1c39:	49 89 f4             	mov    %rsi,%r12
+    1c3c:	be 08 00 00 00       	mov    $0x8,%esi
+    1c41:	53                   	push   %rbx
+    1c42:	48 89 fb             	mov    %rdi,%rbx
+    1c45:	51                   	push   %rcx
+    1c46:	e8 92 ff ff ff       	call   1bdd <randombytes>
+    1c4b:	85 c0                	test   %eax,%eax
+    1c4d:	75 20                	jne    1c6f <CTKAT_KS_crypto_kem_enc+0x45>
+    1c4f:	31 c9                	xor    %ecx,%ecx
+    1c51:	48 89 ca             	mov    %rcx,%rdx
+    1c54:	83 e2 07             	and    $0x7,%edx
+    1c57:	40 8a 34 13          	mov    (%rbx,%rdx,1),%sil
+    1c5b:	41 32 74 0d 00       	xor    0x0(%r13,%rcx,1),%sil
+    1c60:	41 88 34 0c          	mov    %sil,(%r12,%rcx,1)
+    1c64:	48 ff c1             	inc    %rcx
+    1c67:	48 83 f9 20          	cmp    $0x20,%rcx
+    1c6b:	75 e4                	jne    1c51 <CTKAT_KS_crypto_kem_enc+0x27>
+    1c6d:	eb 03                	jmp    1c72 <CTKAT_KS_crypto_kem_enc+0x48>
+    1c6f:	83 c8 ff             	or     $0xffffffff,%eax
+    1c72:	5a                   	pop    %rdx
+    1c73:	5b                   	pop    %rbx
+    1c74:	41 5c                	pop    %r12
+    1c76:	41 5d                	pop    %r13
+    1c78:	5d                   	pop    %rbp
+    1c79:	c3                   	ret
+
+0000000000001c7a <CTKAT_KS_crypto_kem_dec>:
+    1c7a:	f3 0f 1e fa          	endbr64
+    1c7e:	55                   	push   %rbp
+    1c7f:	83 c8 ff             	or     $0xffffffff,%eax
+    1c82:	48 89 e5             	mov    %rsp,%rbp
+    1c85:	41 54                	push   %r12
+    1c87:	53                   	push   %rbx
+    1c88:	48 89 fb             	mov    %rdi,%rbx
+    1c8b:	0f b7 3e             	movzwl (%rsi),%edi
+    1c8e:	66 81 ff 00 0d       	cmp    $0xd00,%di
+    1c93:	77 2a                	ja     1cbf <CTKAT_KS_crypto_kem_dec+0x45>
+    1c95:	49 89 d4             	mov    %rdx,%r12
+    1c98:	e8 27 00 00 00       	call   1cc4 <ctkat_kyberslash_site_operation>
+    1c9d:	31 d2                	xor    %edx,%edx
+    1c9f:	89 d1                	mov    %edx,%ecx
+    1ca1:	89 c6                	mov    %eax,%esi
+    1ca3:	83 e1 03             	and    $0x3,%ecx
+    1ca6:	c1 e1 03             	shl    $0x3,%ecx
+    1ca9:	d3 ee                	shr    %cl,%esi
+    1cab:	89 f1                	mov    %esi,%ecx
+    1cad:	41 32 0c 14          	xor    (%r12,%rdx,1),%cl
+    1cb1:	88 0c 13             	mov    %cl,(%rbx,%rdx,1)
+    1cb4:	48 ff c2             	inc    %rdx
+    1cb7:	48 83 fa 20          	cmp    $0x20,%rdx
+    1cbb:	75 e2                	jne    1c9f <CTKAT_KS_crypto_kem_dec+0x25>
+    1cbd:	31 c0                	xor    %eax,%eax
+    1cbf:	5b                   	pop    %rbx
+    1cc0:	41 5c                	pop    %r12
+    1cc2:	5d                   	pop    %rbp
+    1cc3:	c3                   	ret
+
+0000000000001cc4 <ctkat_kyberslash_site_operation>:
+    1cc4:	f3 0f 1e fa          	endbr64
+    1cc8:	0f b7 c7             	movzwl %di,%eax
+    1ccb:	8b 0d 3f 23 00 00    	mov    0x233f(%rip),%ecx        # 4010 <ctkat_kyberslash_divisor>
+    1cd1:	31 d2                	xor    %edx,%edx
+    1cd3:	c1 e0 04             	shl    $0x4,%eax
+    1cd6:	05 80 06 00 00       	add    $0x680,%eax
+    1cdb:	f7 f1                	div    %ecx
+    1cdd:	83 e0 0f             	and    $0xf,%eax
+    1ce0:	c3                   	ret
+
+Disassembly of section .fini:
+
+0000000000001ce4 <_fini>:
+    1ce4:	f3 0f 1e fa          	endbr64
+    1ce8:	48 83 ec 08          	sub    $0x8,%rsp
+    1cec:	48 83 c4 08          	add    $0x8,%rsp
+    1cf0:	c3                   	ret

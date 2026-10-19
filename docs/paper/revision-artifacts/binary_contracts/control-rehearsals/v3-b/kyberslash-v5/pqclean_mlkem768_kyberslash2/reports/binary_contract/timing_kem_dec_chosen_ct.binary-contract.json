@@ -1,0 +1,179 @@
+{
+  "binary": {
+    "bytes": 117824,
+    "path": "/home/test/ctkat-native/measurement_runs/host-a/control-rehearsals/v3-b/kyberslash-v5/pqclean_mlkem768_kyberslash2/generated/timing_kem_dec_chosen_ct",
+    "sha256": "836c690a476ae8971626c649304a210d3032edfc7a1dc195a698a9d13e7e096b"
+  },
+  "comparison_group": "pqclean-mlkem768-gcc-Os-fixed-sk-chosen-ct",
+  "compiler": {
+    "cflags": [
+      "-std=c99",
+      "-Os",
+      "-g",
+      "-fno-inline",
+      "-fno-omit-frame-pointer",
+      "-fno-lto"
+    ],
+    "compile_command": "gcc -std=c99 -Os -g -fno-inline -fno-omit-frame-pointer -fno-lto -I/home/test/ctkat-native/examples/pqc_mlkem768/clean -I/home/test/ctkat-native/examples/pqc_mlkem768/common /home/test/ctkat-native/measurement_runs/host-a/control-rehearsals/v3-b/kyberslash-v5/pqclean_mlkem768_kyberslash2/generated/.timing_kem_dec_chosen_ct.c.m_l_z7tq.c /home/test/ctkat-native/examples/pqc_mlkem768/clean/kem.c /home/test/ctkat-native/examples/pqc_mlkem768/clean/indcpa.c /home/test/ctkat-native/examples/pqc_mlkem768/clean_kyberslash2/poly.c /home/test/ctkat-native/examples/pqc_mlkem768/clean_kyberslash2/polyvec.c /home/test/ctkat-native/examples/pqc_mlkem768/clean/ntt.c /home/test/ctkat-native/examples/pqc_mlkem768/clean/reduce.c /home/test/ctkat-native/examples/pqc_mlkem768/clean/cbd.c /home/test/ctkat-native/examples/pqc_mlkem768/clean/symmetric-shake.c /home/test/ctkat-native/examples/pqc_mlkem768/clean/verify.c /home/test/ctkat-native/examples/pqc_mlkem768/common/fips202.c -o /home/test/ctkat-native/measurement_runs/host-a/control-rehearsals/v3-b/kyberslash-v5/pqclean_mlkem768_kyberslash2/generated/.timing_kem_dec_chosen_ct.7gaqouzy.tmp",
+    "executable": {
+      "bytes": 1023032,
+      "path": "/usr/bin/x86_64-linux-gnu-gcc-13",
+      "sha256": "1b99826121ae6682a634e5efe09bd3e3df58ce58e0b28f849114ab5b89139c26",
+      "version_command": [
+        "/usr/bin/x86_64-linux-gnu-gcc-13",
+        "--version"
+      ]
+    },
+    "requested_command": "gcc",
+    "version": "x86_64-linux-gnu-gcc-13 (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0"
+  },
+  "config": {
+    "bytes": 1445,
+    "path": "/home/test/ctkat-native/examples/pqc_mlkem768_kyberslash2/ctkat_timing_v2.yaml",
+    "sha256": "5cd8afdc2191335a66878aea22d11d87867e515aa98da19e6c3628ff3748db17"
+  },
+  "contract_id": "kyberslash-full-kem-linked-binary-v2",
+  "contract_manifest": {
+    "bytes": 2747,
+    "path": "/home/test/ctkat-native/examples/pqc_mlkem768/kyberslash_binary_contracts_v2.yaml",
+    "sha256": "ac75d7c788b29769780143ac35631de80e5fadedf650b7cf83bdb0f17c66e1b5"
+  },
+  "contract_target": "ks2",
+  "created_at": "2026-08-14T13:39:17.873904Z",
+  "disassembly": {
+    "command": [
+      "/usr/bin/x86_64-linux-gnu-objdump",
+      "-d",
+      "/home/test/ctkat-native/measurement_runs/host-a/control-rehearsals/v3-b/kyberslash-v5/pqclean_mlkem768_kyberslash2/generated/timing_kem_dec_chosen_ct"
+    ],
+    "file_header_artifact": "timing_kem_dec_chosen_ct.objdump-file-header.txt",
+    "file_header_command": [
+      "/usr/bin/x86_64-linux-gnu-objdump",
+      "-f",
+      "/home/test/ctkat-native/measurement_runs/host-a/control-rehearsals/v3-b/kyberslash-v5/pqclean_mlkem768_kyberslash2/generated/timing_kem_dec_chosen_ct"
+    ],
+    "file_header_path": "/home/test/ctkat-native/measurement_runs/host-a/control-rehearsals/v3-b/kyberslash-v5/pqclean_mlkem768_kyberslash2/reports/binary_contract/timing_kem_dec_chosen_ct.objdump-file-header.txt",
+    "file_header_sha256": "e55ed2df65e822a12619506ac3f9d71a68b2a6b456fb135023e08778f1c8c640",
+    "full_artifact": "timing_kem_dec_chosen_ct.objdump.txt",
+    "full_path": "/home/test/ctkat-native/measurement_runs/host-a/control-rehearsals/v3-b/kyberslash-v5/pqclean_mlkem768_kyberslash2/reports/binary_contract/timing_kem_dec_chosen_ct.objdump.txt",
+    "full_sha256": "29cd2ca5e724045b2150b4d236ec367b72f803f8b3b48e4878ad65890349d109",
+    "symbols": {
+      "PQCLEAN_MLKEM768_CLEAN_poly_compress": {
+        "call_targets": [
+          "__stack_chk_fail@plt"
+        ],
+        "division_count": 1,
+        "division_helper_lines": [],
+        "division_lines": [
+          "2a58:\t41 f7 f9             \tidiv   %r9d"
+        ],
+        "expected_division_count": 1,
+        "expected_present": true,
+        "floating_point_arithmetic_count": 0,
+        "floating_point_arithmetic_lines": [],
+        "present": true,
+        "tail_targets": []
+      },
+      "PQCLEAN_MLKEM768_CLEAN_poly_tomsg": {
+        "call_targets": [],
+        "division_count": 0,
+        "division_helper_lines": [],
+        "division_lines": [],
+        "expected_division_count": 0,
+        "expected_present": true,
+        "floating_point_arithmetic_count": 0,
+        "floating_point_arithmetic_lines": [],
+        "present": true,
+        "tail_targets": []
+      },
+      "PQCLEAN_MLKEM768_CLEAN_polyvec_compress": {
+        "call_targets": [
+          "__stack_chk_fail@plt"
+        ],
+        "division_count": 1,
+        "division_helper_lines": [],
+        "division_lines": [
+          "2ec2:\t41 f7 f6             \tdiv    %r14d"
+        ],
+        "expected_division_count": 1,
+        "expected_present": true,
+        "floating_point_arithmetic_count": 0,
+        "floating_point_arithmetic_lines": [],
+        "present": true,
+        "tail_targets": []
+      }
+    },
+    "tool": {
+      "bytes": 390848,
+      "path": "/usr/bin/x86_64-linux-gnu-objdump",
+      "sha256": "325c4205a4c658a9d1e1ebc469ae55975a2b897a3d3c1e79d9b158612d37f745",
+      "version": "GNU objdump (GNU Binutils for Ubuntu) 2.42",
+      "version_command": [
+        "/usr/bin/x86_64-linux-gnu-objdump",
+        "--version"
+      ]
+    }
+  },
+  "errors": [],
+  "evidence_boundary": "Exact KS2 linked binary; one surviving div/idiv in each compression site is required before any timing sample is collected.",
+  "generated_source": {
+    "bytes": 18494,
+    "path": "/home/test/ctkat-native/measurement_runs/host-a/control-rehearsals/v3-b/kyberslash-v5/pqclean_mlkem768_kyberslash2/generated/timing_kem_dec_chosen_ct.c",
+    "sha256": "1b0a3a0926280d7ea1d9897b5bf41804f3c45ff7800e2ed01451a66342574316"
+  },
+  "kind": "ctkat-timing-binary-contract-report",
+  "linked_sources": [
+    {
+      "bytes": 6447,
+      "path": "/home/test/ctkat-native/examples/pqc_mlkem768/clean/kem.c",
+      "sha256": "f5f3f5c8c7646479923b7a978fa963d894e020917fbe9135812691b15f21f010"
+    },
+    {
+      "bytes": 13045,
+      "path": "/home/test/ctkat-native/examples/pqc_mlkem768/clean/indcpa.c",
+      "sha256": "094209bf4ce8b2d857846c8378708156e1d37c1ed4ad90678ac95f4a5950614b"
+    },
+    {
+      "bytes": 11777,
+      "path": "/home/test/ctkat-native/examples/pqc_mlkem768/clean_kyberslash2/poly.c",
+      "sha256": "6bce6c8c2ad503b50e495f3a66646b6f997ab0709db1ed5008413ec0d959abd9"
+    },
+    {
+      "bytes": 7537,
+      "path": "/home/test/ctkat-native/examples/pqc_mlkem768/clean_kyberslash2/polyvec.c",
+      "sha256": "6790b91485079dc1524b4c79afd5ba2ac78286f5f428fb81419000cc1c716d54"
+    },
+    {
+      "bytes": 5451,
+      "path": "/home/test/ctkat-native/examples/pqc_mlkem768/clean/ntt.c",
+      "sha256": "c8ef4f66d14f3e3bb40643d1f066d187d55a30008211ffcfbcfda022118c7b97"
+    },
+    {
+      "bytes": 1390,
+      "path": "/home/test/ctkat-native/examples/pqc_mlkem768/clean/reduce.c",
+      "sha256": "df8cc0ea0a9b357fc5649caba850baecaa260b166e89abf598e3ef52a79f06e9"
+    },
+    {
+      "bytes": 2699,
+      "path": "/home/test/ctkat-native/examples/pqc_mlkem768/clean/cbd.c",
+      "sha256": "c00b39d8a7a1523630976fb17bf6f23a2fe949465396976d45f49cba5ad3e9fa"
+    },
+    {
+      "bytes": 2910,
+      "path": "/home/test/ctkat-native/examples/pqc_mlkem768/clean/symmetric-shake.c",
+      "sha256": "aea6e14d0e83429569cecc8cdddb4122ab5d3bf3dae83964c9daf5264fb62ac0"
+    },
+    {
+      "bytes": 2219,
+      "path": "/home/test/ctkat-native/examples/pqc_mlkem768/clean/verify.c",
+      "sha256": "8b32c676ba3e7687cbfdf6e785f3be1a53323c5b3dbce6787a671917628cdf37"
+    },
+    {
+      "bytes": 29026,
+      "path": "/home/test/ctkat-native/examples/pqc_mlkem768/common/fips202.c",
+      "sha256": "4871baddebf2d4771d86b5088719123e2e43addce1a3c0eca75b4d18970ffc1f"
+    }
+  ],
+  "passed": true,
+  "schema_version": "1.0"
+}

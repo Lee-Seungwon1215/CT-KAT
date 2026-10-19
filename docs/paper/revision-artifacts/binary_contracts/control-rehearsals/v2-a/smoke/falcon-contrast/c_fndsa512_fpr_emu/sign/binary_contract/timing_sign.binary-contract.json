@@ -1,0 +1,234 @@
+{
+  "binary": {
+    "bytes": 520656,
+    "path": "/home/test/ctkat-native/measurement_runs/host-a/control-rehearsals/v2-a/smoke/falcon-contrast/c_fndsa512_fpr_emu/sign/generated/timing_sign",
+    "sha256": "757638a0e60ce88476598c08618f3ea4af38fedb47b2adfea74c7a80e7f765d4"
+  },
+  "comparison_group": "falcon-512-full-sign-gcc-O2",
+  "compiler": {
+    "cflags": [
+      "-std=c99",
+      "-O2",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-fno-lto",
+      "-D_GNU_SOURCE",
+      "-DCTKAT_FNDSA_LOGN=9",
+      "-DFNDSA_AVX2=0",
+      "-DFNDSA_SSE2=0",
+      "-DFNDSA_NEON=0",
+      "-DFNDSA_RV64D=0",
+      "-DFNDSA_DIV_EMU=1",
+      "-DFNDSA_SQRT_EMU=1"
+    ],
+    "compile_command": "gcc -std=c99 -O2 -g -fno-omit-frame-pointer -fno-lto -D_GNU_SOURCE -DCTKAT_FNDSA_LOGN=9 -DFNDSA_AVX2=0 -DFNDSA_SSE2=0 -DFNDSA_NEON=0 -DFNDSA_RV64D=0 -DFNDSA_DIV_EMU=1 -DFNDSA_SQRT_EMU=1 -I/home/test/ctkat-native/examples/c_fndsa512_prospective -I/home/test/ctkat-native/examples/fndsa_prospective/upstream /home/test/ctkat-native/measurement_runs/host-a/control-rehearsals/v2-a/smoke/falcon-contrast/c_fndsa512_fpr_emu/sign/generated/.timing_sign.c.72gc2_dw.c /home/test/ctkat-native/examples/fndsa_prospective/timing_adapter.c /home/test/ctkat-native/examples/fndsa_prospective/upstream/codec.c /home/test/ctkat-native/examples/fndsa_prospective/upstream/mq.c /home/test/ctkat-native/examples/fndsa_prospective/upstream/sha3.c /home/test/ctkat-native/examples/fndsa_prospective/upstream/sysrng.c /home/test/ctkat-native/examples/fndsa_prospective/upstream/util.c /home/test/ctkat-native/examples/fndsa_prospective/upstream/kgen.c /home/test/ctkat-native/examples/fndsa_prospective/upstream/kgen_fxp.c /home/test/ctkat-native/examples/fndsa_prospective/upstream/kgen_gauss.c /home/test/ctkat-native/examples/fndsa_prospective/upstream/kgen_mp31.c /home/test/ctkat-native/examples/fndsa_prospective/upstream/kgen_ntru.c /home/test/ctkat-native/examples/fndsa_prospective/upstream/kgen_poly.c /home/test/ctkat-native/examples/fndsa_prospective/upstream/kgen_zint31.c /home/test/ctkat-native/examples/fndsa_prospective/upstream/sign.c /home/test/ctkat-native/examples/fndsa_prospective/upstream/sign_core.c /home/test/ctkat-native/examples/fndsa_prospective/upstream/sign_fpoly.c /home/test/ctkat-native/examples/fndsa_prospective/upstream/sign_fpr.c /home/test/ctkat-native/examples/fndsa_prospective/upstream/sign_sampler.c /home/test/ctkat-native/examples/fndsa_prospective/upstream/vrfy.c -o /home/test/ctkat-native/measurement_runs/host-a/control-rehearsals/v2-a/smoke/falcon-contrast/c_fndsa512_fpr_emu/sign/generated/.timing_sign.6840g_vv.tmp",
+    "executable": {
+      "bytes": 1023032,
+      "path": "/usr/bin/x86_64-linux-gnu-gcc-13",
+      "sha256": "1b99826121ae6682a634e5efe09bd3e3df58ce58e0b28f849114ab5b89139c26",
+      "version_command": [
+        "/usr/bin/x86_64-linux-gnu-gcc-13",
+        "--version"
+      ]
+    },
+    "requested_command": "gcc",
+    "version": "x86_64-linux-gnu-gcc-13 (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0"
+  },
+  "config": {
+    "bytes": 1950,
+    "path": "/home/test/ctkat-native/examples/c_fndsa512_prospective/ctkat_timing_fpr_emu.yaml",
+    "sha256": "7126441c4ee9828d0d75084f408cb7d947e19c694eff4ada21788a2d3dbff2ef"
+  },
+  "contract_id": "falcon-signing-linked-binary-v1",
+  "contract_manifest": {
+    "bytes": 4793,
+    "path": "/home/test/ctkat-native/examples/falcon_comparator_support/timing_binary_contracts_v1.yaml",
+    "sha256": "80836994eea332d2b2621495630e3ed6a0683a8edd9a43c8f34b69801aac8718"
+  },
+  "contract_target": "c_fndsa512_fpr_emu",
+  "created_at": "2026-08-14T02:03:47.495060Z",
+  "disassembly": {
+    "command": [
+      "/usr/bin/x86_64-linux-gnu-objdump",
+      "-d",
+      "/home/test/ctkat-native/measurement_runs/host-a/control-rehearsals/v2-a/smoke/falcon-contrast/c_fndsa512_fpr_emu/sign/generated/timing_sign"
+    ],
+    "file_header_artifact": "timing_sign.objdump-file-header.txt",
+    "file_header_command": [
+      "/usr/bin/x86_64-linux-gnu-objdump",
+      "-f",
+      "/home/test/ctkat-native/measurement_runs/host-a/control-rehearsals/v2-a/smoke/falcon-contrast/c_fndsa512_fpr_emu/sign/generated/timing_sign"
+    ],
+    "file_header_path": "/home/test/ctkat-native/measurement_runs/host-a/control-rehearsals/v2-a/smoke/falcon-contrast/c_fndsa512_fpr_emu/sign/binary_contract/timing_sign.objdump-file-header.txt",
+    "file_header_sha256": "eaa911403b3860d9ae25e8bb28eeab9830f2f2a719515b0fbd3be9d055d73081",
+    "full_artifact": "timing_sign.objdump.txt",
+    "full_path": "/home/test/ctkat-native/measurement_runs/host-a/control-rehearsals/v2-a/smoke/falcon-contrast/c_fndsa512_fpr_emu/sign/binary_contract/timing_sign.objdump.txt",
+    "full_sha256": "8bf2049f40c4eeaaea76347cbe475c1ebee0a47830b41a73a3f1ee28e7a6e501",
+    "symbols": {
+      "fndsa_sampler_next": {
+        "call_targets": [
+          "fndsa_fpr_scaled",
+          "fndsa_fpr_add",
+          "fndsa_fpr_mul",
+          "fndsa_fpr_mul",
+          "fndsa_fpr_scaled",
+          "fndsa_fpr_add",
+          "fndsa_fpr_mul",
+          "fndsa_fpr_mul",
+          "fndsa_fpr_scaled",
+          "fndsa_fpr_mul",
+          "fndsa_fpr_add",
+          "fndsa_fpr_mul",
+          "fndsa_fpr_scaled",
+          "fndsa_fpr_mul",
+          "fndsa_fpr_add",
+          "fndsa_shake_extract",
+          "fndsa_shake_extract",
+          "fndsa_shake_extract",
+          "__stack_chk_fail@plt"
+        ],
+        "division_count": 0,
+        "division_helper_lines": [],
+        "division_lines": [],
+        "expected_division_count": null,
+        "expected_present": true,
+        "floating_point_arithmetic_count": 0,
+        "floating_point_arithmetic_lines": [],
+        "present": true,
+        "tail_targets": [
+          "fndsa_sampler_next+0x548",
+          "fndsa_sampler_next+0x1e5",
+          "fndsa_sampler_next+0x1c9"
+        ]
+      },
+      "sampler_next_sse2": {
+        "call_targets": [],
+        "division_count": null,
+        "division_helper_lines": [],
+        "division_lines": [],
+        "expected_present": false,
+        "floating_point_arithmetic_count": null,
+        "floating_point_arithmetic_lines": [],
+        "present": false,
+        "tail_targets": []
+      }
+    },
+    "tool": {
+      "bytes": 390848,
+      "path": "/usr/bin/x86_64-linux-gnu-objdump",
+      "sha256": "325c4205a4c658a9d1e1ebc469ae55975a2b897a3d3c1e79d9b158612d37f745",
+      "version": "GNU objdump (GNU Binutils for Ubuntu) 2.42",
+      "version_command": [
+        "/usr/bin/x86_64-linux-gnu-objdump",
+        "--version"
+      ]
+    }
+  },
+  "errors": [],
+  "evidence_boundary": "Exact prospective c-fn-dsa-512 integer-FPR linked binary. The entry point must contain zero hardware FP arithmetic and the native SSE2 implementation symbol must be absent. This is a profile/build fact, not a constant-time verdict, and this target has no FN-DSA conformance claim.",
+  "generated_source": {
+    "bytes": 19038,
+    "path": "/home/test/ctkat-native/measurement_runs/host-a/control-rehearsals/v2-a/smoke/falcon-contrast/c_fndsa512_fpr_emu/sign/generated/timing_sign.c",
+    "sha256": "01e1c4c74ea579e87c290fb3232fc8cfe504250f51629972b03b0327a189b363"
+  },
+  "kind": "ctkat-timing-binary-contract-report",
+  "linked_sources": [
+    {
+      "bytes": 1939,
+      "path": "/home/test/ctkat-native/examples/fndsa_prospective/timing_adapter.c",
+      "sha256": "6ad42cebf259e90fec0fa89be1c88baecbbfee0fffb834d05101b773d428432f"
+    },
+    {
+      "bytes": 5244,
+      "path": "/home/test/ctkat-native/examples/fndsa_prospective/upstream/codec.c",
+      "sha256": "d72b5b03b6b74aec02de60cc69bbe232c6f13e0ff94cbd096f157ea178bb6cc7"
+    },
+    {
+      "bytes": 47148,
+      "path": "/home/test/ctkat-native/examples/fndsa_prospective/upstream/mq.c",
+      "sha256": "25463492c036ef3da6eea8534971766739abc3af91e4f8dde4b607231cec6f3f"
+    },
+    {
+      "bytes": 13606,
+      "path": "/home/test/ctkat-native/examples/fndsa_prospective/upstream/sha3.c",
+      "sha256": "a6a21c599f031414ecf98c558058b83c9e7dbf2a979b4b55242c4cdcf8fdfdf3"
+    },
+    {
+      "bytes": 2072,
+      "path": "/home/test/ctkat-native/examples/fndsa_prospective/upstream/sysrng.c",
+      "sha256": "663d943595102660f0c98ec3fef37d3b7825f162cd8a9218cf9df8317cb38bd1"
+    },
+    {
+      "bytes": 3916,
+      "path": "/home/test/ctkat-native/examples/fndsa_prospective/upstream/util.c",
+      "sha256": "eeaaa063aa1e5987ba81d6cb13941300d9e55d0c428aa33ef6127693d8eca80f"
+    },
+    {
+      "bytes": 10697,
+      "path": "/home/test/ctkat-native/examples/fndsa_prospective/upstream/kgen.c",
+      "sha256": "723dac7c8466d1cfc46cf3179d3e5d63df2e78a575bb642f65ec29b693504567"
+    },
+    {
+      "bytes": 84193,
+      "path": "/home/test/ctkat-native/examples/fndsa_prospective/upstream/kgen_fxp.c",
+      "sha256": "cf93446862da0ba3429326bddb6633595cb2b2cb310b0e8489cb1b7f9c100edd"
+    },
+    {
+      "bytes": 2357,
+      "path": "/home/test/ctkat-native/examples/fndsa_prospective/upstream/kgen_gauss.c",
+      "sha256": "d7a4890e94d81b3a9a83722aef98ca343d513b4c7f17f1f3e3ec91bb739c1da9"
+    },
+    {
+      "bytes": 51950,
+      "path": "/home/test/ctkat-native/examples/fndsa_prospective/upstream/kgen_mp31.c",
+      "sha256": "d4423f4dfe784309fa99840e25353140c8c95f32e6e7b701f7b1ce0cb70ef002"
+    },
+    {
+      "bytes": 62509,
+      "path": "/home/test/ctkat-native/examples/fndsa_prospective/upstream/kgen_ntru.c",
+      "sha256": "35696b1619bbaaa14046ab85a66f384670e9f8c8d44e523a0dcf8cd402fb8abf"
+    },
+    {
+      "bytes": 40046,
+      "path": "/home/test/ctkat-native/examples/fndsa_prospective/upstream/kgen_poly.c",
+      "sha256": "4508e2feeb7a19a5616243d205e395c6709b8c90dbcc19d1feb05421a8f71f7f"
+    },
+    {
+      "bytes": 21975,
+      "path": "/home/test/ctkat-native/examples/fndsa_prospective/upstream/kgen_zint31.c",
+      "sha256": "ba655aabdfb7c36cf8d723c8a69521915c07f5d023cbbf96a05a35f6e759f81e"
+    },
+    {
+      "bytes": 9382,
+      "path": "/home/test/ctkat-native/examples/fndsa_prospective/upstream/sign.c",
+      "sha256": "5477202620359971f51bb0d06132641cc84bc13baac3574ff4135c33786a19b7"
+    },
+    {
+      "bytes": 13954,
+      "path": "/home/test/ctkat-native/examples/fndsa_prospective/upstream/sign_core.c",
+      "sha256": "d64678400179f60ecbcc53624c2aa93fde3539cf8dc064a53e8778fa79c29861"
+    },
+    {
+      "bytes": 113880,
+      "path": "/home/test/ctkat-native/examples/fndsa_prospective/upstream/sign_fpoly.c",
+      "sha256": "d6187c282576f8f1b534f9e48da8dedcca8f6f4f2a4ab6aa73bfd5412492b1e6"
+    },
+    {
+      "bytes": 10771,
+      "path": "/home/test/ctkat-native/examples/fndsa_prospective/upstream/sign_fpr.c",
+      "sha256": "995ad5b954913cd1d63a5d14d3cffdeb48e7fa2ccb9afacc3f8bda129ea1aa95"
+    },
+    {
+      "bytes": 45891,
+      "path": "/home/test/ctkat-native/examples/fndsa_prospective/upstream/sign_sampler.c",
+      "sha256": "9f91e55b8d7f9a48c730affe05bffc3c9c304121df5d2ce5542b99854c53c69b"
+    },
+    {
+      "bytes": 7623,
+      "path": "/home/test/ctkat-native/examples/fndsa_prospective/upstream/vrfy.c",
+      "sha256": "d6db7c9a50ef36c30ef951127bdee0ed90774b4a5811817beb19850c265db58f"
+    }
+  ],
+  "passed": true,
+  "schema_version": "1.0"
+}

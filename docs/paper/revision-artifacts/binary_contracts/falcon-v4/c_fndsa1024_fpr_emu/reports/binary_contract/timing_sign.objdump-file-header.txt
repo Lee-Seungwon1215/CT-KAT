@@ -1,0 +1,6 @@
+
+/home/test/ctkat-native/measurement_runs/host-a/falcon-v4/c_fndsa1024_fpr_emu/generated/timing_sign:     file format elf64-x86-64
+architecture: i386:x86-64, flags 0x00000150:
+HAS_SYMS, DYNAMIC, D_PAGED
+start address 0x0000000000002140
+

@@ -1,0 +1,123 @@
+{
+  "binary": {
+    "bytes": 36616,
+    "path": "/home/test/ctkat-native/measurement_runs/host-a/control-rehearsals/v2-a/smoke/kyberslash-contrast/kyberslash_operand_ks1_vulnerable/operand_bin/generated/timing_operand_bin",
+    "sha256": "7097600a79eb2f124180d92c9f2126139310f39e71ab56e25b99a243c0642065"
+  },
+  "comparison_group": "kyberslash-ks1-direct-operand-v3",
+  "compiler": {
+    "cflags": [
+      "-std=c99",
+      "-Os",
+      "-g",
+      "-fno-inline",
+      "-fno-omit-frame-pointer",
+      "-fno-lto"
+    ],
+    "compile_command": "gcc -std=c99 -Os -g -fno-inline -fno-omit-frame-pointer -fno-lto -I/home/test/ctkat-native/examples/kyberslash_operand_latency /home/test/ctkat-native/measurement_runs/host-a/control-rehearsals/v2-a/smoke/kyberslash-contrast/kyberslash_operand_ks1_vulnerable/operand_bin/generated/.timing_operand_bin.c.adpm_2u9.c /home/test/ctkat-native/examples/kyberslash_operand_latency/operand_kem.c /home/test/ctkat-native/examples/kyberslash_operand_latency/ks1_vulnerable.c -o /home/test/ctkat-native/measurement_runs/host-a/control-rehearsals/v2-a/smoke/kyberslash-contrast/kyberslash_operand_ks1_vulnerable/operand_bin/generated/.timing_operand_bin.g3obxh6i.tmp",
+    "executable": {
+      "bytes": 1023032,
+      "path": "/usr/bin/x86_64-linux-gnu-gcc-13",
+      "sha256": "1b99826121ae6682a634e5efe09bd3e3df58ce58e0b28f849114ab5b89139c26",
+      "version_command": [
+        "/usr/bin/x86_64-linux-gnu-gcc-13",
+        "--version"
+      ]
+    },
+    "requested_command": "gcc",
+    "version": "x86_64-linux-gnu-gcc-13 (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0"
+  },
+  "config": {
+    "bytes": 846,
+    "path": "/home/test/ctkat-native/examples/kyberslash_operand_latency/ctkat_ks1_vulnerable_v3.yaml",
+    "sha256": "f99591db8b54749a404effef06d25e92233294af09f0fa3129c114ded58f82ed"
+  },
+  "contract_id": "kyberslash-direct-operand-linked-binary-v3",
+  "contract_manifest": {
+    "bytes": 1756,
+    "path": "/home/test/ctkat-native/examples/kyberslash_operand_latency/binary_contracts_v3.yaml",
+    "sha256": "662cc7117080f5a0ed6c28aeb6d2bc24f840690615d8858bed46f01aca07ff5b"
+  },
+  "contract_target": "ks1_vulnerable",
+  "created_at": "2026-08-14T02:03:16.181765Z",
+  "disassembly": {
+    "command": [
+      "/usr/bin/x86_64-linux-gnu-objdump",
+      "-d",
+      "/home/test/ctkat-native/measurement_runs/host-a/control-rehearsals/v2-a/smoke/kyberslash-contrast/kyberslash_operand_ks1_vulnerable/operand_bin/generated/timing_operand_bin"
+    ],
+    "file_header_artifact": "timing_operand_bin.objdump-file-header.txt",
+    "file_header_command": [
+      "/usr/bin/x86_64-linux-gnu-objdump",
+      "-f",
+      "/home/test/ctkat-native/measurement_runs/host-a/control-rehearsals/v2-a/smoke/kyberslash-contrast/kyberslash_operand_ks1_vulnerable/operand_bin/generated/timing_operand_bin"
+    ],
+    "file_header_path": "/home/test/ctkat-native/measurement_runs/host-a/control-rehearsals/v2-a/smoke/kyberslash-contrast/kyberslash_operand_ks1_vulnerable/operand_bin/binary_contract/timing_operand_bin.objdump-file-header.txt",
+    "file_header_sha256": "81480dc84ed06347cacaab155ce1d7c3a6e597de349cb57bd09d50a78f2f1a31",
+    "full_artifact": "timing_operand_bin.objdump.txt",
+    "full_path": "/home/test/ctkat-native/measurement_runs/host-a/control-rehearsals/v2-a/smoke/kyberslash-contrast/kyberslash_operand_ks1_vulnerable/operand_bin/binary_contract/timing_operand_bin.objdump.txt",
+    "full_sha256": "ce2bbf257f5545750b56e41e292d08c000db2f48c9c48b9dc64e6761a227b54c",
+    "symbols": {
+      "CTKAT_KS_crypto_kem_dec": {
+        "call_targets": [
+          "ctkat_kyberslash_site_operation"
+        ],
+        "division_count": 0,
+        "division_helper_lines": [],
+        "division_lines": [],
+        "expected_division_count": null,
+        "expected_present": true,
+        "floating_point_arithmetic_count": 0,
+        "floating_point_arithmetic_lines": [],
+        "present": true,
+        "tail_targets": []
+      },
+      "ctkat_kyberslash_site_operation": {
+        "call_targets": [],
+        "division_count": 1,
+        "division_helper_lines": [],
+        "division_lines": [
+          "1cda:\tf7 f1                \tdiv    %ecx"
+        ],
+        "expected_division_count": 1,
+        "expected_present": true,
+        "floating_point_arithmetic_count": 0,
+        "floating_point_arithmetic_lines": [],
+        "present": true,
+        "tail_targets": []
+      }
+    },
+    "tool": {
+      "bytes": 390848,
+      "path": "/usr/bin/x86_64-linux-gnu-objdump",
+      "sha256": "325c4205a4c658a9d1e1ebc469ae55975a2b897a3d3c1e79d9b158612d37f745",
+      "version": "GNU objdump (GNU Binutils for Ubuntu) 2.42",
+      "version_command": [
+        "/usr/bin/x86_64-linux-gnu-objdump",
+        "--version"
+      ]
+    }
+  },
+  "errors": [],
+  "evidence_boundary": "Same-address, fixed-key, valid-decapsulation public numerator-bin hardware-division canary; not a full-KEM or key-recovery claim.",
+  "generated_source": {
+    "bytes": 17496,
+    "path": "/home/test/ctkat-native/measurement_runs/host-a/control-rehearsals/v2-a/smoke/kyberslash-contrast/kyberslash_operand_ks1_vulnerable/operand_bin/generated/timing_operand_bin.c",
+    "sha256": "f40f11c7dc5695c57959a80ca4cdd508c70474b68174a9fd71fc406e29b94406"
+  },
+  "kind": "ctkat-timing-binary-contract-report",
+  "linked_sources": [
+    {
+      "bytes": 1476,
+      "path": "/home/test/ctkat-native/examples/kyberslash_operand_latency/operand_kem.c",
+      "sha256": "a5cc3af355b61b22a3dd00ff697318705c32aeb52039cf46ae0f1a2027c31342"
+    },
+    {
+      "bytes": 299,
+      "path": "/home/test/ctkat-native/examples/kyberslash_operand_latency/ks1_vulnerable.c",
+      "sha256": "76d8478171c45e8da4b775f74ae2f0e5b3bb82f78317655298e8928bc9669ece"
+    }
+  ],
+  "passed": true,
+  "schema_version": "1.0"
+}

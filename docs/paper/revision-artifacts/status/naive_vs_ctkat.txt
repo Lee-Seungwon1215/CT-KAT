@@ -1,0 +1,25 @@
+
+== naive rule: any-tool
+  naive=safe       ctkat=inconclusive         2
+  naive=safe       ctkat=no-finding-observed  1
+  naive=vulnerable ctkat=needs-review         10
+  naive=vulnerable ctkat=no-finding-observed  5
+  naive=vulnerable ctkat=risk-detected        7
+  naive "safe" but CT-KAT still open (inconclusive/needs-review/...): 2
+  naive "vulnerable" but CT-KAT not Risk Identified: 15
+    safe-but-open: toy_lookup/safe -> inconclusive (correctness=not-run, timing=not-run, review=not-needed)
+    safe-but-open: ct_matrix_flip/safe -> inconclusive (correctness=not-run, timing=not-run, review=not-needed)
+
+== naive rule: valgrind+timing
+  naive=safe       ctkat=inconclusive         2
+  naive=safe       ctkat=no-finding-observed  6
+  naive=safe       ctkat=risk-detected        3
+  naive=vulnerable ctkat=needs-review         10
+  naive=vulnerable ctkat=risk-detected        4
+  naive "safe" but CT-KAT still open (inconclusive/needs-review/...): 5
+  naive "vulnerable" but CT-KAT not Risk Identified: 10
+    safe-but-open: toy_lookup/safe -> inconclusive (correctness=not-run, timing=not-run, review=not-needed)
+    safe-but-open: ct_matrix_flip/safe -> inconclusive (correctness=not-run, timing=not-run, review=not-needed)
+    safe-but-open: pqclean_mlkem768_kyberslash1/kem_dec -> risk-detected (correctness=pass, timing=not-run, review=reviewed)
+    safe-but-open: pqclean_mlkem768_kyberslash2/kem_dec -> risk-detected (correctness=pass, timing=not-run, review=reviewed)
+    safe-but-open: pqclean_mlkem768_kyberslash/kem_dec -> risk-detected (correctness=pass, timing=not-run, review=reviewed)

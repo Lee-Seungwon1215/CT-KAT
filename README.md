@@ -1,5 +1,48 @@
 # CT-KAT
 
+## Reproducing the paper
+
+This repository accompanies the manuscript *CT-KAT: Beyond Pass/Fail in Constant-Time Screening
+of PQC Implementations*. The tag `paper-revision-2026-10` marks the version used for the revised
+manuscript. The results can be checked at three levels.
+
+1. **Regenerate the tables from the recorded results** (any machine with Python 3.11+, a few
+   minutes, no timing hardware).
+
+   ```bash
+   git checkout paper-revision-2026-10
+   uv sync --frozen          # or: python -m pip install .
+   uv run bash docs/paper/revision-artifacts/reproduce_tables.sh
+   ```
+
+   The script rebuilds Table 6, Table 7, Tables A13–A16, and the numbers of the naive pass/fail
+   comparison in Section 5.3 from the recorded results, and checks that they match the committed
+   outputs. [`docs/paper/revision-artifacts/README.md`](docs/paper/revision-artifacts/README.md)
+   maps every table to its data and script.
+
+2. **Re-run the structural and instruction analyses** (Linux x86-64 with GCC, Clang, and
+   Valgrind). The structural test, binary inspection, and build matrix run through the `ctkat`
+   commands described in [Quick start](#quick-start) and [CLI commands](#cli-commands), using the
+   configurations in `examples/`.
+   [`structural_coverage/coverage.py`](docs/paper/revision-artifacts/structural_coverage/coverage.py)
+   re-measures the coverage of Table 6, and
+   [`mlkem_root_cause/README.md`](docs/paper/revision-artifacts/mlkem_root_cause/README.md)
+   describes how to rebuild and rerun the root-cause experiment of Table A16.
+
+3. **Repeat the timing campaign** (a dedicated physical x86-64 Linux host). The frozen plan is
+   [`docs/measurement/paper_native_campaign_v10.yaml`](docs/measurement/paper_native_campaign_v10.yaml),
+   and [`docs/artifact/README.md`](docs/artifact/README.md) gives the single-host procedure,
+   including the control rehearsals that qualify a host before the final run. Timing depends on
+   the host, so a repeated campaign should be compared with the paper in terms of which
+   conditions show a signal and how large a difference each comparison could detect, not cycle
+   by cycle.
+
+The dudect reports, named analysis, and binary contracts of the paper campaign are included in
+`docs/paper/revision-artifacts/`. The raw timing traces (about 3.3 GB) are not stored in this
+repository.
+
+---
+
 KAT, Valgrind/Memcheck, asm-scan, ct-matrix와 pinned upstream
 **official dudect** 통계 백엔드를 묶어 쓰는 constant-time **스크리닝**
 프레임워크. 기존 Python first-order 구현은 명시적 experimental 백엔드로만

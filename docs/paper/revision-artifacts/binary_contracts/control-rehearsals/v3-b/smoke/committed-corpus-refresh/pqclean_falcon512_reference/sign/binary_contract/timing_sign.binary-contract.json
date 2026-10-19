@@ -1,0 +1,169 @@
+{
+  "binary": {
+    "bytes": 533568,
+    "path": "/home/test/ctkat-native/measurement_runs/host-a/control-rehearsals/v3-b/smoke/committed-corpus-refresh/pqclean_falcon512_reference/sign/generated/timing_sign",
+    "sha256": "994e9cbb0f0c84282a80e4ae64576d6dd4534be18235031591a0d276918ecb22"
+  },
+  "comparison_group": "falcon-512-full-sign-gcc-O2",
+  "compiler": {
+    "cflags": [
+      "-std=c99",
+      "-O2",
+      "-g",
+      "-fno-omit-frame-pointer",
+      "-fno-lto"
+    ],
+    "compile_command": "gcc -std=c99 -O2 -g -fno-omit-frame-pointer -fno-lto -I/home/test/ctkat-native/examples/pqc_falcon512/clean -I/home/test/ctkat-native/examples/pqc_mlkem768/common /home/test/ctkat-native/measurement_runs/host-a/control-rehearsals/v3-b/smoke/committed-corpus-refresh/pqclean_falcon512_reference/sign/generated/.timing_sign.c.o17h80nk.c /home/test/ctkat-native/examples/pqc_falcon512/clean/codec.c /home/test/ctkat-native/examples/pqc_falcon512/clean/common.c /home/test/ctkat-native/examples/pqc_falcon512/clean/fft.c /home/test/ctkat-native/examples/pqc_falcon512/clean/fpr.c /home/test/ctkat-native/examples/pqc_falcon512/clean/keygen.c /home/test/ctkat-native/examples/pqc_falcon512/clean/pqclean.c /home/test/ctkat-native/examples/pqc_falcon512/clean/rng.c /home/test/ctkat-native/examples/pqc_falcon512/clean/sign.c /home/test/ctkat-native/examples/pqc_falcon512/clean/vrfy.c /home/test/ctkat-native/examples/pqc_mlkem768/common/fips202.c -o /home/test/ctkat-native/measurement_runs/host-a/control-rehearsals/v3-b/smoke/committed-corpus-refresh/pqclean_falcon512_reference/sign/generated/.timing_sign.90t6crem.tmp",
+    "executable": {
+      "bytes": 1023032,
+      "path": "/usr/bin/x86_64-linux-gnu-gcc-13",
+      "sha256": "1b99826121ae6682a634e5efe09bd3e3df58ce58e0b28f849114ab5b89139c26",
+      "version_command": [
+        "/usr/bin/x86_64-linux-gnu-gcc-13",
+        "--version"
+      ]
+    },
+    "requested_command": "gcc",
+    "version": "x86_64-linux-gnu-gcc-13 (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0"
+  },
+  "config": {
+    "bytes": 2932,
+    "path": "/home/test/ctkat-native/examples/pqc_falcon512/ctkat.yaml",
+    "sha256": "ab83780c284ba4d02f61f97ce0752b301fc81ecba55581efc37b330b2db78184"
+  },
+  "contract_id": "falcon-signing-linked-binary-v1",
+  "contract_manifest": {
+    "bytes": 4793,
+    "path": "/home/test/ctkat-native/examples/falcon_comparator_support/timing_binary_contracts_v1.yaml",
+    "sha256": "80836994eea332d2b2621495630e3ed6a0683a8edd9a43c8f34b69801aac8718"
+  },
+  "contract_target": "pqclean_falcon512_reference",
+  "created_at": "2026-08-14T12:12:47.375283Z",
+  "disassembly": {
+    "command": [
+      "/usr/bin/x86_64-linux-gnu-objdump",
+      "-d",
+      "/home/test/ctkat-native/measurement_runs/host-a/control-rehearsals/v3-b/smoke/committed-corpus-refresh/pqclean_falcon512_reference/sign/generated/timing_sign"
+    ],
+    "file_header_artifact": "timing_sign.objdump-file-header.txt",
+    "file_header_command": [
+      "/usr/bin/x86_64-linux-gnu-objdump",
+      "-f",
+      "/home/test/ctkat-native/measurement_runs/host-a/control-rehearsals/v3-b/smoke/committed-corpus-refresh/pqclean_falcon512_reference/sign/generated/timing_sign"
+    ],
+    "file_header_path": "/home/test/ctkat-native/measurement_runs/host-a/control-rehearsals/v3-b/smoke/committed-corpus-refresh/pqclean_falcon512_reference/sign/binary_contract/timing_sign.objdump-file-header.txt",
+    "file_header_sha256": "b939aede2c3f02554e6a5bc7da6bc81fa96e33fc01759477c3472f416f32363c",
+    "full_artifact": "timing_sign.objdump.txt",
+    "full_path": "/home/test/ctkat-native/measurement_runs/host-a/control-rehearsals/v3-b/smoke/committed-corpus-refresh/pqclean_falcon512_reference/sign/binary_contract/timing_sign.objdump.txt",
+    "full_sha256": "5a51119f426417a7727ae7b52ab6b4b7a4d8d8f72553ef5549bc26b8f67c3ec3",
+    "symbols": {
+      "PQCLEAN_FALCON512_CLEAN_sampler": {
+        "call_targets": [
+          "PQCLEAN_FALCON512_CLEAN_fpr_scaled",
+          "PQCLEAN_FALCON512_CLEAN_fpr_add",
+          "PQCLEAN_FALCON512_CLEAN_fpr_mul",
+          "PQCLEAN_FALCON512_CLEAN_fpr_mul",
+          "PQCLEAN_FALCON512_CLEAN_gaussian0_sampler",
+          "PQCLEAN_FALCON512_CLEAN_fpr_scaled",
+          "PQCLEAN_FALCON512_CLEAN_fpr_add",
+          "PQCLEAN_FALCON512_CLEAN_fpr_mul",
+          "PQCLEAN_FALCON512_CLEAN_fpr_mul",
+          "PQCLEAN_FALCON512_CLEAN_fpr_scaled",
+          "PQCLEAN_FALCON512_CLEAN_fpr_mul",
+          "PQCLEAN_FALCON512_CLEAN_fpr_add",
+          "PQCLEAN_FALCON512_CLEAN_fpr_mul",
+          "PQCLEAN_FALCON512_CLEAN_fpr_scaled",
+          "PQCLEAN_FALCON512_CLEAN_fpr_mul",
+          "PQCLEAN_FALCON512_CLEAN_fpr_add",
+          "PQCLEAN_FALCON512_CLEAN_fpr_expm_p63",
+          "PQCLEAN_FALCON512_CLEAN_prng_refill",
+          "PQCLEAN_FALCON512_CLEAN_prng_refill"
+        ],
+        "division_count": 0,
+        "division_helper_lines": [],
+        "division_lines": [],
+        "expected_division_count": null,
+        "expected_present": true,
+        "floating_point_arithmetic_count": 0,
+        "floating_point_arithmetic_lines": [],
+        "present": true,
+        "tail_targets": [
+          "PQCLEAN_FALCON512_CLEAN_sampler+0x295",
+          "PQCLEAN_FALCON512_CLEAN_sampler+0x11e"
+        ]
+      }
+    },
+    "tool": {
+      "bytes": 390848,
+      "path": "/usr/bin/x86_64-linux-gnu-objdump",
+      "sha256": "325c4205a4c658a9d1e1ebc469ae55975a2b897a3d3c1e79d9b158612d37f745",
+      "version": "GNU objdump (GNU Binutils for Ubuntu) 2.42",
+      "version_command": [
+        "/usr/bin/x86_64-linux-gnu-objdump",
+        "--version"
+      ]
+    }
+  },
+  "errors": [],
+  "evidence_boundary": "Exact PQClean Falcon-512 reference linked binary. Its fpr type is a uint64_t software representation, so the namespaced sampler must contain exactly zero hardware floating-point arithmetic instructions. This is a build-scope fact, not a constant-time or leakage verdict.",
+  "generated_source": {
+    "bytes": 19184,
+    "path": "/home/test/ctkat-native/measurement_runs/host-a/control-rehearsals/v3-b/smoke/committed-corpus-refresh/pqclean_falcon512_reference/sign/generated/timing_sign.c",
+    "sha256": "4f58087051f9450d87a7c38b8c2eb12d1d98d3af6e48a4ccac5923845f66391a"
+  },
+  "kind": "ctkat-timing-binary-contract-report",
+  "linked_sources": [
+    {
+      "bytes": 14404,
+      "path": "/home/test/ctkat-native/examples/pqc_falcon512/clean/codec.c",
+      "sha256": "2023cfb3633ac89bf93072f9e5d8e1284a9251e19fd015a67f5aa3e829f2f19c"
+    },
+    {
+      "bytes": 8894,
+      "path": "/home/test/ctkat-native/examples/pqc_falcon512/clean/common.c",
+      "sha256": "2942a2ee1c3392de02d7e1ead6859163346039b5066804544ed27c7e43dfcb80"
+    },
+    {
+      "bytes": 19963,
+      "path": "/home/test/ctkat-native/examples/pqc_falcon512/clean/fft.c",
+      "sha256": "a8761dbbd64f3b50f5a800aab8c61b9ac685ac8f72d2bc056065c9da5588c004"
+    },
+    {
+      "bytes": 69023,
+      "path": "/home/test/ctkat-native/examples/pqc_falcon512/clean/fpr.c",
+      "sha256": "7e3d9cccd9c579d844fd32fcb84fdfbdb3d7c78fa6ecb64be095d7fddff04031"
+    },
+    {
+      "bytes": 138528,
+      "path": "/home/test/ctkat-native/examples/pqc_falcon512/clean/keygen.c",
+      "sha256": "1d675b6ee18a0744ca6ab7966a2a72a44207c82fe5e3ac58f892bf1bd6be99a0"
+    },
+    {
+      "bytes": 10288,
+      "path": "/home/test/ctkat-native/examples/pqc_falcon512/clean/pqclean.c",
+      "sha256": "e34de7e362591d561cfe13ec3bb1f8cee3e2d4e53778a9b8391f1a90e4b76c47"
+    },
+    {
+      "bytes": 5900,
+      "path": "/home/test/ctkat-native/examples/pqc_falcon512/clean/rng.c",
+      "sha256": "3a3d0002f6aee2e68bfe7e22c0cd11ba65090230d58a31319f2985f352b14da4"
+    },
+    {
+      "bytes": 39195,
+      "path": "/home/test/ctkat-native/examples/pqc_falcon512/clean/sign.c",
+      "sha256": "2d4ac79a0139be5921bba89ccdc9a2075db52fbb1472db203868ba6c51b5fcca"
+    },
+    {
+      "bytes": 30318,
+      "path": "/home/test/ctkat-native/examples/pqc_falcon512/clean/vrfy.c",
+      "sha256": "93315cff7e968b5b4ed18d4b2175d1e3e19c3fa54c8d231b187cea403b10cf8c"
+    },
+    {
+      "bytes": 29026,
+      "path": "/home/test/ctkat-native/examples/pqc_mlkem768/common/fips202.c",
+      "sha256": "4871baddebf2d4771d86b5088719123e2e43addce1a3c0eca75b4d18970ffc1f"
+    }
+  ],
+  "passed": true,
+  "schema_version": "1.0"
+}

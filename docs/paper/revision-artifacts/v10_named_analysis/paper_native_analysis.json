@@ -1,0 +1,3350 @@
+{
+  "analysis_policy": {
+    "heterogeneity": "not applicable to the preregistered single-host scope",
+    "heterogeneity_i2_warning_percent": 75.0,
+    "multiplicity": "Holm within each preregistered family",
+    "pairwise_method": "Welch two-sided test on per-process class-mean deltas",
+    "primary_combination": "single valid host result is retained without cross-host generalization",
+    "secondary_can_override_primary": false,
+    "signature_association": "Pearson duration/output-length, plus within-class-centered Pearson"
+  },
+  "bundle_id": "ctkat-v10-1aeadb97e040-b2e608e053f6",
+  "ctkat_commit": "1aeadb97e0409227aa203ba825a6bfc1d90445bc",
+  "hosts": [
+    {
+      "cpu_model": "Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz",
+      "id": "host-a",
+      "machine_id_sha256": "78fcac006d6ab71ac391a53b0e4b2e6353242e1b21730f44e0465002eb038fef"
+    }
+  ],
+  "input_aggregate_sha256": "0e18d2f103ed550151fa394641d533482a8ecb8f13bcbea2d9b45482ca18e7f3",
+  "inputs": [
+    {
+      "bytes": 3317639,
+      "label": "assembly/mlkem_public_attribution.json",
+      "sha256": "a3eca8173dfd9695ad84e1064ff402e01f18ebc1dc26a986444c85e9fdf7e209"
+    },
+    {
+      "bytes": 1179645,
+      "label": "host-a/SHA256SUMS",
+      "sha256": "b2e608e053f60582d6349626ad4789d19d8f62af6a17da9666685127120bd8f5"
+    },
+    {
+      "bytes": 20394,
+      "label": "host-a/committed-corpus-refresh/campaign_report.json",
+      "sha256": "d125c123f1e48e76728aa0e65d24c9c1dd30b8d20f0f1f6f18a3624fc30cd392"
+    },
+    {
+      "bytes": 7999,
+      "label": "host-a/committed-corpus-refresh/pqclean_falcon512_reference/binary_contract/timing_sign.binary-contract.json",
+      "sha256": "9360a8f0e2a412636ebd094210289a24ebc4c815e6ddc5f7e6184cd75f83081e"
+    },
+    {
+      "bytes": 255,
+      "label": "host-a/committed-corpus-refresh/pqclean_falcon512_reference/binary_contract/timing_sign.objdump-file-header.txt",
+      "sha256": "23806672a0d9b7d4dce36e6ca7ce4bb6ff6eabda64534dc6229d844fdcf9cfba"
+    },
+    {
+      "bytes": 938385,
+      "label": "host-a/committed-corpus-refresh/pqclean_falcon512_reference/binary_contract/timing_sign.objdump.txt",
+      "sha256": "c4fcd22b3f9c2990c8daf74dc7315c57ae235a02c2dc0b38b0425d90319f7945"
+    },
+    {
+      "bytes": 5757,
+      "label": "host-a/committed-corpus-refresh/pqclean_falcon512_reference/build_provenance/timing_sign.build-seal.json",
+      "sha256": "4cda321ad91b6ec6ae471a4ae108ecc1d025619db873131cafb3337e1ef7b369"
+    },
+    {
+      "bytes": 85234,
+      "label": "host-a/committed-corpus-refresh/pqclean_falcon512_reference/dudect_backend_report.json",
+      "sha256": "032ad1023c947ef7931569f3c6808d62b20e7ea827d76a86cbde52eac6b7b0dc"
+    },
+    {
+      "bytes": 2419004,
+      "label": "host-a/committed-corpus-refresh/pqclean_falcon512_reference/dudect_calibration_timings.csv",
+      "sha256": "b057f0eb46c8e13b794743006ea6da53d209daa4ddc590a256fd4dac33a22fdd"
+    },
+    {
+      "bytes": 29541841,
+      "label": "host-a/committed-corpus-refresh/pqclean_falcon512_reference/dudect_protocol_timings.csv",
+      "sha256": "52701a2a78486a2820eebcb954b4f86414e0ffeb60e35ea66c28c0b53f68bfb5"
+    },
+    {
+      "bytes": 2419004,
+      "label": "host-a/committed-corpus-refresh/pqclean_falcon512_reference/dudect_raw_timings.csv",
+      "sha256": "d02f3ed872ad03ab9e202db3e25dce2980499782845c8b564bedd1e318e21cfa"
+    },
+    {
+      "bytes": 947,
+      "label": "host-a/committed-corpus-refresh/pqclean_falcon512_reference/dudect_summary.csv",
+      "sha256": "626e1402b64f74681a68f230ade716e66634565879ce856f5199b8094fba8afb"
+    },
+    {
+      "bytes": 533488,
+      "label": "host-a/committed-corpus-refresh/pqclean_falcon512_reference/generated/timing_sign",
+      "sha256": "bf56f31313615d88b86012ed6e8d5fad506508d4eaffd9c4651d841de2e200a2"
+    },
+    {
+      "bytes": 19184,
+      "label": "host-a/committed-corpus-refresh/pqclean_falcon512_reference/generated/timing_sign.c",
+      "sha256": "4f58087051f9450d87a7c38b8c2eb12d1d98d3af6e48a4ccac5923845f66391a"
+    },
+    {
+      "bytes": 5310,
+      "label": "host-a/committed-corpus-refresh/pqclean_mldsa44/build_provenance/timing_sign.build-seal.json",
+      "sha256": "707c433c5827075ea9c50a49a729e1b521f093c2ddc594826f02949dda647485"
+    },
+    {
+      "bytes": 84660,
+      "label": "host-a/committed-corpus-refresh/pqclean_mldsa44/dudect_backend_report.json",
+      "sha256": "95b74f113984992b5e078995dea8348615423f8c6f2d1635865efc0072d4cdc7"
+    },
+    {
+      "bytes": 2048983,
+      "label": "host-a/committed-corpus-refresh/pqclean_mldsa44/dudect_calibration_timings.csv",
+      "sha256": "bd52678e8b4e7371181885a45af227551d2f63e40c2aaafd2b628f830f4257e8"
+    },
+    {
+      "bytes": 26476120,
+      "label": "host-a/committed-corpus-refresh/pqclean_mldsa44/dudect_protocol_timings.csv",
+      "sha256": "0d55adb2dfdad9c4dc23362a0d9c3f77aab25481ad6967ba7fbf1d6e91121b66"
+    },
+    {
+      "bytes": 2049018,
+      "label": "host-a/committed-corpus-refresh/pqclean_mldsa44/dudect_raw_timings.csv",
+      "sha256": "246b90094858bb4a6951f82f67011d0cb0627cfe5aec112f7fe3046a44de7900"
+    },
+    {
+      "bytes": 926,
+      "label": "host-a/committed-corpus-refresh/pqclean_mldsa44/dudect_summary.csv",
+      "sha256": "7108f97b65e530059dfa2b7562ec18521eaa78e5376c02c84d54b6c4c3830931"
+    },
+    {
+      "bytes": 165648,
+      "label": "host-a/committed-corpus-refresh/pqclean_mldsa44/generated/timing_sign",
+      "sha256": "b5245616b0a3db549e57e4b261c01d0ce2638eb78b760268a7ca1595c5add497"
+    },
+    {
+      "bytes": 19173,
+      "label": "host-a/committed-corpus-refresh/pqclean_mldsa44/generated/timing_sign.c",
+      "sha256": "d8ed9397ded75d29cc035c2fa8c149f68c21c3a0fca6306574439126ab30c87c"
+    },
+    {
+      "bytes": 5310,
+      "label": "host-a/committed-corpus-refresh/pqclean_mldsa65/build_provenance/timing_sign.build-seal.json",
+      "sha256": "dfb265a049465281eb00b7c990629fee2d6d66b0a08f441a24adcb75585321ca"
+    },
+    {
+      "bytes": 84794,
+      "label": "host-a/committed-corpus-refresh/pqclean_mldsa65/dudect_backend_report.json",
+      "sha256": "e9262497252ccaac4eaf6a9679e2409650800ab6382da71be232854c0f58bd1e"
+    },
+    {
+      "bytes": 2059222,
+      "label": "host-a/committed-corpus-refresh/pqclean_mldsa65/dudect_calibration_timings.csv",
+      "sha256": "299776ebdd4de73816d77ded1df56905bbc4ce22900ee9b02505488e7b7b57e1"
+    },
+    {
+      "bytes": 26558729,
+      "label": "host-a/committed-corpus-refresh/pqclean_mldsa65/dudect_protocol_timings.csv",
+      "sha256": "e309ee4fd8cb0bbeb4b23cb63b9a64f0549416d44ec4a1fe7dcf076353ce44d7"
+    },
+    {
+      "bytes": 2059212,
+      "label": "host-a/committed-corpus-refresh/pqclean_mldsa65/dudect_raw_timings.csv",
+      "sha256": "1310eac9101f0f3cbb80afea77a3a72c06c7364975d7fd873aed3169d45fc53b"
+    },
+    {
+      "bytes": 926,
+      "label": "host-a/committed-corpus-refresh/pqclean_mldsa65/dudect_summary.csv",
+      "sha256": "507b3426a4dea401652b8771d4848938661e9d8077911b4e4dbe49d33c27975b"
+    },
+    {
+      "bytes": 164968,
+      "label": "host-a/committed-corpus-refresh/pqclean_mldsa65/generated/timing_sign",
+      "sha256": "f256d765a2c43a77623f75ea9af53b6d6c7e1f913c59bced4017787b9814ed75"
+    },
+    {
+      "bytes": 19173,
+      "label": "host-a/committed-corpus-refresh/pqclean_mldsa65/generated/timing_sign.c",
+      "sha256": "798c46614e4dc2723ae65db5df084187de962fe3e89a14ffbfd1840242953677"
+    },
+    {
+      "bytes": 5310,
+      "label": "host-a/committed-corpus-refresh/pqclean_mldsa87/build_provenance/timing_sign.build-seal.json",
+      "sha256": "7244a811fb67cb383fa2bdb77f2dbd3b51243cfab922ca4574779cce92fb9876"
+    },
+    {
+      "bytes": 84716,
+      "label": "host-a/committed-corpus-refresh/pqclean_mldsa87/dudect_backend_report.json",
+      "sha256": "5a38e88a1a4639294561ef31fee0d34f3066aa58398379d2908a8137926f5d23"
+    },
+    {
+      "bytes": 2059357,
+      "label": "host-a/committed-corpus-refresh/pqclean_mldsa87/dudect_calibration_timings.csv",
+      "sha256": "602cb7f24a99b5e5b002924fa651ff16b071f7de5afe955298e65404b555168b"
+    },
+    {
+      "bytes": 26559803,
+      "label": "host-a/committed-corpus-refresh/pqclean_mldsa87/dudect_protocol_timings.csv",
+      "sha256": "b945f34e96bbf155242c335ebfeea9bd09ca3b310816ff0d69ed919662e2bfd8"
+    },
+    {
+      "bytes": 2059331,
+      "label": "host-a/committed-corpus-refresh/pqclean_mldsa87/dudect_raw_timings.csv",
+      "sha256": "111ada7a43a22b6741cccdc50444fb7ee47ac5ac2c46b73a49834c52de9439db"
+    },
+    {
+      "bytes": 935,
+      "label": "host-a/committed-corpus-refresh/pqclean_mldsa87/dudect_summary.csv",
+      "sha256": "8e55d1e48f1b4f1355941dddb412d53ce004ff2a8c60fd65320a47b0d34ff7d9"
+    },
+    {
+      "bytes": 166176,
+      "label": "host-a/committed-corpus-refresh/pqclean_mldsa87/generated/timing_sign",
+      "sha256": "738483f534829b6f55f8c3f7444e2a1ac0f9256ec499abd813929403616c31d6"
+    },
+    {
+      "bytes": 19173,
+      "label": "host-a/committed-corpus-refresh/pqclean_mldsa87/generated/timing_sign.c",
+      "sha256": "51d892034b7b66bfdbc0a9d23008cf2de4223892c3e3e085d6bc21bc95bfcdd2"
+    },
+    {
+      "bytes": 5675,
+      "label": "host-a/committed-corpus-refresh/pqclean_mlkem768/build_provenance/timing_kem_dec.build-seal.json",
+      "sha256": "5f7f58518e0a0c6c650dd1da2eca5bc821918cd43562edd22dc8afe1c8192b9a"
+    },
+    {
+      "bytes": 5693,
+      "label": "host-a/committed-corpus-refresh/pqclean_mlkem768/build_provenance/timing_kem_dec_ct.build-seal.json",
+      "sha256": "b0e5dfac4526109b2234a83662c66264bba75e1a8f6cf20cfbf227a76d5aebb5"
+    },
+    {
+      "bytes": 5693,
+      "label": "host-a/committed-corpus-refresh/pqclean_mlkem768/build_provenance/timing_kem_dec_fo.build-seal.json",
+      "sha256": "115bd0b42c8a46ece3830f9e075b957028515f862779499fc54831228d30c2d4"
+    },
+    {
+      "bytes": 245000,
+      "label": "host-a/committed-corpus-refresh/pqclean_mlkem768/dudect_backend_report.json",
+      "sha256": "185edb0f26619acbab3c629863d2099fa5e1b3ac8ac5852980441bd0d0c25200"
+    },
+    {
+      "bytes": 6356784,
+      "label": "host-a/committed-corpus-refresh/pqclean_mlkem768/dudect_calibration_timings.csv",
+      "sha256": "cc8ca9445fcfed0e694c71ec82d6eed59aa2b3f0fe567b701d6431f8d546d8f4"
+    },
+    {
+      "bytes": 104420240,
+      "label": "host-a/committed-corpus-refresh/pqclean_mlkem768/dudect_protocol_timings.csv",
+      "sha256": "a824c4687ad61cee40fed60886d48344569af03d1558e81e1062e2c69b836d13"
+    },
+    {
+      "bytes": 6356787,
+      "label": "host-a/committed-corpus-refresh/pqclean_mlkem768/dudect_raw_timings.csv",
+      "sha256": "3a1cb262eac949f29030008b3093f0acc4f8a8a1fc72a854e166e86b5baf7322"
+    },
+    {
+      "bytes": 1632,
+      "label": "host-a/committed-corpus-refresh/pqclean_mlkem768/dudect_summary.csv",
+      "sha256": "c05dd244dd971a330b44541ee324e2ecee36a8fc43de47d717b6dbe769ed1310"
+    },
+    {
+      "bytes": 132064,
+      "label": "host-a/committed-corpus-refresh/pqclean_mlkem768/generated/timing_kem_dec",
+      "sha256": "c5df7cdf444099c0daaac25d9f10caec30a0521c1b44aaeeae505ba8f6789681"
+    },
+    {
+      "bytes": 16099,
+      "label": "host-a/committed-corpus-refresh/pqclean_mlkem768/generated/timing_kem_dec.c",
+      "sha256": "c7f8d46f972c5e921f70d6e2cc8a11717c109cf21c98b8c686f613e5addc43c6"
+    },
+    {
+      "bytes": 131088,
+      "label": "host-a/committed-corpus-refresh/pqclean_mlkem768/generated/timing_kem_dec_ct",
+      "sha256": "ae319b73e2a50866eef2da4eeec0a4792109d57870e16491ea3960569ee4bcb5"
+    },
+    {
+      "bytes": 14657,
+      "label": "host-a/committed-corpus-refresh/pqclean_mlkem768/generated/timing_kem_dec_ct.c",
+      "sha256": "5de0a22b90e8c46e7ec9ab0904901a3d330e21fc29f013044c3b9ae594c7bb7f"
+    },
+    {
+      "bytes": 131928,
+      "label": "host-a/committed-corpus-refresh/pqclean_mlkem768/generated/timing_kem_dec_fo",
+      "sha256": "f30261d906d8047f511643d9771b525956e033fe0d47b8aa77ef9bb01f238166"
+    },
+    {
+      "bytes": 15532,
+      "label": "host-a/committed-corpus-refresh/pqclean_mlkem768/generated/timing_kem_dec_fo.c",
+      "sha256": "1914174f4cbe305569f9ff03b85d8c70518c4f812cc180451639a32acc42c701"
+    },
+    {
+      "bytes": 7019,
+      "label": "host-a/committed-corpus-refresh/pqclean_sphincs_sha2_128f_simple/build_provenance/timing_sign.build-seal.json",
+      "sha256": "fe83d38c1ea9c2cd49d8c089253f96c92dce14e9782d921607221193fb0b8421"
+    },
+    {
+      "bytes": 85047,
+      "label": "host-a/committed-corpus-refresh/pqclean_sphincs_sha2_128f_simple/dudect_backend_report.json",
+      "sha256": "f41a3ce21ee8fc6f08bba44dc9c02f3fe7569327c60aea78efb10665baec95a1"
+    },
+    {
+      "bytes": 2659004,
+      "label": "host-a/committed-corpus-refresh/pqclean_sphincs_sha2_128f_simple/dudect_calibration_timings.csv",
+      "sha256": "206fe47ebf01a8b51207b893494f216d045171706c14133ffc5d4faf6ca10244"
+    },
+    {
+      "bytes": 26046841,
+      "label": "host-a/committed-corpus-refresh/pqclean_sphincs_sha2_128f_simple/dudect_protocol_timings.csv",
+      "sha256": "3f09e818217e461b678745002916b8334e79121f407cc6e96d01a4fe1cb215b4"
+    },
+    {
+      "bytes": 2659004,
+      "label": "host-a/committed-corpus-refresh/pqclean_sphincs_sha2_128f_simple/dudect_raw_timings.csv",
+      "sha256": "ebd034a7f766b59c1f9c4d51edcf26dcd5e4eb14dd7737d23791a098102c4685"
+    },
+    {
+      "bytes": 951,
+      "label": "host-a/committed-corpus-refresh/pqclean_sphincs_sha2_128f_simple/dudect_summary.csv",
+      "sha256": "ae0c2df46407a2ed8033229cc851d436887d580326244f93faf76ef4f03f34c6"
+    },
+    {
+      "bytes": 225552,
+      "label": "host-a/committed-corpus-refresh/pqclean_sphincs_sha2_128f_simple/generated/timing_sign",
+      "sha256": "6995954f0bb08416f89c76c7a1059c31259c090bd9854a134838374c59f68001"
+    },
+    {
+      "bytes": 19327,
+      "label": "host-a/committed-corpus-refresh/pqclean_sphincs_sha2_128f_simple/generated/timing_sign.c",
+      "sha256": "dc6b3943856d7e279b0b3a2f64f32e71c5e7814ec647b3171312e6caccb6dedc"
+    },
+    {
+      "bytes": 15412,
+      "label": "host-a/diverse-lineages/campaign_report.json",
+      "sha256": "1d5d61db7c6608aa55eee4ed297248c9c73c9e6e4fa7e7b844e69e4e1dc940bc"
+    },
+    {
+      "bytes": 3265,
+      "label": "host-a/diverse-lineages/mldsa_native_65_portable/build_provenance/timing_sign.build-seal.json",
+      "sha256": "7ba5ccdbd114e875889a097a6953c5908d69a49d7e7626997939ca2a43c8245c"
+    },
+    {
+      "bytes": 84800,
+      "label": "host-a/diverse-lineages/mldsa_native_65_portable/dudect_backend_report.json",
+      "sha256": "671ece4cb52d9c21128ca686d28bc9d208c74677cf8e3858c5cf9e855ea0603f"
+    },
+    {
+      "bytes": 2323246,
+      "label": "host-a/diverse-lineages/mldsa_native_65_portable/dudect_calibration_timings.csv",
+      "sha256": "64691418502dde7acc41681218ae286a6cf43a6110fd40c48c73fb7e862c83a6"
+    },
+    {
+      "bytes": 28805324,
+      "label": "host-a/diverse-lineages/mldsa_native_65_portable/dudect_protocol_timings.csv",
+      "sha256": "b6a0f5f7e794805634df485fd219606b8f7b2022d58f1c3ecd1760d7246ca95d"
+    },
+    {
+      "bytes": 2323187,
+      "label": "host-a/diverse-lineages/mldsa_native_65_portable/dudect_raw_timings.csv",
+      "sha256": "feb35091c1bf22916d5c0a0a9ec41d47764710e21d588c4c89c7841cf0c168c7"
+    },
+    {
+      "bytes": 935,
+      "label": "host-a/diverse-lineages/mldsa_native_65_portable/dudect_summary.csv",
+      "sha256": "3cc1294b9856b907df0fa58326a6ad2e51935f8b93bb2d4c55c6e3447e552f67"
+    },
+    {
+      "bytes": 278664,
+      "label": "host-a/diverse-lineages/mldsa_native_65_portable/generated/timing_sign",
+      "sha256": "a1fc7039ddf3a175e6ea3c54f8dfe1a1b3bbc05fb3690e12f122c2d2fd83ec33"
+    },
+    {
+      "bytes": 19074,
+      "label": "host-a/diverse-lineages/mldsa_native_65_portable/generated/timing_sign.c",
+      "sha256": "22b10bfa691acdf575bab3bb5a7daa8388a3ce4dea3ac5e42a0d7dbd43a6d368"
+    },
+    {
+      "bytes": 4409,
+      "label": "host-a/diverse-lineages/mldsa_native_65_x86_64/build_provenance/timing_sign.build-seal.json",
+      "sha256": "496b12cc2fa3ea23c65b071970124ff5e12f11dabbf4a10a64f7c8b8561b0211"
+    },
+    {
+      "bytes": 84580,
+      "label": "host-a/diverse-lineages/mldsa_native_65_x86_64/dudect_backend_report.json",
+      "sha256": "ad902e347160c6d6cba93f803e482522a8ddf159a465e2787d7fef6b816f3bcc"
+    },
+    {
+      "bytes": 2240886,
+      "label": "host-a/diverse-lineages/mldsa_native_65_x86_64/dudect_calibration_timings.csv",
+      "sha256": "26f9e964c7bec4a34b986583498f3b1635fbbb7758621bfe5e32b17fcb8a20c2"
+    },
+    {
+      "bytes": 28111149,
+      "label": "host-a/diverse-lineages/mldsa_native_65_x86_64/dudect_protocol_timings.csv",
+      "sha256": "3c3c6885d3b28d74f36cdf4ddc270ee43d16a82086f17be3fb94ab3d3b74e852"
+    },
+    {
+      "bytes": 2240934,
+      "label": "host-a/diverse-lineages/mldsa_native_65_x86_64/dudect_raw_timings.csv",
+      "sha256": "0d85fa552033f4d2600efce6d94281c5df2c06ef1b89bedc4488ed41e1ce3e03"
+    },
+    {
+      "bytes": 926,
+      "label": "host-a/diverse-lineages/mldsa_native_65_x86_64/dudect_summary.csv",
+      "sha256": "bca4ba46e23a9ce993fecd32e08f6cb497b458abf0a878632d39e4d577279960"
+    },
+    {
+      "bytes": 318608,
+      "label": "host-a/diverse-lineages/mldsa_native_65_x86_64/generated/timing_sign",
+      "sha256": "d1b83db410ab242cff5ba9dc04de5de23113676dd184932b835619901469a93c"
+    },
+    {
+      "bytes": 19074,
+      "label": "host-a/diverse-lineages/mldsa_native_65_x86_64/generated/timing_sign.c",
+      "sha256": "22b10bfa691acdf575bab3bb5a7daa8388a3ce4dea3ac5e42a0d7dbd43a6d368"
+    },
+    {
+      "bytes": 2881,
+      "label": "host-a/diverse-lineages/mlkem_native_768_portable/build_provenance/timing_kem_dec_valid_tuple.build-seal.json",
+      "sha256": "5d098322ae33172497ce6eec1a4c157ba4a385d8cbdcbfbd1fb7a1b6ddd1583a"
+    },
+    {
+      "bytes": 92229,
+      "label": "host-a/diverse-lineages/mlkem_native_768_portable/dudect_backend_report.json",
+      "sha256": "49589ca6917b1b90f42a5a158c4dcd122646a8a712477b10395aaec759a8c6f6"
+    },
+    {
+      "bytes": 2689005,
+      "label": "host-a/diverse-lineages/mlkem_native_768_portable/dudect_calibration_timings.csv",
+      "sha256": "a92f6aefb7ddf9cd862387efd847cd2ad562742156e107beab98d36e12133438"
+    },
+    {
+      "bytes": 41076845,
+      "label": "host-a/diverse-lineages/mlkem_native_768_portable/dudect_protocol_timings.csv",
+      "sha256": "af0fc44ec0fc8291d44d0294207a49cefbd183f3d9aea4057c3adcecf8c9aaec"
+    },
+    {
+      "bytes": 2689004,
+      "label": "host-a/diverse-lineages/mlkem_native_768_portable/dudect_raw_timings.csv",
+      "sha256": "791f2a804113ff11be313ca245db74fc04b7c67682d0ebf25c269a66051b7641"
+    },
+    {
+      "bytes": 953,
+      "label": "host-a/diverse-lineages/mlkem_native_768_portable/dudect_summary.csv",
+      "sha256": "96eda4fd3c72dd4bb63a9ebf3e9fa1b9a4863ca3baa404cb528e56362729cb70"
+    },
+    {
+      "bytes": 189296,
+      "label": "host-a/diverse-lineages/mlkem_native_768_portable/generated/timing_kem_dec_valid_tuple",
+      "sha256": "1854b0d297b990de0eac929b3d578a17da217780f98f6178fba54ce11707b14b"
+    },
+    {
+      "bytes": 15816,
+      "label": "host-a/diverse-lineages/mlkem_native_768_portable/generated/timing_kem_dec_valid_tuple.c",
+      "sha256": "a8253371b868c2708015117b90f8aa860f4c8de74b70a300db4e87fa693fa00a"
+    },
+    {
+      "bytes": 4025,
+      "label": "host-a/diverse-lineages/mlkem_native_768_x86_64/build_provenance/timing_kem_dec_valid_tuple.build-seal.json",
+      "sha256": "d6fcffbbdd3d673b3f62331701d40e817843829ce4b9a754a110d62a0b0f1ce6"
+    },
+    {
+      "bytes": 91731,
+      "label": "host-a/diverse-lineages/mlkem_native_768_x86_64/dudect_backend_report.json",
+      "sha256": "18ec9f92a0adf73989a4053b45b5f1fd27d9f762d914dc3f0ee5fd2bc95095e9"
+    },
+    {
+      "bytes": 2599030,
+      "label": "host-a/diverse-lineages/mlkem_native_768_x86_64/dudect_calibration_timings.csv",
+      "sha256": "d837b1aacf97af3ef8a1570dc9246cf5aba6f8a6dbe3b5c742f35714269ea3ba"
+    },
+    {
+      "bytes": 40088061,
+      "label": "host-a/diverse-lineages/mlkem_native_768_x86_64/dudect_protocol_timings.csv",
+      "sha256": "2cae506f5ec0511bd1df3ef5b5bc568fd0bec0dabc2cfdc4633a8d7aa813530d"
+    },
+    {
+      "bytes": 2599024,
+      "label": "host-a/diverse-lineages/mlkem_native_768_x86_64/dudect_raw_timings.csv",
+      "sha256": "be6afa2306363318ea202f3d7a9242935a71a58c3a1a3faa41afe899442ab453"
+    },
+    {
+      "bytes": 930,
+      "label": "host-a/diverse-lineages/mlkem_native_768_x86_64/dudect_summary.csv",
+      "sha256": "a0ac8469b8925ef228550447ce7ceebb4b7dbbf3565ccdff3f0b25a9f796ac75"
+    },
+    {
+      "bytes": 221152,
+      "label": "host-a/diverse-lineages/mlkem_native_768_x86_64/generated/timing_kem_dec_valid_tuple",
+      "sha256": "807c306c112798834616101d537cc1eb8e7690b7783152e2b4dff72fda9cb6e7"
+    },
+    {
+      "bytes": 15816,
+      "label": "host-a/diverse-lineages/mlkem_native_768_x86_64/generated/timing_kem_dec_valid_tuple.c",
+      "sha256": "a8253371b868c2708015117b90f8aa860f4c8de74b70a300db4e87fa693fa00a"
+    },
+    {
+      "bytes": 10897,
+      "label": "host-a/falcon-contrast/c_fndsa1024_fpr_emu/binary_contract/timing_sign.binary-contract.json",
+      "sha256": "b9effc365f52adee52f720c347fb12bb376a1219ce53bdc59b6f97c17b3e2c0e"
+    },
+    {
+      "bytes": 237,
+      "label": "host-a/falcon-contrast/c_fndsa1024_fpr_emu/binary_contract/timing_sign.objdump-file-header.txt",
+      "sha256": "671596b8c77a8e750ef45b5d651fd8126050515bf3902618c384371ccb4bbdfe"
+    },
+    {
+      "bytes": 812734,
+      "label": "host-a/falcon-contrast/c_fndsa1024_fpr_emu/binary_contract/timing_sign.objdump.txt",
+      "sha256": "215090886bd64dbf9c60455a2c277461eb0c1f0fad4993a190fdf383fdee3bd1"
+    },
+    {
+      "bytes": 9676,
+      "label": "host-a/falcon-contrast/c_fndsa1024_fpr_emu/build_provenance/timing_sign.build-seal.json",
+      "sha256": "7f98e43f0fc65305ef611b23065297cd9ffee06da9b535f6a9335c9ada7a5f3e"
+    },
+    {
+      "bytes": 85392,
+      "label": "host-a/falcon-contrast/c_fndsa1024_fpr_emu/dudect_backend_report.json",
+      "sha256": "b0186463485b6897d96e92bff62c734a4618a3170b8978b3c4e9e12968b71bc5"
+    },
+    {
+      "bytes": 2209004,
+      "label": "host-a/falcon-contrast/c_fndsa1024_fpr_emu/dudect_calibration_timings.csv",
+      "sha256": "6c72cfe0ed82f7501c6f4b8e049127946d6c5442bc85a84957d24a9956741cd1"
+    },
+    {
+      "bytes": 27831841,
+      "label": "host-a/falcon-contrast/c_fndsa1024_fpr_emu/dudect_protocol_timings.csv",
+      "sha256": "ed4335019289f5f6938c2650fb73d915703b5658ab388d11b706887a6f7283ff"
+    },
+    {
+      "bytes": 2209004,
+      "label": "host-a/falcon-contrast/c_fndsa1024_fpr_emu/dudect_raw_timings.csv",
+      "sha256": "6e0e9b6002d6dbe5cae7caec65732a28bb21022e541b14e1ada916cbbebc9d0d"
+    },
+    {
+      "bytes": 937,
+      "label": "host-a/falcon-contrast/c_fndsa1024_fpr_emu/dudect_summary.csv",
+      "sha256": "69e55001755ce5f30cd6e9fc9d7e04c85d94f11dab69db8bb63ce305792f7859"
+    },
+    {
+      "bytes": 520688,
+      "label": "host-a/falcon-contrast/c_fndsa1024_fpr_emu/generated/timing_sign",
+      "sha256": "edfee4d57f8f18f7ef8ad98d74a8e72025ea805e59bb446120625f6beb39effe"
+    },
+    {
+      "bytes": 19038,
+      "label": "host-a/falcon-contrast/c_fndsa1024_fpr_emu/generated/timing_sign.c",
+      "sha256": "01e1c4c74ea579e87c290fb3232fc8cfe504250f51629972b03b0327a189b363"
+    },
+    {
+      "bytes": 12100,
+      "label": "host-a/falcon-contrast/c_fndsa1024_native_fp/binary_contract/timing_sign.binary-contract.json",
+      "sha256": "d37acd6cafd74872e2be282ad7da992a99c66bdedcf5eac05c2d23e709d64383"
+    },
+    {
+      "bytes": 239,
+      "label": "host-a/falcon-contrast/c_fndsa1024_native_fp/binary_contract/timing_sign.objdump-file-header.txt",
+      "sha256": "2c78b7cbe33a8dee592272381b19a2768a734de5021a9d5df7b63c966a792074"
+    },
+    {
+      "bytes": 764908,
+      "label": "host-a/falcon-contrast/c_fndsa1024_native_fp/binary_contract/timing_sign.objdump.txt",
+      "sha256": "e4b82cc27843c6b4fbe2b7f0a4b8fda5fe19542d495c349d36b13daa536757c9"
+    },
+    {
+      "bytes": 9358,
+      "label": "host-a/falcon-contrast/c_fndsa1024_native_fp/build_provenance/timing_sign.build-seal.json",
+      "sha256": "587b837cce5f5c9ed5895f40c3fc7831a4186ff9634b579d59a807ac005e2427"
+    },
+    {
+      "bytes": 85286,
+      "label": "host-a/falcon-contrast/c_fndsa1024_native_fp/dudect_backend_report.json",
+      "sha256": "7f020625f496b91d6f210d89b7c338cd62bdb7289ff493da1d29dc932ad4cda6"
+    },
+    {
+      "bytes": 2239004,
+      "label": "host-a/falcon-contrast/c_fndsa1024_native_fp/dudect_calibration_timings.csv",
+      "sha256": "1e9139d6a6ecca4b278e0df131eda0458fe56bf21be9e78b8d8510345b90527c"
+    },
+    {
+      "bytes": 27996841,
+      "label": "host-a/falcon-contrast/c_fndsa1024_native_fp/dudect_protocol_timings.csv",
+      "sha256": "2b64d51a93c0768831586fb036b511e36d4f01a48c3774c93d0d66640a34f921"
+    },
+    {
+      "bytes": 2239004,
+      "label": "host-a/falcon-contrast/c_fndsa1024_native_fp/dudect_raw_timings.csv",
+      "sha256": "77c85fa265a3abcf61f5745c6fb72515ccef74382af3b73f4cddf90cf9043e03"
+    },
+    {
+      "bytes": 928,
+      "label": "host-a/falcon-contrast/c_fndsa1024_native_fp/dudect_summary.csv",
+      "sha256": "b02bcf441c04762b0fa58b214562cefdd43e431942f6e02e1a35b94590347a74"
+    },
+    {
+      "bytes": 531336,
+      "label": "host-a/falcon-contrast/c_fndsa1024_native_fp/generated/timing_sign",
+      "sha256": "02a7c3ca77b56cca853aaf49cd62b01ec71132ef1e8f6b81a5d6a649a15b2b61"
+    },
+    {
+      "bytes": 19038,
+      "label": "host-a/falcon-contrast/c_fndsa1024_native_fp/generated/timing_sign.c",
+      "sha256": "01e1c4c74ea579e87c290fb3232fc8cfe504250f51629972b03b0327a189b363"
+    },
+    {
+      "bytes": 10882,
+      "label": "host-a/falcon-contrast/c_fndsa512_fpr_emu/binary_contract/timing_sign.binary-contract.json",
+      "sha256": "5365e3ef1bac3560d518ec63515211b434f5367a5b29eafc2cd74d2a21a4808b"
+    },
+    {
+      "bytes": 236,
+      "label": "host-a/falcon-contrast/c_fndsa512_fpr_emu/binary_contract/timing_sign.objdump-file-header.txt",
+      "sha256": "4feb27b6679d3166b9acd47874752f6367e94b785260281c7510fdb8a299bbb9"
+    },
+    {
+      "bytes": 812454,
+      "label": "host-a/falcon-contrast/c_fndsa512_fpr_emu/binary_contract/timing_sign.objdump.txt",
+      "sha256": "27767e0b84eba4bcb358dfeef9138dbaddc55085ff28313867696f3470ce5028"
+    },
+    {
+      "bytes": 9663,
+      "label": "host-a/falcon-contrast/c_fndsa512_fpr_emu/build_provenance/timing_sign.build-seal.json",
+      "sha256": "bbefe347cb3001d01c6df839930f7fe736e12e0235baac8f27158a80d82e3e72"
+    },
+    {
+      "bytes": 85280,
+      "label": "host-a/falcon-contrast/c_fndsa512_fpr_emu/dudect_backend_report.json",
+      "sha256": "56aa06834d1bc99031822382078d5cd0a2bdd9e14310cf38f170cfb4a9ea5585"
+    },
+    {
+      "bytes": 2149004,
+      "label": "host-a/falcon-contrast/c_fndsa512_fpr_emu/dudect_calibration_timings.csv",
+      "sha256": "20195b69752c6fbe4243cb9dbd676acfb543b72f43bf1bba4bd4b96e81e547c0"
+    },
+    {
+      "bytes": 27246841,
+      "label": "host-a/falcon-contrast/c_fndsa512_fpr_emu/dudect_protocol_timings.csv",
+      "sha256": "97b095220c454ec9bdc5db5cb023b9b0c2659a21065cb84366ecbdf70a3f682d"
+    },
+    {
+      "bytes": 2149004,
+      "label": "host-a/falcon-contrast/c_fndsa512_fpr_emu/dudect_raw_timings.csv",
+      "sha256": "5feb67b9e5d6ab629422e52979c1699ef603bb0604b430c48264c847c4b5aced"
+    },
+    {
+      "bytes": 940,
+      "label": "host-a/falcon-contrast/c_fndsa512_fpr_emu/dudect_summary.csv",
+      "sha256": "79e70faf87731185862896367838f98114613eaf37c7dd629d4596df4a4f07c9"
+    },
+    {
+      "bytes": 520568,
+      "label": "host-a/falcon-contrast/c_fndsa512_fpr_emu/generated/timing_sign",
+      "sha256": "feae11b24cbc2f2d2d718eee3cba1f42ea8078252763c1eb8f9541e9a97d7214"
+    },
+    {
+      "bytes": 19038,
+      "label": "host-a/falcon-contrast/c_fndsa512_fpr_emu/generated/timing_sign.c",
+      "sha256": "01e1c4c74ea579e87c290fb3232fc8cfe504250f51629972b03b0327a189b363"
+    },
+    {
+      "bytes": 12085,
+      "label": "host-a/falcon-contrast/c_fndsa512_native_fp/binary_contract/timing_sign.binary-contract.json",
+      "sha256": "d09370f44b36a3dbb456f6bb2352551f55807d4c79e16d6ddb31918dee5b7f86"
+    },
+    {
+      "bytes": 238,
+      "label": "host-a/falcon-contrast/c_fndsa512_native_fp/binary_contract/timing_sign.objdump-file-header.txt",
+      "sha256": "5ae73e1c8309c03b27f4b78d84393581b0803f9237de0240b32c52d0f7511c2c"
+    },
+    {
+      "bytes": 764628,
+      "label": "host-a/falcon-contrast/c_fndsa512_native_fp/binary_contract/timing_sign.objdump.txt",
+      "sha256": "85e5a369c36246eb7b0a1852a97b5b093e9db9f46594a337e1adc801cf74ae54"
+    },
+    {
+      "bytes": 9345,
+      "label": "host-a/falcon-contrast/c_fndsa512_native_fp/build_provenance/timing_sign.build-seal.json",
+      "sha256": "401c4a49a35627050e7f5f4a5dd2c8d8d05567635c7a00c48697451cb9b20160"
+    },
+    {
+      "bytes": 85322,
+      "label": "host-a/falcon-contrast/c_fndsa512_native_fp/dudect_backend_report.json",
+      "sha256": "402174a069271830cbb4e996b7777ddd611b3e0874b992214111bd2b492ac21c"
+    },
+    {
+      "bytes": 2179004,
+      "label": "host-a/falcon-contrast/c_fndsa512_native_fp/dudect_calibration_timings.csv",
+      "sha256": "3d4de35898234903eebb5d4bf5af920f9f074d5c565b909aec28f34fe8cf5eb7"
+    },
+    {
+      "bytes": 27486839,
+      "label": "host-a/falcon-contrast/c_fndsa512_native_fp/dudect_protocol_timings.csv",
+      "sha256": "41e1de44c7999483290c0fb37b815c4195f7a59a95c03fee25b981363f67e8c6"
+    },
+    {
+      "bytes": 2179004,
+      "label": "host-a/falcon-contrast/c_fndsa512_native_fp/dudect_raw_timings.csv",
+      "sha256": "7d611163a9686af604ecc23f543c007e1e87d7dc1110476fe44fdc5a26bff135"
+    },
+    {
+      "bytes": 936,
+      "label": "host-a/falcon-contrast/c_fndsa512_native_fp/dudect_summary.csv",
+      "sha256": "4dc335398003de84d62fa7ac86142e5841df34a91392681a0edd8ebeb7620d9b"
+    },
+    {
+      "bytes": 531216,
+      "label": "host-a/falcon-contrast/c_fndsa512_native_fp/generated/timing_sign",
+      "sha256": "a5041ba3163403c1d28ebf2ca117373448fa5954de271e50f857276a1d318b91"
+    },
+    {
+      "bytes": 19038,
+      "label": "host-a/falcon-contrast/c_fndsa512_native_fp/generated/timing_sign.c",
+      "sha256": "01e1c4c74ea579e87c290fb3232fc8cfe504250f51629972b03b0327a189b363"
+    },
+    {
+      "bytes": 20983,
+      "label": "host-a/falcon-contrast/campaign_report.json",
+      "sha256": "6c690b27c625164c250a480c8594daa02186e18bc91e257a7f6f02fe251998bf"
+    },
+    {
+      "bytes": 7979,
+      "label": "host-a/falcon-contrast/pqclean_falcon1024_reference/binary_contract/timing_sign.binary-contract.json",
+      "sha256": "5f9a29663fce7346a5846990864398ddbc2afdc4fcb7f863959fdf28ae8f8d57"
+    },
+    {
+      "bytes": 246,
+      "label": "host-a/falcon-contrast/pqclean_falcon1024_reference/binary_contract/timing_sign.objdump-file-header.txt",
+      "sha256": "3750fd13651fbc597123fcd0856d5962fd045c6612cfe083c9b79fbf61286d47"
+    },
+    {
+      "bytes": 939590,
+      "label": "host-a/falcon-contrast/pqclean_falcon1024_reference/binary_contract/timing_sign.objdump.txt",
+      "sha256": "e4d2827d1988acf34764d69f71b1d7d5e20584ab15fbae2f2b5c98776cd3a7e8"
+    },
+    {
+      "bytes": 5741,
+      "label": "host-a/falcon-contrast/pqclean_falcon1024_reference/build_provenance/timing_sign.build-seal.json",
+      "sha256": "053df2eafdbee4fcb3d359e33c489431513ea1ea56dcdf6d2e7f8cf3d9b86868"
+    },
+    {
+      "bytes": 85242,
+      "label": "host-a/falcon-contrast/pqclean_falcon1024_reference/dudect_backend_report.json",
+      "sha256": "f9841ad3764705cd91fa9d78941f73948ed6050917da599ab6e86f230db5437a"
+    },
+    {
+      "bytes": 2479004,
+      "label": "host-a/falcon-contrast/pqclean_falcon1024_reference/dudect_calibration_timings.csv",
+      "sha256": "47adb7e929ead8903db43cf5a3e1ffeb689977d7ef6e2675b2daf9c6ae924ba1"
+    },
+    {
+      "bytes": 30051841,
+      "label": "host-a/falcon-contrast/pqclean_falcon1024_reference/dudect_protocol_timings.csv",
+      "sha256": "3d76bc0ad4810b0088fe99f58e8090070ab81a5eda48129adee94286b1828bec"
+    },
+    {
+      "bytes": 2479004,
+      "label": "host-a/falcon-contrast/pqclean_falcon1024_reference/dudect_raw_timings.csv",
+      "sha256": "96a89d462d5407b8158486ef17cb67772d04d0fa43ed9fbec1d0e63d4a1a4b5b"
+    },
+    {
+      "bytes": 949,
+      "label": "host-a/falcon-contrast/pqclean_falcon1024_reference/dudect_summary.csv",
+      "sha256": "5678c7a503f0a367c2d48d0fac730bf43cd452d02872202999dff2b7a641cc75"
+    },
+    {
+      "bytes": 533768,
+      "label": "host-a/falcon-contrast/pqclean_falcon1024_reference/generated/timing_sign",
+      "sha256": "3de28fb2c5315224504179e4b8c83633241618e005955e9597a1a39bdd0cc3ed"
+    },
+    {
+      "bytes": 19195,
+      "label": "host-a/falcon-contrast/pqclean_falcon1024_reference/generated/timing_sign.c",
+      "sha256": "34bd68c30342b3d4d3c38d46c11a60d7d0a7b7c43740e5c416121c441415bc27"
+    },
+    {
+      "bytes": 7919,
+      "label": "host-a/falcon-contrast/pqclean_falcon512_reference/binary_contract/timing_sign.binary-contract.json",
+      "sha256": "39df65591597b9a35284ab8b07a6190b657bbfd707c95d99bfa556e3e83545e6"
+    },
+    {
+      "bytes": 245,
+      "label": "host-a/falcon-contrast/pqclean_falcon512_reference/binary_contract/timing_sign.objdump-file-header.txt",
+      "sha256": "58a923fa68789739dcce50ca27d5927853360d42c5a252978eadc07acb73d926"
+    },
+    {
+      "bytes": 938375,
+      "label": "host-a/falcon-contrast/pqclean_falcon512_reference/binary_contract/timing_sign.objdump.txt",
+      "sha256": "0a7230c7d0c78d3fac44473846b5d88feef7c9aac006cb6d305e05d43f6a3e6f"
+    },
+    {
+      "bytes": 5697,
+      "label": "host-a/falcon-contrast/pqclean_falcon512_reference/build_provenance/timing_sign.build-seal.json",
+      "sha256": "30c3ea57bcd542c6b1f9621b3d9fe4ed4ca403961a61e7b419e9686d493a7068"
+    },
+    {
+      "bytes": 85066,
+      "label": "host-a/falcon-contrast/pqclean_falcon512_reference/dudect_backend_report.json",
+      "sha256": "5d673560043b1c773638b53a2d0ce878611641f6a8d7bd32df768d7fcf587e15"
+    },
+    {
+      "bytes": 2419004,
+      "label": "host-a/falcon-contrast/pqclean_falcon512_reference/dudect_calibration_timings.csv",
+      "sha256": "2eca6cc1ce05419e064847aa47e7dc4bc68cff7eaf85e9ea4de954be2cde4543"
+    },
+    {
+      "bytes": 29541841,
+      "label": "host-a/falcon-contrast/pqclean_falcon512_reference/dudect_protocol_timings.csv",
+      "sha256": "5d1a187c5076b9a3cddafd2f4bafc8e6d048987406039ee49dd029b6f72ae5a6"
+    },
+    {
+      "bytes": 2419004,
+      "label": "host-a/falcon-contrast/pqclean_falcon512_reference/dudect_raw_timings.csv",
+      "sha256": "fcbbf01575c8538f8a97a1fd0d13e042fb401724b786b608af08c9202e5a57d8"
+    },
+    {
+      "bytes": 944,
+      "label": "host-a/falcon-contrast/pqclean_falcon512_reference/dudect_summary.csv",
+      "sha256": "ed3a391e040b8f496369b772e962d574dfc9e76e22be3afc41cdb847f31fd9b9"
+    },
+    {
+      "bytes": 533464,
+      "label": "host-a/falcon-contrast/pqclean_falcon512_reference/generated/timing_sign",
+      "sha256": "4f97989b2bcc5b388e449205e8f6af6239a036b8434ae6d03e748f0810e040b9"
+    },
+    {
+      "bytes": 19184,
+      "label": "host-a/falcon-contrast/pqclean_falcon512_reference/generated/timing_sign.c",
+      "sha256": "4f58087051f9450d87a7c38b8c2eb12d1d98d3af6e48a4ccac5923845f66391a"
+    },
+    {
+      "bytes": 30561,
+      "label": "host-a/kyberslash-contrast/campaign_report.json",
+      "sha256": "712c217ed2502b61913fb45273f9b04681cb51f15e31d7455a08a46a916bbc0f"
+    },
+    {
+      "bytes": 5323,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks1_patched/binary_contract/timing_operand_bin.binary-contract.json",
+      "sha256": "78f3bce1ebd283e9e59eb18092b7fe7705e4242eb21e96402c47dc13669b13c6"
+    },
+    {
+      "bytes": 259,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks1_patched/binary_contract/timing_operand_bin.objdump-file-header.txt",
+      "sha256": "6ae33fc066bfb78854f11d353a07b6a431c69079b5d05889c88dee09170cfd75"
+    },
+    {
+      "bytes": 49903,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks1_patched/binary_contract/timing_operand_bin.objdump.txt",
+      "sha256": "9694000c05f860297301c4b683f1d90619a1958d1b0a00ea43c246c70fa7afc2"
+    },
+    {
+      "bytes": 3185,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks1_patched/build_provenance/timing_operand_bin.build-seal.json",
+      "sha256": "3d713647f17adcd83f1233b75d6cba0c815c34c1a9f75a410e9e86b05cd1c905"
+    },
+    {
+      "bytes": 93505,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks1_patched/dudect_backend_report.json",
+      "sha256": "915ad54955f8f703051765de674f871e7c1e9da7d00ae0b7f05a9ba08a8e7f30"
+    },
+    {
+      "bytes": 2509009,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks1_patched/dudect_calibration_timings.csv",
+      "sha256": "65834564d9e018d9bb8c9d83256e6670b5b4e996ceff6139234ef435ffe687b9"
+    },
+    {
+      "bytes": 39126844,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks1_patched/dudect_protocol_timings.csv",
+      "sha256": "bca2807cb3082394484eaf67e4fd4b1ff81b2b38ce90be551982b5f0bca7aabb"
+    },
+    {
+      "bytes": 2509010,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks1_patched/dudect_raw_timings.csv",
+      "sha256": "5a98bd0fb40cdb9c9e91b535b979adb32f668fefecaceb39b0b7176954f4f5a3"
+    },
+    {
+      "bytes": 925,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks1_patched/dudect_summary.csv",
+      "sha256": "f36439c2f5ab23ed5e7601a4ed5801db8e991632861d81fe1d1a47f43e05ca35"
+    },
+    {
+      "bytes": 36392,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks1_patched/generated/timing_operand_bin",
+      "sha256": "ad208f46f92455fcd14099f1f9a73dab7f3d6f4f05b55c3077cd6bd9c586b7c4"
+    },
+    {
+      "bytes": 17496,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks1_patched/generated/timing_operand_bin.c",
+      "sha256": "f40f11c7dc5695c57959a80ca4cdd508c70474b68174a9fd71fc406e29b94406"
+    },
+    {
+      "bytes": 5436,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks1_vulnerable/binary_contract/timing_operand_bin.binary-contract.json",
+      "sha256": "55b48fafe95b219bd6d5888b345d27e78a87b2bcc3d34da7b98330f9835a42bf"
+    },
+    {
+      "bytes": 262,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks1_vulnerable/binary_contract/timing_operand_bin.objdump-file-header.txt",
+      "sha256": "fbafb225cfa741f088f11e5c92e1260d6541b9b06b99c96642d0f6f86da43941"
+    },
+    {
+      "bytes": 49989,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks1_vulnerable/binary_contract/timing_operand_bin.objdump.txt",
+      "sha256": "6a7307a1e35fbe100ec37c04219654195cf093a0148913ff0bc9b3269ac47122"
+    },
+    {
+      "bytes": 3215,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks1_vulnerable/build_provenance/timing_operand_bin.build-seal.json",
+      "sha256": "73d3f27d7a2eff6a15acdaf9689194240edb963ff205c2aeeb1c65330b6d5ce2"
+    },
+    {
+      "bytes": 93455,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks1_vulnerable/dudect_backend_report.json",
+      "sha256": "776f6f2dbda6fd4155b4457d5cee788271351dc31516c000707d0a2dcdec76d6"
+    },
+    {
+      "bytes": 2599011,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks1_vulnerable/dudect_calibration_timings.csv",
+      "sha256": "629b45f047bc0acef1ae76d6305cd779e0383037190b448a2b69c568f0e026ad"
+    },
+    {
+      "bytes": 40116864,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks1_vulnerable/dudect_protocol_timings.csv",
+      "sha256": "3fa5057c8307d27cf6595a12a9de8795f9481f31c30634d499a1320f796b5809"
+    },
+    {
+      "bytes": 2599011,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks1_vulnerable/dudect_raw_timings.csv",
+      "sha256": "bbcbe145bb9b90b8a4acb81a06980707048c499ff527e070e68543af9cc00597"
+    },
+    {
+      "bytes": 929,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks1_vulnerable/dudect_summary.csv",
+      "sha256": "ec59e4b93f134e5b39f8b65662a1bffe4d0c9eff543c7c512f7ecf334012dfc5"
+    },
+    {
+      "bytes": 36520,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks1_vulnerable/generated/timing_operand_bin",
+      "sha256": "4b4385a3873bbdd10510b12fb5dd3a7c5c8f307a8c18ee024999cb90c1d7decc"
+    },
+    {
+      "bytes": 17496,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks1_vulnerable/generated/timing_operand_bin.c",
+      "sha256": "f40f11c7dc5695c57959a80ca4cdd508c70474b68174a9fd71fc406e29b94406"
+    },
+    {
+      "bytes": 5388,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks2_poly_patched/binary_contract/timing_operand_bin.binary-contract.json",
+      "sha256": "67ab71189057605b1f8acbcf41aeb934478da56e1b8fef6b2f8041cfac8e3128"
+    },
+    {
+      "bytes": 264,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks2_poly_patched/binary_contract/timing_operand_bin.objdump-file-header.txt",
+      "sha256": "7d171e75b09a47f33bd71882141e87086a48ee9b1f059ace12e2d4e227d46d98"
+    },
+    {
+      "bytes": 49896,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks2_poly_patched/binary_contract/timing_operand_bin.objdump.txt",
+      "sha256": "b3323b819dd237c0ccee2bdb9bf632c42ff682599b910680ba8d8175af5c2f59"
+    },
+    {
+      "bytes": 3235,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks2_poly_patched/build_provenance/timing_operand_bin.build-seal.json",
+      "sha256": "ee57bf653339aabec33fcc7fd83934c4e51f927fe490fb0b1eff8ed8c3beebac"
+    },
+    {
+      "bytes": 93409,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks2_poly_patched/dudect_backend_report.json",
+      "sha256": "f8b804ffc70296b391cad4b549e4cc08458ade9c0c6133c68abef9aaf0247696"
+    },
+    {
+      "bytes": 2659006,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks2_poly_patched/dudect_calibration_timings.csv",
+      "sha256": "82ea6fc69933724a7ec0223f601f77007cd74cd2d581429807e65bcae095f3a6"
+    },
+    {
+      "bytes": 40776843,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks2_poly_patched/dudect_protocol_timings.csv",
+      "sha256": "fe7f09e46e7881411d5f23ab0542b8f583eb21a047fc5f3a7ec8d4608f606eab"
+    },
+    {
+      "bytes": 2659010,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks2_poly_patched/dudect_raw_timings.csv",
+      "sha256": "61c3b32cd1fc8f204829c1087a0e5e9dd4cc001f210a9f2464e3b2e745770128"
+    },
+    {
+      "bytes": 930,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks2_poly_patched/dudect_summary.csv",
+      "sha256": "f21f115a2a5e8e3448033162339d71857ac4b10bb5de2167eff83046c42db37c"
+    },
+    {
+      "bytes": 36408,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks2_poly_patched/generated/timing_operand_bin",
+      "sha256": "1e7b4a5e836ddcf1ec336539c20d4dd9ebc67786b3ce09080c6ee6238bd19a9a"
+    },
+    {
+      "bytes": 17496,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks2_poly_patched/generated/timing_operand_bin.c",
+      "sha256": "f40f11c7dc5695c57959a80ca4cdd508c70474b68174a9fd71fc406e29b94406"
+    },
+    {
+      "bytes": 5501,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks2_poly_vulnerable/binary_contract/timing_operand_bin.binary-contract.json",
+      "sha256": "170167955bcd23cf5e47a3a8fd066669bd0a0876588bb9d2ef476f747b7934bd"
+    },
+    {
+      "bytes": 267,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks2_poly_vulnerable/binary_contract/timing_operand_bin.objdump-file-header.txt",
+      "sha256": "160d74539912784bdd3fd8e6d58e7c1f2ef8ead12a96d5100ba929cd59278b74"
+    },
+    {
+      "bytes": 50031,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks2_poly_vulnerable/binary_contract/timing_operand_bin.objdump.txt",
+      "sha256": "57f46028077c52a6c4394974b570f32f353563f7829b1acb6884da4e630c6c9e"
+    },
+    {
+      "bytes": 3265,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks2_poly_vulnerable/build_provenance/timing_operand_bin.build-seal.json",
+      "sha256": "a751cfe5c105dc7eb86093c3273445180c2152040a7b0403e8787652e4455db3"
+    },
+    {
+      "bytes": 93260,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks2_poly_vulnerable/dudect_backend_report.json",
+      "sha256": "70f8e1e670af2ab6998164ce526d1349bf7c1b13997766d8537287e332ca9abd"
+    },
+    {
+      "bytes": 2749008,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks2_poly_vulnerable/dudect_calibration_timings.csv",
+      "sha256": "834a08b351acd7d501bec63a82756e521f97b6c975fafd13886584990dc29e83"
+    },
+    {
+      "bytes": 41766852,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks2_poly_vulnerable/dudect_protocol_timings.csv",
+      "sha256": "b2f4ccd21cbc03d889a059c1298e41639e876dc32e296b80f9e2e40e4c1b9bc5"
+    },
+    {
+      "bytes": 2749013,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks2_poly_vulnerable/dudect_raw_timings.csv",
+      "sha256": "73a4ee7aef67c9c832974bb00bcc8a1984318a95b4806b74ffe8bd9b1381dcff"
+    },
+    {
+      "bytes": 923,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks2_poly_vulnerable/dudect_summary.csv",
+      "sha256": "d396061986a8f443436802264c942806b5998268b594e56d2aaf1ddfb44dbf0d"
+    },
+    {
+      "bytes": 36544,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks2_poly_vulnerable/generated/timing_operand_bin",
+      "sha256": "d2a3070bc6a6bf380ec084accfdbf1f8bd73daa4e8ed62a9d040e25ae577b545"
+    },
+    {
+      "bytes": 17496,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks2_poly_vulnerable/generated/timing_operand_bin.c",
+      "sha256": "f40f11c7dc5695c57959a80ca4cdd508c70474b68174a9fd71fc406e29b94406"
+    },
+    {
+      "bytes": 5427,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks2_polyvec_patched/binary_contract/timing_operand_bin.binary-contract.json",
+      "sha256": "2e91483e1fb8cf5e33d77831abb3b894863b0d5f95c125afa0610383632b727a"
+    },
+    {
+      "bytes": 267,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks2_polyvec_patched/binary_contract/timing_operand_bin.objdump-file-header.txt",
+      "sha256": "1e291120e14fb71c07f20945a2b2be139ebe6b4e1522379c44c6c1339e998e2a"
+    },
+    {
+      "bytes": 49951,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks2_polyvec_patched/binary_contract/timing_operand_bin.objdump.txt",
+      "sha256": "3c9e282a9f21798bbd63a0b09839259403582d96db429ca2c3d4d11c1afab91e"
+    },
+    {
+      "bytes": 3265,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks2_polyvec_patched/build_provenance/timing_operand_bin.build-seal.json",
+      "sha256": "366e387e4600efba47f2879b84d90e541160cd7c375e6d02c05795f192a2dc12"
+    },
+    {
+      "bytes": 93392,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks2_polyvec_patched/dudect_backend_report.json",
+      "sha256": "7c8ba07750b41af956204a06f132e84be8088bf2d1ac53d398f1bc04afbd4ebd"
+    },
+    {
+      "bytes": 2749013,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks2_polyvec_patched/dudect_calibration_timings.csv",
+      "sha256": "698290b5db631bb097267da9f5379b9ccead967ef19bd0ce77bb12f5d7647362"
+    },
+    {
+      "bytes": 41766861,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks2_polyvec_patched/dudect_protocol_timings.csv",
+      "sha256": "42ba8e1d886d5bbd7d95bbf7653539a5a0cbecf1d4b08b5d8cb6e396a413567a"
+    },
+    {
+      "bytes": 2749005,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks2_polyvec_patched/dudect_raw_timings.csv",
+      "sha256": "905990f69e29dfa57d1be3c5b9d903b833d939a0f910a4d8834233299f5b7946"
+    },
+    {
+      "bytes": 935,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks2_polyvec_patched/dudect_summary.csv",
+      "sha256": "bc1587d91c26a31ce19273e57a0aea856862d088a5477d5d970d54904698ee3e"
+    },
+    {
+      "bytes": 36456,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks2_polyvec_patched/generated/timing_operand_bin",
+      "sha256": "d9f5ec77cfd412534de31a4be1cd0d25b479c8d72a971e91a35bc730d7218eee"
+    },
+    {
+      "bytes": 17496,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks2_polyvec_patched/generated/timing_operand_bin.c",
+      "sha256": "f40f11c7dc5695c57959a80ca4cdd508c70474b68174a9fd71fc406e29b94406"
+    },
+    {
+      "bytes": 5540,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks2_polyvec_vulnerable/binary_contract/timing_operand_bin.binary-contract.json",
+      "sha256": "a12fdba74c17166200072162fc97dc280162aa9f1fe00a6524ffa803f64a247a"
+    },
+    {
+      "bytes": 270,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks2_polyvec_vulnerable/binary_contract/timing_operand_bin.objdump-file-header.txt",
+      "sha256": "2a8fcc21c11b76c22e3aaa422933406b222b40023355225e802c036e6c980d21"
+    },
+    {
+      "bytes": 50036,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks2_polyvec_vulnerable/binary_contract/timing_operand_bin.objdump.txt",
+      "sha256": "240bac74aa25a3a5415a324ec1f4a4ff7f351dad0571f7d63d52eb6434998636"
+    },
+    {
+      "bytes": 3295,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks2_polyvec_vulnerable/build_provenance/timing_operand_bin.build-seal.json",
+      "sha256": "a4d36f1da67fe9da2270485fef93addd56f3635523082cb74c9e1a4453cec867"
+    },
+    {
+      "bytes": 93789,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks2_polyvec_vulnerable/dudect_backend_report.json",
+      "sha256": "bfb6b92fcc8d68ec2363e57449a8feaa82552ad809d40aeaa4594baadacadee3"
+    },
+    {
+      "bytes": 2839008,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks2_polyvec_vulnerable/dudect_calibration_timings.csv",
+      "sha256": "4e8673a9cef0add4e7103b9146be4bd34353f6474f656f4bfbd3789316aa55b9"
+    },
+    {
+      "bytes": 42756844,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks2_polyvec_vulnerable/dudect_protocol_timings.csv",
+      "sha256": "3c47089bec3e9edbc203b6b2f4e9a26f3ce796ac1f91d18d1c9bbc5703242f50"
+    },
+    {
+      "bytes": 2839012,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks2_polyvec_vulnerable/dudect_raw_timings.csv",
+      "sha256": "09b580db56707e889da2586f0916e372b9e8a1b26bf5c0f1aa8314d90557a72f"
+    },
+    {
+      "bytes": 928,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks2_polyvec_vulnerable/dudect_summary.csv",
+      "sha256": "04cc0bcaa6801fabd2575e5d24bf94d8a80c0f2cd64134dd55fced86b7455c1f"
+    },
+    {
+      "bytes": 36552,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks2_polyvec_vulnerable/generated/timing_operand_bin",
+      "sha256": "e2182cc8ea813ef88a5b590254edaaab8ea496ea86db291f98c57e188137d143"
+    },
+    {
+      "bytes": 17496,
+      "label": "host-a/kyberslash-contrast/kyberslash_operand_ks2_polyvec_vulnerable/generated/timing_operand_bin.c",
+      "sha256": "f40f11c7dc5695c57959a80ca4cdd508c70474b68174a9fd71fc406e29b94406"
+    },
+    {
+      "bytes": 7763,
+      "label": "host-a/kyberslash-contrast/pqclean_mlkem768/binary_contract/timing_kem_dec_chosen_ct.binary-contract.json",
+      "sha256": "41af8d02061299745546135fe3316504094ec5195b375c5927f3596519c44a7f"
+    },
+    {
+      "bytes": 251,
+      "label": "host-a/kyberslash-contrast/pqclean_mlkem768/binary_contract/timing_kem_dec_chosen_ct.objdump-file-header.txt",
+      "sha256": "6b0cb116634a503c121409df27cafa74639c6bb22c410e83d63f5c70ebd3f3da"
+    },
+    {
+      "bytes": 230884,
+      "label": "host-a/kyberslash-contrast/pqclean_mlkem768/binary_contract/timing_kem_dec_chosen_ct.objdump.txt",
+      "sha256": "fb73178ae44a52275051a894261b0c20b93c47c41ae0571a3f5e915b1df70f58"
+    },
+    {
+      "bytes": 5805,
+      "label": "host-a/kyberslash-contrast/pqclean_mlkem768/build_provenance/timing_kem_dec_chosen_ct.build-seal.json",
+      "sha256": "5eea0f75c1122e3ba8deb6b6c14cf2a82ddb632b1a77647bdf5003f49b6d4fc3"
+    },
+    {
+      "bytes": 90977,
+      "label": "host-a/kyberslash-contrast/pqclean_mlkem768/dudect_backend_report.json",
+      "sha256": "66a324b08ba3fd93f79d384cd1eb1591338477117447be756f0b40fef896c2eb"
+    },
+    {
+      "bytes": 2359005,
+      "label": "host-a/kyberslash-contrast/pqclean_mlkem768/dudect_calibration_timings.csv",
+      "sha256": "7f9ebc8f8ad69e0c237aa02d9241fec7c888d4f87fde8c891e24cfeb172da862"
+    },
+    {
+      "bytes": 37446848,
+      "label": "host-a/kyberslash-contrast/pqclean_mlkem768/dudect_protocol_timings.csv",
+      "sha256": "740afe24421fc3ffb67a881a6be965c70b3bdf0d3a298bc3294d188322da7eb0"
+    },
+    {
+      "bytes": 2359004,
+      "label": "host-a/kyberslash-contrast/pqclean_mlkem768/dudect_raw_timings.csv",
+      "sha256": "96fef3f4497adedb3731c3a7ef0097b54c38c2249c84d17f10032d1dee77c888"
+    },
+    {
+      "bytes": 928,
+      "label": "host-a/kyberslash-contrast/pqclean_mlkem768/dudect_summary.csv",
+      "sha256": "f7a5605258f8986420f4ce64993bf157a55c63dc1ad0c64159b6e711fa8b58fe"
+    },
+    {
+      "bytes": 117688,
+      "label": "host-a/kyberslash-contrast/pqclean_mlkem768/generated/timing_kem_dec_chosen_ct",
+      "sha256": "700cacf8bfae64f4c7376405115367cea85f635fede304233b0c65a6d6ab1745"
+    },
+    {
+      "bytes": 18494,
+      "label": "host-a/kyberslash-contrast/pqclean_mlkem768/generated/timing_kem_dec_chosen_ct.c",
+      "sha256": "5e8407cd2d3a2c73ba09fd1638fa326e82534e5aab294646e950e100bd419824"
+    },
+    {
+      "bytes": 8076,
+      "label": "host-a/kyberslash-contrast/pqclean_mlkem768_kyberslash/binary_contract/timing_kem_dec_chosen_ct.binary-contract.json",
+      "sha256": "c656b954aaea36e8148cb3ff79e46487055c5ae62659a8aec62f7c3353a79516"
+    },
+    {
+      "bytes": 262,
+      "label": "host-a/kyberslash-contrast/pqclean_mlkem768_kyberslash/binary_contract/timing_kem_dec_chosen_ct.objdump-file-header.txt",
+      "sha256": "b35f059b53f412fc98c4fc5610f4eb6e35081835a9fcaeebc3548693c15c188b"
+    },
+    {
+      "bytes": 231250,
+      "label": "host-a/kyberslash-contrast/pqclean_mlkem768_kyberslash/binary_contract/timing_kem_dec_chosen_ct.objdump.txt",
+      "sha256": "e3a77bdaf3b286bfe51b844fb34d05d9d9908d6e4cbe0557afb7621f972a6040"
+    },
+    {
+      "bytes": 5937,
+      "label": "host-a/kyberslash-contrast/pqclean_mlkem768_kyberslash/build_provenance/timing_kem_dec_chosen_ct.build-seal.json",
+      "sha256": "52db01cc4829672a7f33be43185085aaabe332edbb2a17d38319afad1bc34c55"
+    },
+    {
+      "bytes": 89418,
+      "label": "host-a/kyberslash-contrast/pqclean_mlkem768_kyberslash/dudect_backend_report.json",
+      "sha256": "24b7cbe9e27b384e4ace194c367615e4ab56cf7089cc4632b12ec2992c0c3b49"
+    },
+    {
+      "bytes": 2689005,
+      "label": "host-a/kyberslash-contrast/pqclean_mlkem768_kyberslash/dudect_calibration_timings.csv",
+      "sha256": "1c73c72568a32917a349fe92633809ee196f4eb2edf7c9bc2e48930080c8c8d6"
+    },
+    {
+      "bytes": 41076850,
+      "label": "host-a/kyberslash-contrast/pqclean_mlkem768_kyberslash/dudect_protocol_timings.csv",
+      "sha256": "738233fee53c232462021c05e85e3e66153ff316b35679020a64644743c8af6d"
+    },
+    {
+      "bytes": 2689004,
+      "label": "host-a/kyberslash-contrast/pqclean_mlkem768_kyberslash/dudect_raw_timings.csv",
+      "sha256": "7b6510c3d7530f6dac65fad88709070b2e50cd07c1034eb7f0165ba7bfd6f0e4"
+    },
+    {
+      "bytes": 939,
+      "label": "host-a/kyberslash-contrast/pqclean_mlkem768_kyberslash/dudect_summary.csv",
+      "sha256": "8c7fbb96b79e71d57f8b421448203edb400ef642827991afd3ddf3bd5619a900"
+    },
+    {
+      "bytes": 117784,
+      "label": "host-a/kyberslash-contrast/pqclean_mlkem768_kyberslash/generated/timing_kem_dec_chosen_ct",
+      "sha256": "89875ae52771eee1429a772907d9619b7fa57330ba655433ad653aa6318f18c3"
+    },
+    {
+      "bytes": 18494,
+      "label": "host-a/kyberslash-contrast/pqclean_mlkem768_kyberslash/generated/timing_kem_dec_chosen_ct.c",
+      "sha256": "5e8407cd2d3a2c73ba09fd1638fa326e82534e5aab294646e950e100bd419824"
+    },
+    {
+      "bytes": 7932,
+      "label": "host-a/kyberslash-contrast/pqclean_mlkem768_kyberslash1/binary_contract/timing_kem_dec_chosen_ct.binary-contract.json",
+      "sha256": "9854866b7b982f16df80d319d2ee06eb696895142d9e9cf65bd3311f316d7518"
+    },
+    {
+      "bytes": 263,
+      "label": "host-a/kyberslash-contrast/pqclean_mlkem768_kyberslash1/binary_contract/timing_kem_dec_chosen_ct.objdump-file-header.txt",
+      "sha256": "965b277f492e27e18d1145489f3bff8949151d479bf3c1f6ada9420fc0dda88f"
+    },
+    {
+      "bytes": 231178,
+      "label": "host-a/kyberslash-contrast/pqclean_mlkem768_kyberslash1/binary_contract/timing_kem_dec_chosen_ct.objdump.txt",
+      "sha256": "25061be0241aba895cfef98d363f7fa1fd0db920850765c2d73a1f979d0aab16"
+    },
+    {
+      "bytes": 5914,
+      "label": "host-a/kyberslash-contrast/pqclean_mlkem768_kyberslash1/build_provenance/timing_kem_dec_chosen_ct.build-seal.json",
+      "sha256": "7814e7eacf4a5d33b57ff5d4ec9bb1dee37efb655fb7ba7086798a0af586917b"
+    },
+    {
+      "bytes": 90977,
+      "label": "host-a/kyberslash-contrast/pqclean_mlkem768_kyberslash1/dudect_backend_report.json",
+      "sha256": "94cf1bd8eff62351eda7d88a689866dee0b85bf8280bc48ede73ae09ac0da600"
+    },
+    {
+      "bytes": 2719005,
+      "label": "host-a/kyberslash-contrast/pqclean_mlkem768_kyberslash1/dudect_calibration_timings.csv",
+      "sha256": "a51763c58e53c4ed77818f82f63bab141e22d9d76137c6e538c295289f5d6c55"
+    },
+    {
+      "bytes": 41406849,
+      "label": "host-a/kyberslash-contrast/pqclean_mlkem768_kyberslash1/dudect_protocol_timings.csv",
+      "sha256": "adacbf4018e17779c7ec95d8ca7b5c42b3719488d3b327f0bfac99a5e2419424"
+    },
+    {
+      "bytes": 2719005,
+      "label": "host-a/kyberslash-contrast/pqclean_mlkem768_kyberslash1/dudect_raw_timings.csv",
+      "sha256": "843db7d70f960a29ddd2f773b5405217c460dc77bdad0e1c3da2e26761689407"
+    },
+    {
+      "bytes": 948,
+      "label": "host-a/kyberslash-contrast/pqclean_mlkem768_kyberslash1/dudect_summary.csv",
+      "sha256": "12954d21c334014d05cbf09163913ca9c741c54e54a9ecccec09771af9310384"
+    },
+    {
+      "bytes": 117816,
+      "label": "host-a/kyberslash-contrast/pqclean_mlkem768_kyberslash1/generated/timing_kem_dec_chosen_ct",
+      "sha256": "74f1dd2d7ba31f406cc0f9e5e78884e039f9e162ca96876b1c42180a003de307"
+    },
+    {
+      "bytes": 18494,
+      "label": "host-a/kyberslash-contrast/pqclean_mlkem768_kyberslash1/generated/timing_kem_dec_chosen_ct.c",
+      "sha256": "5e8407cd2d3a2c73ba09fd1638fa326e82534e5aab294646e950e100bd419824"
+    },
+    {
+      "bytes": 8031,
+      "label": "host-a/kyberslash-contrast/pqclean_mlkem768_kyberslash2/binary_contract/timing_kem_dec_chosen_ct.binary-contract.json",
+      "sha256": "4785420f40b1452218edac29ffe8b82f940a9f41b4832a6a13374271c73e5554"
+    },
+    {
+      "bytes": 263,
+      "label": "host-a/kyberslash-contrast/pqclean_mlkem768_kyberslash2/binary_contract/timing_kem_dec_chosen_ct.objdump-file-header.txt",
+      "sha256": "e10d99e3811d43a514f869e7053fd47e3d5d5f0903f69d88124322b9e9954edb"
+    },
+    {
+      "bytes": 230969,
+      "label": "host-a/kyberslash-contrast/pqclean_mlkem768_kyberslash2/binary_contract/timing_kem_dec_chosen_ct.objdump.txt",
+      "sha256": "bc1a0b42c85f4cdd3407b2b56c30176b0d2e23abd7349da9e002d663c016d8b5"
+    },
+    {
+      "bytes": 5950,
+      "label": "host-a/kyberslash-contrast/pqclean_mlkem768_kyberslash2/build_provenance/timing_kem_dec_chosen_ct.build-seal.json",
+      "sha256": "2bc1786120e4106f2d0af9eac1cfde79ce083c94185e0e04bf7f9aa6c4f99047"
+    },
+    {
+      "bytes": 90981,
+      "label": "host-a/kyberslash-contrast/pqclean_mlkem768_kyberslash2/dudect_backend_report.json",
+      "sha256": "b357dbe9e1c123edecb820dca4b922e88329a1cded1fd0998bb2016fcaa032c7"
+    },
+    {
+      "bytes": 2719005,
+      "label": "host-a/kyberslash-contrast/pqclean_mlkem768_kyberslash2/dudect_calibration_timings.csv",
+      "sha256": "4f248e48302ca7d238b2f8be0fa4d9eb1b651a109d4576dcbcf1438ef6c1a048"
+    },
+    {
+      "bytes": 41406849,
+      "label": "host-a/kyberslash-contrast/pqclean_mlkem768_kyberslash2/dudect_protocol_timings.csv",
+      "sha256": "9daa6f45f0cb43f0424bf625ef98d5d2fced3373946ff38e63b6166e6454e13d"
+    },
+    {
+      "bytes": 2719004,
+      "label": "host-a/kyberslash-contrast/pqclean_mlkem768_kyberslash2/dudect_raw_timings.csv",
+      "sha256": "127aa7a721514e28719b767aeed9a8570ea171137f61cf4e008e28cb45a0552b"
+    },
+    {
+      "bytes": 938,
+      "label": "host-a/kyberslash-contrast/pqclean_mlkem768_kyberslash2/dudect_summary.csv",
+      "sha256": "f905179bf2e3561e975a9a3d1cd1022a9a4afe4ea4d444c31b2a6ff4bd24c9e8"
+    },
+    {
+      "bytes": 117776,
+      "label": "host-a/kyberslash-contrast/pqclean_mlkem768_kyberslash2/generated/timing_kem_dec_chosen_ct",
+      "sha256": "aa9d8eaea9863c006e5c10954f73fd26e031cf989a42063d89ff710653689cc1"
+    },
+    {
+      "bytes": 18494,
+      "label": "host-a/kyberslash-contrast/pqclean_mlkem768_kyberslash2/generated/timing_kem_dec_chosen_ct.c",
+      "sha256": "5e8407cd2d3a2c73ba09fd1638fa326e82534e5aab294646e950e100bd419824"
+    },
+    {
+      "bytes": 25366,
+      "label": "host-a/same-corpus/microwalk_pin.json",
+      "sha256": "79b97015959df235186094622f23f23f27d30a3455cddddb125d7bcc22eab968"
+    },
+    {
+      "bytes": 11189,
+      "label": "host-a/same-corpus/official_dudect.json",
+      "sha256": "513b66c6726a3297bbeaf4b23e85d40b2d37887008a6a2f1d8cb3850fb804ab4"
+    },
+    {
+      "bytes": 19879,
+      "label": "host-a/same-corpus/timecop.json",
+      "sha256": "5cabbd3f0f6e3b39ee8989646ddff7fa296b4bdceaabeb55ba5bf1df65b16a66"
+    },
+    {
+      "bytes": 1105,
+      "label": "measurement_bundle",
+      "sha256": "67089b3efc0f43fd951ffc81f77c61d33e5bbec3c61990f0eb4394d14f425a39"
+    },
+    {
+      "bytes": 3202,
+      "label": "plan/committed-corpus-refresh/manifest",
+      "sha256": "85d3263a9ec56aa69056cebf46896b68bd4c102c432bbddb738c675961d16b0a"
+    },
+    {
+      "bytes": 2395,
+      "label": "plan/diverse-lineages/manifest",
+      "sha256": "cf99bd7c43475bebc0ec943fc2f93837dfb217964c1ec1160a16d20daa271da3"
+    },
+    {
+      "bytes": 2884,
+      "label": "plan/falcon-contrast/manifest",
+      "sha256": "27cb175b52a483637570b432a6e6b026f05c0997b8072835314a7b3a6027848a"
+    },
+    {
+      "bytes": 4751,
+      "label": "plan/kyberslash-contrast/manifest",
+      "sha256": "093f9a1c1c056cd070672e155e4b41cef4f5158797aca1d1a35c85725fe65825"
+    }
+  ],
+  "kind": "paper-native-single-host-analysis",
+  "measurement_commit": "1aeadb97e0409227aa203ba825a6bfc1d90445bc",
+  "pairwise_contrasts": [
+    {
+      "contrast_id": "c_fndsa1024_native_fp:sign__vs__c_fndsa1024_fpr_emu:sign",
+      "degrees_of_freedom": 2.017466435218395,
+      "effect_metric": "class1-minus-class0-mean-cycles",
+      "estimate_difference": 3053.3834539549425,
+      "family": "falcon-1024",
+      "holm_significant_0_05": false,
+      "left": {
+        "component": "falcon-contrast",
+        "harness": "sign",
+        "target": "c_fndsa1024_native_fp"
+      },
+      "mean_left": -232.90616916896155,
+      "mean_right": -3286.289623123904,
+      "method": "welch-two-sided-on-process-repeat-class-mean-deltas",
+      "n_left": 3,
+      "n_right": 3,
+      "p_value_holm": 1.0,
+      "p_value_raw": 0.6756998515166937,
+      "right": {
+        "component": "falcon-contrast",
+        "harness": "sign",
+        "target": "c_fndsa1024_fpr_emu"
+      },
+      "t_direction": 1,
+      "t_nonfinite": false,
+      "t_score": 0.48422294808852695
+    },
+    {
+      "contrast_id": "pqclean_falcon1024_reference:sign__vs__c_fndsa1024_fpr_emu:sign",
+      "degrees_of_freedom": 2.263585249795992,
+      "effect_metric": "class1-minus-class0-mean-cycles",
+      "estimate_difference": 3323.4958300540848,
+      "family": "falcon-1024",
+      "holm_significant_0_05": false,
+      "left": {
+        "component": "falcon-contrast",
+        "harness": "sign",
+        "target": "pqclean_falcon1024_reference"
+      },
+      "mean_left": 37.20620693018039,
+      "mean_right": -3286.289623123904,
+      "method": "welch-two-sided-on-process-repeat-class-mean-deltas",
+      "n_left": 3,
+      "n_right": 3,
+      "p_value_holm": 1.0,
+      "p_value_raw": 0.6545529485728835,
+      "right": {
+        "component": "falcon-contrast",
+        "harness": "sign",
+        "target": "c_fndsa1024_fpr_emu"
+      },
+      "t_direction": 1,
+      "t_nonfinite": false,
+      "t_score": 0.5115511097205576
+    },
+    {
+      "contrast_id": "pqclean_falcon1024_reference:sign__vs__c_fndsa1024_native_fp:sign",
+      "degrees_of_freedom": 2.2627645807398507,
+      "effect_metric": "class1-minus-class0-mean-cycles",
+      "estimate_difference": 270.11237609914195,
+      "family": "falcon-1024",
+      "holm_significant_0_05": false,
+      "left": {
+        "component": "falcon-contrast",
+        "harness": "sign",
+        "target": "pqclean_falcon1024_reference"
+      },
+      "mean_left": 37.20620693018039,
+      "mean_right": -232.90616916896155,
+      "method": "welch-two-sided-on-process-repeat-class-mean-deltas",
+      "n_left": 3,
+      "n_right": 3,
+      "p_value_holm": 1.0,
+      "p_value_raw": 0.8849039288365117,
+      "right": {
+        "component": "falcon-contrast",
+        "harness": "sign",
+        "target": "c_fndsa1024_native_fp"
+      },
+      "t_direction": 1,
+      "t_nonfinite": false,
+      "t_score": 0.16162220793574697
+    },
+    {
+      "contrast_id": "c_fndsa512_native_fp:sign__vs__c_fndsa512_fpr_emu:sign",
+      "degrees_of_freedom": 2.012605668978658,
+      "effect_metric": "class1-minus-class0-mean-cycles",
+      "estimate_difference": -2024.3225113581866,
+      "family": "falcon-512",
+      "holm_significant_0_05": false,
+      "left": {
+        "component": "falcon-contrast",
+        "harness": "sign",
+        "target": "c_fndsa512_native_fp"
+      },
+      "mean_left": 245.30807275883853,
+      "mean_right": 2269.630584117025,
+      "method": "welch-two-sided-on-process-repeat-class-mean-deltas",
+      "n_left": 3,
+      "n_right": 3,
+      "p_value_holm": 1.0,
+      "p_value_raw": 0.530950424381171,
+      "right": {
+        "component": "falcon-contrast",
+        "harness": "sign",
+        "target": "c_fndsa512_fpr_emu"
+      },
+      "t_direction": -1,
+      "t_nonfinite": false,
+      "t_score": -0.7502104132118762
+    },
+    {
+      "contrast_id": "pqclean_falcon512_reference:sign__vs__c_fndsa512_fpr_emu:sign",
+      "degrees_of_freedom": 2.9450820051913,
+      "effect_metric": "class1-minus-class0-mean-cycles",
+      "estimate_difference": -2829.8916771896183,
+      "family": "falcon-512",
+      "holm_significant_0_05": false,
+      "left": {
+        "component": "falcon-contrast",
+        "harness": "sign",
+        "target": "pqclean_falcon512_reference"
+      },
+      "mean_left": -560.2610930725932,
+      "mean_right": 2269.630584117025,
+      "method": "welch-two-sided-on-process-repeat-class-mean-deltas",
+      "n_left": 3,
+      "n_right": 3,
+      "p_value_holm": 1.0,
+      "p_value_raw": 0.41814169189208605,
+      "right": {
+        "component": "falcon-contrast",
+        "harness": "sign",
+        "target": "c_fndsa512_fpr_emu"
+      },
+      "t_direction": -1,
+      "t_nonfinite": false,
+      "t_score": -0.9390681579771798
+    },
+    {
+      "contrast_id": "pqclean_falcon512_reference:sign__vs__c_fndsa512_native_fp:sign",
+      "degrees_of_freedom": 2.0501790474158663,
+      "effect_metric": "class1-minus-class0-mean-cycles",
+      "estimate_difference": -805.5691658314317,
+      "family": "falcon-512",
+      "holm_significant_0_05": false,
+      "left": {
+        "component": "falcon-contrast",
+        "harness": "sign",
+        "target": "pqclean_falcon512_reference"
+      },
+      "mean_left": -560.2610930725932,
+      "mean_right": 245.30807275883853,
+      "method": "welch-two-sided-on-process-repeat-class-mean-deltas",
+      "n_left": 3,
+      "n_right": 3,
+      "p_value_holm": 1.0,
+      "p_value_raw": 0.6120589675334143,
+      "right": {
+        "component": "falcon-contrast",
+        "harness": "sign",
+        "target": "c_fndsa512_native_fp"
+      },
+      "t_direction": -1,
+      "t_nonfinite": false,
+      "t_score": -0.5929146925236262
+    },
+    {
+      "contrast_id": "pqclean_mlkem768:kem_dec_chosen_ct__vs__pqclean_mlkem768_kyberslash1:kem_dec_chosen_ct",
+      "degrees_of_freedom": 3.999865392183943,
+      "effect_metric": "class1-minus-class0-mean-cycles",
+      "estimate_difference": 25.311393609251052,
+      "family": "kyberslash-full-kem-chosen-ct",
+      "holm_significant_0_05": false,
+      "left": {
+        "component": "kyberslash-contrast",
+        "harness": "kem_dec_chosen_ct",
+        "target": "pqclean_mlkem768"
+      },
+      "mean_left": -29.72359576637003,
+      "mean_right": -55.03498937562108,
+      "method": "welch-two-sided-on-process-repeat-class-mean-deltas",
+      "n_left": 3,
+      "n_right": 3,
+      "p_value_holm": 1.0,
+      "p_value_raw": 0.8102203224291998,
+      "right": {
+        "component": "kyberslash-contrast",
+        "harness": "kem_dec_chosen_ct",
+        "target": "pqclean_mlkem768_kyberslash1"
+      },
+      "t_direction": 1,
+      "t_nonfinite": false,
+      "t_score": 0.25649605811778853
+    },
+    {
+      "contrast_id": "pqclean_mlkem768:kem_dec_chosen_ct__vs__pqclean_mlkem768_kyberslash2:kem_dec_chosen_ct",
+      "degrees_of_freedom": 2.618508460867873,
+      "effect_metric": "class1-minus-class0-mean-cycles",
+      "estimate_difference": -14.764352832144747,
+      "family": "kyberslash-full-kem-chosen-ct",
+      "holm_significant_0_05": false,
+      "left": {
+        "component": "kyberslash-contrast",
+        "harness": "kem_dec_chosen_ct",
+        "target": "pqclean_mlkem768"
+      },
+      "mean_left": -29.72359576637003,
+      "mean_right": -14.959242934225282,
+      "method": "welch-two-sided-on-process-repeat-class-mean-deltas",
+      "n_left": 3,
+      "n_right": 3,
+      "p_value_holm": 1.0,
+      "p_value_raw": 0.858801769883762,
+      "right": {
+        "component": "kyberslash-contrast",
+        "harness": "kem_dec_chosen_ct",
+        "target": "pqclean_mlkem768_kyberslash2"
+      },
+      "t_direction": -1,
+      "t_nonfinite": false,
+      "t_score": -0.19601425994457558
+    },
+    {
+      "contrast_id": "pqclean_mlkem768:kem_dec_chosen_ct__vs__pqclean_mlkem768_kyberslash:kem_dec_chosen_ct",
+      "degrees_of_freedom": 2.082276412521374,
+      "effect_metric": "class1-minus-class0-mean-cycles",
+      "estimate_difference": -157.08118579579363,
+      "family": "kyberslash-full-kem-chosen-ct",
+      "holm_significant_0_05": false,
+      "left": {
+        "component": "kyberslash-contrast",
+        "harness": "kem_dec_chosen_ct",
+        "target": "pqclean_mlkem768"
+      },
+      "mean_left": -29.72359576637003,
+      "mean_right": 127.35759002942359,
+      "method": "welch-two-sided-on-process-repeat-class-mean-deltas",
+      "n_left": 3,
+      "n_right": 3,
+      "p_value_holm": 0.6054174146237249,
+      "p_value_raw": 0.15135435365593122,
+      "right": {
+        "component": "kyberslash-contrast",
+        "harness": "kem_dec_chosen_ct",
+        "target": "pqclean_mlkem768_kyberslash"
+      },
+      "t_direction": -1,
+      "t_nonfinite": false,
+      "t_score": -2.221900906240594
+    },
+    {
+      "contrast_id": "pqclean_mlkem768_kyberslash1:kem_dec_chosen_ct__vs__pqclean_mlkem768_kyberslash2:kem_dec_chosen_ct",
+      "degrees_of_freedom": 2.62536658695487,
+      "effect_metric": "class1-minus-class0-mean-cycles",
+      "estimate_difference": -40.0757464413958,
+      "family": "kyberslash-full-kem-chosen-ct",
+      "holm_significant_0_05": false,
+      "left": {
+        "component": "kyberslash-contrast",
+        "harness": "kem_dec_chosen_ct",
+        "target": "pqclean_mlkem768_kyberslash1"
+      },
+      "mean_left": -55.03498937562108,
+      "mean_right": -14.959242934225282,
+      "method": "welch-two-sided-on-process-repeat-class-mean-deltas",
+      "n_left": 3,
+      "n_right": 3,
+      "p_value_holm": 1.0,
+      "p_value_raw": 0.6347645546078236,
+      "right": {
+        "component": "kyberslash-contrast",
+        "harness": "kem_dec_chosen_ct",
+        "target": "pqclean_mlkem768_kyberslash2"
+      },
+      "t_direction": -1,
+      "t_nonfinite": false,
+      "t_score": -0.5347217497177799
+    },
+    {
+      "contrast_id": "pqclean_mlkem768_kyberslash1:kem_dec_chosen_ct__vs__pqclean_mlkem768_kyberslash:kem_dec_chosen_ct",
+      "degrees_of_freedom": 2.083235747465811,
+      "effect_metric": "class1-minus-class0-mean-cycles",
+      "estimate_difference": -182.39257940504467,
+      "family": "kyberslash-full-kem-chosen-ct",
+      "holm_significant_0_05": false,
+      "left": {
+        "component": "kyberslash-contrast",
+        "harness": "kem_dec_chosen_ct",
+        "target": "pqclean_mlkem768_kyberslash1"
+      },
+      "mean_left": -55.03498937562108,
+      "mean_right": 127.35759002942359,
+      "method": "welch-two-sided-on-process-repeat-class-mean-deltas",
+      "n_left": 3,
+      "n_right": 3,
+      "p_value_holm": 0.5852737021226087,
+      "p_value_raw": 0.11705474042452174,
+      "right": {
+        "component": "kyberslash-contrast",
+        "harness": "kem_dec_chosen_ct",
+        "target": "pqclean_mlkem768_kyberslash"
+      },
+      "t_direction": -1,
+      "t_nonfinite": false,
+      "t_score": -2.594633479191026
+    },
+    {
+      "contrast_id": "pqclean_mlkem768_kyberslash2:kem_dec_chosen_ct__vs__pqclean_mlkem768_kyberslash:kem_dec_chosen_ct",
+      "degrees_of_freedom": 2.510667415191682,
+      "effect_metric": "class1-minus-class0-mean-cycles",
+      "estimate_difference": -142.31683296364886,
+      "family": "kyberslash-full-kem-chosen-ct",
+      "holm_significant_0_05": false,
+      "left": {
+        "component": "kyberslash-contrast",
+        "harness": "kem_dec_chosen_ct",
+        "target": "pqclean_mlkem768_kyberslash2"
+      },
+      "mean_left": -14.959242934225282,
+      "mean_right": 127.35759002942359,
+      "method": "welch-two-sided-on-process-repeat-class-mean-deltas",
+      "n_left": 3,
+      "n_right": 3,
+      "p_value_holm": 0.15283726011543458,
+      "p_value_raw": 0.025472876685905765,
+      "right": {
+        "component": "kyberslash-contrast",
+        "harness": "kem_dec_chosen_ct",
+        "target": "pqclean_mlkem768_kyberslash"
+      },
+      "t_direction": -1,
+      "t_nonfinite": false,
+      "t_score": -4.8055604286340134
+    },
+    {
+      "contrast_id": "kyberslash_operand_ks1_vulnerable:operand_bin__vs__kyberslash_operand_ks1_patched:operand_bin",
+      "degrees_of_freedom": 2.9806007552636244,
+      "effect_metric": "class1-minus-class0-mean-cycles",
+      "estimate_difference": -0.12980052252773555,
+      "family": "kyberslash-ks1-operand",
+      "holm_significant_0_05": false,
+      "left": {
+        "component": "kyberslash-contrast",
+        "harness": "operand_bin",
+        "target": "kyberslash_operand_ks1_vulnerable"
+      },
+      "mean_left": 0.7482835339961866,
+      "mean_right": 0.8780840565239222,
+      "method": "welch-two-sided-on-process-repeat-class-mean-deltas",
+      "n_left": 3,
+      "n_right": 3,
+      "p_value_holm": 0.9644307545250448,
+      "p_value_raw": 0.9644307545250448,
+      "right": {
+        "component": "kyberslash-contrast",
+        "harness": "operand_bin",
+        "target": "kyberslash_operand_ks1_patched"
+      },
+      "t_direction": -1,
+      "t_nonfinite": false,
+      "t_score": -0.04843690025397247
+    },
+    {
+      "contrast_id": "kyberslash_operand_ks2_poly_vulnerable:operand_bin__vs__kyberslash_operand_ks2_poly_patched:operand_bin",
+      "degrees_of_freedom": 2.2712260463625156,
+      "effect_metric": "class1-minus-class0-mean-cycles",
+      "estimate_difference": 3.768731966733649,
+      "family": "kyberslash-ks2-poly-operand",
+      "holm_significant_0_05": false,
+      "left": {
+        "component": "kyberslash-contrast",
+        "harness": "operand_bin",
+        "target": "kyberslash_operand_ks2_poly_vulnerable"
+      },
+      "mean_left": 1.388892916084842,
+      "mean_right": -2.379839050648807,
+      "method": "welch-two-sided-on-process-repeat-class-mean-deltas",
+      "n_left": 3,
+      "n_right": 3,
+      "p_value_holm": 0.4647588227696583,
+      "p_value_raw": 0.4647588227696583,
+      "right": {
+        "component": "kyberslash-contrast",
+        "harness": "operand_bin",
+        "target": "kyberslash_operand_ks2_poly_patched"
+      },
+      "t_direction": 1,
+      "t_nonfinite": false,
+      "t_score": 0.8737171709371567
+    },
+    {
+      "contrast_id": "kyberslash_operand_ks2_polyvec_vulnerable:operand_bin__vs__kyberslash_operand_ks2_polyvec_patched:operand_bin",
+      "degrees_of_freedom": 2.2875317571531015,
+      "effect_metric": "class1-minus-class0-mean-cycles",
+      "estimate_difference": 2.5075391510279323,
+      "family": "kyberslash-ks2-polyvec-operand",
+      "holm_significant_0_05": false,
+      "left": {
+        "component": "kyberslash-contrast",
+        "harness": "operand_bin",
+        "target": "kyberslash_operand_ks2_polyvec_vulnerable"
+      },
+      "mean_left": 3.1607600087095875,
+      "mean_right": 0.6532208576816553,
+      "method": "welch-two-sided-on-process-repeat-class-mean-deltas",
+      "n_left": 3,
+      "n_right": 3,
+      "p_value_holm": 0.7332708789401021,
+      "p_value_raw": 0.7332708789401021,
+      "right": {
+        "component": "kyberslash-contrast",
+        "harness": "operand_bin",
+        "target": "kyberslash_operand_ks2_polyvec_patched"
+      },
+      "t_direction": 1,
+      "t_nonfinite": false,
+      "t_score": 0.38479215558113106
+    },
+    {
+      "contrast_id": "mldsa_native_65_portable:sign__vs__mldsa_native_65_x86_64:sign",
+      "degrees_of_freedom": 2.3145979326997828,
+      "effect_metric": "class1-minus-class0-mean-cycles",
+      "estimate_difference": 5337.511111528399,
+      "family": "mldsa-native",
+      "holm_significant_0_05": false,
+      "left": {
+        "component": "diverse-lineages",
+        "harness": "sign",
+        "target": "mldsa_native_65_portable"
+      },
+      "mean_left": 7278.175381295849,
+      "mean_right": 1940.6642697674495,
+      "method": "welch-two-sided-on-process-repeat-class-mean-deltas",
+      "n_left": 3,
+      "n_right": 3,
+      "p_value_holm": 0.18621631403905006,
+      "p_value_raw": 0.18621631403905006,
+      "right": {
+        "component": "diverse-lineages",
+        "harness": "sign",
+        "target": "mldsa_native_65_x86_64"
+      },
+      "t_direction": 1,
+      "t_nonfinite": false,
+      "t_score": 1.8613451060009303
+    },
+    {
+      "contrast_id": "mlkem_native_768_portable:kem_dec_valid_tuple__vs__mlkem_native_768_x86_64:kem_dec_valid_tuple",
+      "degrees_of_freedom": 2.057117679540496,
+      "effect_metric": "class1-minus-class0-mean-cycles",
+      "estimate_difference": 10983.219714799978,
+      "family": "mlkem-native-valid-tuple",
+      "holm_significant_0_05": true,
+      "left": {
+        "component": "diverse-lineages",
+        "harness": "kem_dec_valid_tuple",
+        "target": "mlkem_native_768_portable"
+      },
+      "mean_left": 11360.866990181219,
+      "mean_right": 377.64727538124134,
+      "method": "welch-two-sided-on-process-repeat-class-mean-deltas",
+      "n_left": 3,
+      "n_right": 3,
+      "p_value_holm": 0.00028805850167725985,
+      "p_value_raw": 0.00028805850167725985,
+      "right": {
+        "component": "diverse-lineages",
+        "harness": "kem_dec_valid_tuple",
+        "target": "mlkem_native_768_x86_64"
+      },
+      "t_direction": 1,
+      "t_nonfinite": false,
+      "t_score": 53.57706291659533
+    }
+  ],
+  "primary_axes": [
+    {
+      "axis": "sk",
+      "combined_status": "no-finding-observed",
+      "component": "committed-corpus-refresh",
+      "family": "Falcon",
+      "harness": "sign",
+      "host_heterogeneity": {
+        "applicability": "not-applicable-single-host",
+        "cochran_q": null,
+        "degrees_of_freedom": 0,
+        "effect_metric": "class1-minus-class0-mean-cycles-per-process-repeat",
+        "host_mean_effects": {
+          "host-a": -87.48791849364837
+        },
+        "i2_percent": null,
+        "q_p_value": null,
+        "warning": false,
+        "warning_reasons": []
+      },
+      "host_results": [
+        {
+          "abs_t_score": 0.9929733332607542,
+          "cpu_model": "Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz",
+          "host_id": "host-a",
+          "machine_id_sha256": "78fcac006d6ab71ac391a53b0e4b2e6353242e1b21730f44e0465002eb038fef",
+          "n0": 13949,
+          "n1": 13921,
+          "raw_status": "PASS",
+          "repeat_class_mean_deltas": [
+            -977.6384693719447,
+            -443.1126025542617,
+            1158.2873164452612
+          ],
+          "t_score": -0.9929733332607542,
+          "timing_signal": "no-signal-observed",
+          "timing_validity": "valid"
+        }
+      ],
+      "risk_on_any_measured_host": false,
+      "target": "pqclean_falcon512_reference"
+    },
+    {
+      "axis": "sk",
+      "combined_status": "no-finding-observed",
+      "component": "committed-corpus-refresh",
+      "family": "ML-DSA",
+      "harness": "sign",
+      "host_heterogeneity": {
+        "applicability": "not-applicable-single-host",
+        "cochran_q": null,
+        "degrees_of_freedom": 0,
+        "effect_metric": "class1-minus-class0-mean-cycles-per-process-repeat",
+        "host_mean_effects": {
+          "host-a": 4975.366778492152
+        },
+        "i2_percent": null,
+        "q_p_value": null,
+        "warning": false,
+        "warning_reasons": []
+      },
+      "host_results": [
+        {
+          "abs_t_score": 2.0114941435443567,
+          "cpu_model": "Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz",
+          "host_id": "host-a",
+          "machine_id_sha256": "78fcac006d6ab71ac391a53b0e4b2e6353242e1b21730f44e0465002eb038fef",
+          "n0": 10445,
+          "n1": 10357,
+          "raw_status": "PASS",
+          "repeat_class_mean_deltas": [
+            18013.07576082996,
+            2093.8376517903525,
+            -5180.813077143859
+          ],
+          "t_score": -2.0114941435443567,
+          "timing_signal": "no-signal-observed",
+          "timing_validity": "valid"
+        }
+      ],
+      "risk_on_any_measured_host": false,
+      "target": "pqclean_mldsa44"
+    },
+    {
+      "axis": "sk",
+      "combined_status": "no-finding-observed",
+      "component": "committed-corpus-refresh",
+      "family": "ML-DSA",
+      "harness": "sign",
+      "host_heterogeneity": {
+        "applicability": "not-applicable-single-host",
+        "cochran_q": null,
+        "degrees_of_freedom": 0,
+        "effect_metric": "class1-minus-class0-mean-cycles-per-process-repeat",
+        "host_mean_effects": {
+          "host-a": 10884.342365624694
+        },
+        "i2_percent": null,
+        "q_p_value": null,
+        "warning": false,
+        "warning_reasons": []
+      },
+      "host_results": [
+        {
+          "abs_t_score": 1.8161628601673725,
+          "cpu_model": "Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz",
+          "host_id": "host-a",
+          "machine_id_sha256": "78fcac006d6ab71ac391a53b0e4b2e6353242e1b21730f44e0465002eb038fef",
+          "n0": 10096,
+          "n1": 10063,
+          "raw_status": "PASS",
+          "repeat_class_mean_deltas": [
+            612.8742586970329,
+            14615.788169445936,
+            17424.364668731112
+          ],
+          "t_score": -1.8161628601673725,
+          "timing_signal": "no-signal-observed",
+          "timing_validity": "valid"
+        }
+      ],
+      "risk_on_any_measured_host": false,
+      "target": "pqclean_mldsa65"
+    },
+    {
+      "axis": "sk",
+      "combined_status": "no-finding-observed",
+      "component": "committed-corpus-refresh",
+      "family": "ML-DSA",
+      "harness": "sign",
+      "host_heterogeneity": {
+        "applicability": "not-applicable-single-host",
+        "cochran_q": null,
+        "degrees_of_freedom": 0,
+        "effect_metric": "class1-minus-class0-mean-cycles-per-process-repeat",
+        "host_mean_effects": {
+          "host-a": -8705.066428597705
+        },
+        "i2_percent": null,
+        "q_p_value": null,
+        "warning": false,
+        "warning_reasons": []
+      },
+      "host_results": [
+        {
+          "abs_t_score": 2.34601892473705,
+          "cpu_model": "Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz",
+          "host_id": "host-a",
+          "machine_id_sha256": "78fcac006d6ab71ac391a53b0e4b2e6353242e1b21730f44e0465002eb038fef",
+          "n0": 10174,
+          "n1": 9991,
+          "raw_status": "PASS",
+          "repeat_class_mean_deltas": [
+            -10216.319289471488,
+            -25504.253523361403,
+            9605.373527039774
+          ],
+          "t_score": 2.34601892473705,
+          "timing_signal": "no-signal-observed",
+          "timing_validity": "valid"
+        }
+      ],
+      "risk_on_any_measured_host": false,
+      "target": "pqclean_mldsa87"
+    },
+    {
+      "axis": "valid_tuple",
+      "combined_status": "risk-detected",
+      "component": "committed-corpus-refresh",
+      "family": "ML-KEM",
+      "harness": "kem_dec",
+      "host_heterogeneity": {
+        "applicability": "not-applicable-single-host",
+        "cochran_q": null,
+        "degrees_of_freedom": 0,
+        "effect_metric": "class1-minus-class0-mean-cycles-per-process-repeat",
+        "host_mean_effects": {
+          "host-a": 8725.466543481723
+        },
+        "i2_percent": null,
+        "q_p_value": null,
+        "warning": false,
+        "warning_reasons": []
+      },
+      "host_results": [
+        {
+          "abs_t_score": 256.93322742741583,
+          "cpu_model": "Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz",
+          "host_id": "host-a",
+          "machine_id_sha256": "78fcac006d6ab71ac391a53b0e4b2e6353242e1b21730f44e0465002eb038fef",
+          "n0": 14555,
+          "n1": 9834,
+          "raw_status": "FAIL",
+          "repeat_class_mean_deltas": [
+            8971.695594912337,
+            8015.76857658627,
+            9188.935458946566
+          ],
+          "t_score": -256.93322742741583,
+          "timing_signal": "signal",
+          "timing_validity": "valid"
+        }
+      ],
+      "risk_on_any_measured_host": true,
+      "target": "pqclean_mlkem768"
+    },
+    {
+      "axis": "ct",
+      "combined_status": "no-finding-observed",
+      "component": "committed-corpus-refresh",
+      "family": "ML-KEM",
+      "harness": "kem_dec_ct",
+      "host_heterogeneity": {
+        "applicability": "not-applicable-single-host",
+        "cochran_q": null,
+        "degrees_of_freedom": 0,
+        "effect_metric": "class1-minus-class0-mean-cycles-per-process-repeat",
+        "host_mean_effects": {
+          "host-a": 83.16727708109345
+        },
+        "i2_percent": null,
+        "q_p_value": null,
+        "warning": false,
+        "warning_reasons": []
+      },
+      "host_results": [
+        {
+          "abs_t_score": 1.6428049719768283,
+          "cpu_model": "Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz",
+          "host_id": "host-a",
+          "machine_id_sha256": "78fcac006d6ab71ac391a53b0e4b2e6353242e1b21730f44e0465002eb038fef",
+          "n0": 12999,
+          "n1": 12862,
+          "raw_status": "PASS",
+          "repeat_class_mean_deltas": [
+            154.2621466172277,
+            106.85935658385279,
+            -11.619671957800165
+          ],
+          "t_score": 1.6428049719768283,
+          "timing_signal": "no-signal-observed",
+          "timing_validity": "valid"
+        }
+      ],
+      "risk_on_any_measured_host": false,
+      "target": "pqclean_mlkem768"
+    },
+    {
+      "axis": "fo",
+      "combined_status": "no-finding-observed",
+      "component": "committed-corpus-refresh",
+      "family": "ML-KEM",
+      "harness": "kem_dec_fo",
+      "host_heterogeneity": {
+        "applicability": "not-applicable-single-host",
+        "cochran_q": null,
+        "degrees_of_freedom": 0,
+        "effect_metric": "class1-minus-class0-mean-cycles-per-process-repeat",
+        "host_mean_effects": {
+          "host-a": -152.2526069569673
+        },
+        "i2_percent": null,
+        "q_p_value": null,
+        "warning": false,
+        "warning_reasons": []
+      },
+      "host_results": [
+        {
+          "abs_t_score": 2.222086480802396,
+          "cpu_model": "Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz",
+          "host_id": "host-a",
+          "machine_id_sha256": "78fcac006d6ab71ac391a53b0e4b2e6353242e1b21730f44e0465002eb038fef",
+          "n0": 10587,
+          "n1": 10557,
+          "raw_status": "PASS",
+          "repeat_class_mean_deltas": [
+            -114.74059157277225,
+            -168.9117902389262,
+            -173.1054390592035
+          ],
+          "t_score": 2.222086480802396,
+          "timing_signal": "no-signal-observed",
+          "timing_validity": "valid"
+        }
+      ],
+      "risk_on_any_measured_host": false,
+      "target": "pqclean_mlkem768"
+    },
+    {
+      "axis": "sk",
+      "combined_status": "no-finding-observed",
+      "component": "committed-corpus-refresh",
+      "family": "SPHINCS+",
+      "harness": "sign",
+      "host_heterogeneity": {
+        "applicability": "not-applicable-single-host",
+        "cochran_q": null,
+        "degrees_of_freedom": 0,
+        "effect_metric": "class1-minus-class0-mean-cycles-per-process-repeat",
+        "host_mean_effects": {
+          "host-a": 78.71524979174137
+        },
+        "i2_percent": null,
+        "q_p_value": null,
+        "warning": false,
+        "warning_reasons": []
+      },
+      "host_results": [
+        {
+          "abs_t_score": 1.7642654389161014,
+          "cpu_model": "Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz",
+          "host_id": "host-a",
+          "machine_id_sha256": "78fcac006d6ab71ac391a53b0e4b2e6353242e1b21730f44e0465002eb038fef",
+          "n0": 13828,
+          "n1": 13653,
+          "raw_status": "PASS",
+          "repeat_class_mean_deltas": [
+            1347.0673238188028,
+            430.2835634201765,
+            -1541.2051378637552
+          ],
+          "t_score": 1.7642654389161014,
+          "timing_signal": "no-signal-observed",
+          "timing_validity": "valid"
+        }
+      ],
+      "risk_on_any_measured_host": false,
+      "target": "pqclean_sphincs_sha2_128f_simple"
+    },
+    {
+      "axis": "sk",
+      "combined_status": "no-finding-observed",
+      "component": "diverse-lineages",
+      "family": "ML-DSA/mldsa-native-portable",
+      "harness": "sign",
+      "host_heterogeneity": {
+        "applicability": "not-applicable-single-host",
+        "cochran_q": null,
+        "degrees_of_freedom": 0,
+        "effect_metric": "class1-minus-class0-mean-cycles-per-process-repeat",
+        "host_mean_effects": {
+          "host-a": 7278.175381295849
+        },
+        "i2_percent": null,
+        "q_p_value": null,
+        "warning": false,
+        "warning_reasons": []
+      },
+      "host_results": [
+        {
+          "abs_t_score": 1.9911389275015845,
+          "cpu_model": "Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz",
+          "host_id": "host-a",
+          "machine_id_sha256": "78fcac006d6ab71ac391a53b0e4b2e6353242e1b21730f44e0465002eb038fef",
+          "n0": 10120,
+          "n1": 10091,
+          "raw_status": "PASS",
+          "repeat_class_mean_deltas": [
+            1825.9566705632024,
+            9252.975158399204,
+            10755.59431492514
+          ],
+          "t_score": -1.9911389275015845,
+          "timing_signal": "no-signal-observed",
+          "timing_validity": "valid"
+        }
+      ],
+      "risk_on_any_measured_host": false,
+      "target": "mldsa_native_65_portable"
+    },
+    {
+      "axis": "sk",
+      "combined_status": "no-finding-observed",
+      "component": "diverse-lineages",
+      "family": "ML-DSA/mldsa-native-x86_64",
+      "harness": "sign",
+      "host_heterogeneity": {
+        "applicability": "not-applicable-single-host",
+        "cochran_q": null,
+        "degrees_of_freedom": 0,
+        "effect_metric": "class1-minus-class0-mean-cycles-per-process-repeat",
+        "host_mean_effects": {
+          "host-a": 1940.6642697674495
+        },
+        "i2_percent": null,
+        "q_p_value": null,
+        "warning": false,
+        "warning_reasons": []
+      },
+      "host_results": [
+        {
+          "abs_t_score": 2.2034770305444105,
+          "cpu_model": "Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz",
+          "host_id": "host-a",
+          "machine_id_sha256": "78fcac006d6ab71ac391a53b0e4b2e6353242e1b21730f44e0465002eb038fef",
+          "n0": 10088,
+          "n1": 10069,
+          "raw_status": "PASS",
+          "repeat_class_mean_deltas": [
+            391.2542396580102,
+            2622.396525330085,
+            2808.342044314253
+          ],
+          "t_score": -2.2034770305444105,
+          "timing_signal": "no-signal-observed",
+          "timing_validity": "valid"
+        }
+      ],
+      "risk_on_any_measured_host": false,
+      "target": "mldsa_native_65_x86_64"
+    },
+    {
+      "axis": "valid_tuple",
+      "combined_status": "risk-detected",
+      "component": "diverse-lineages",
+      "family": "ML-KEM/mlkem-native-portable-valid-tuple",
+      "harness": "kem_dec_valid_tuple",
+      "host_heterogeneity": {
+        "applicability": "not-applicable-single-host",
+        "cochran_q": null,
+        "degrees_of_freedom": 0,
+        "effect_metric": "class1-minus-class0-mean-cycles-per-process-repeat",
+        "host_mean_effects": {
+          "host-a": 11360.866990181219
+        },
+        "i2_percent": null,
+        "q_p_value": null,
+        "warning": false,
+        "warning_reasons": []
+      },
+      "host_results": [
+        {
+          "abs_t_score": 351.5024105753273,
+          "cpu_model": "Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz",
+          "host_id": "host-a",
+          "machine_id_sha256": "78fcac006d6ab71ac391a53b0e4b2e6353242e1b21730f44e0465002eb038fef",
+          "n0": 14919,
+          "n1": 10915,
+          "raw_status": "FAIL",
+          "repeat_class_mean_deltas": [
+            11168.578991585062,
+            11146.258781490003,
+            11767.763197468594
+          ],
+          "t_score": -351.5024105753273,
+          "timing_signal": "signal",
+          "timing_validity": "valid"
+        }
+      ],
+      "risk_on_any_measured_host": true,
+      "target": "mlkem_native_768_portable"
+    },
+    {
+      "axis": "valid_tuple",
+      "combined_status": "risk-detected",
+      "component": "diverse-lineages",
+      "family": "ML-KEM/mlkem-native-x86_64-valid-tuple",
+      "harness": "kem_dec_valid_tuple",
+      "host_heterogeneity": {
+        "applicability": "not-applicable-single-host",
+        "cochran_q": null,
+        "degrees_of_freedom": 0,
+        "effect_metric": "class1-minus-class0-mean-cycles-per-process-repeat",
+        "host_mean_effects": {
+          "host-a": 377.64727538124134
+        },
+        "i2_percent": null,
+        "q_p_value": null,
+        "warning": false,
+        "warning_reasons": []
+      },
+      "host_results": [
+        {
+          "abs_t_score": 100.95900598244137,
+          "cpu_model": "Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz",
+          "host_id": "host-a",
+          "machine_id_sha256": "78fcac006d6ab71ac391a53b0e4b2e6353242e1b21730f44e0465002eb038fef",
+          "n0": 14552,
+          "n1": 13265,
+          "raw_status": "FAIL",
+          "repeat_class_mean_deltas": [
+            349.54289771657204,
+            357.3065506281564,
+            426.0923777989956
+          ],
+          "t_score": -100.95900598244137,
+          "timing_signal": "signal",
+          "timing_validity": "valid"
+        }
+      ],
+      "risk_on_any_measured_host": true,
+      "target": "mlkem_native_768_x86_64"
+    },
+    {
+      "axis": "sk",
+      "combined_status": "no-finding-observed",
+      "component": "falcon-contrast",
+      "family": "FN-DSA/prospective-1024-integer-fpr",
+      "harness": "sign",
+      "host_heterogeneity": {
+        "applicability": "not-applicable-single-host",
+        "cochran_q": null,
+        "degrees_of_freedom": 0,
+        "effect_metric": "class1-minus-class0-mean-cycles-per-process-repeat",
+        "host_mean_effects": {
+          "host-a": -3286.289623123904
+        },
+        "i2_percent": null,
+        "q_p_value": null,
+        "warning": false,
+        "warning_reasons": []
+      },
+      "host_results": [
+        {
+          "abs_t_score": 1.680596494491997,
+          "cpu_model": "Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz",
+          "host_id": "host-a",
+          "machine_id_sha256": "78fcac006d6ab71ac391a53b0e4b2e6353242e1b21730f44e0465002eb038fef",
+          "n0": 15019,
+          "n1": 14896,
+          "raw_status": "PASS",
+          "repeat_class_mean_deltas": [
+            9291.17585548386,
+            -9222.994311623275,
+            -9927.050413232297
+          ],
+          "t_score": 1.680596494491997,
+          "timing_signal": "no-signal-observed",
+          "timing_validity": "valid"
+        }
+      ],
+      "risk_on_any_measured_host": false,
+      "target": "c_fndsa1024_fpr_emu"
+    },
+    {
+      "axis": "sk",
+      "combined_status": "no-finding-observed",
+      "component": "falcon-contrast",
+      "family": "FN-DSA/prospective-1024-native-fp",
+      "harness": "sign",
+      "host_heterogeneity": {
+        "applicability": "not-applicable-single-host",
+        "cochran_q": null,
+        "degrees_of_freedom": 0,
+        "effect_metric": "class1-minus-class0-mean-cycles-per-process-repeat",
+        "host_mean_effects": {
+          "host-a": -232.90616916896155
+        },
+        "i2_percent": null,
+        "q_p_value": null,
+        "warning": false,
+        "warning_reasons": []
+      },
+      "host_results": [
+        {
+          "abs_t_score": 1.4806972454816294,
+          "cpu_model": "Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz",
+          "host_id": "host-a",
+          "machine_id_sha256": "78fcac006d6ab71ac391a53b0e4b2e6353242e1b21730f44e0465002eb038fef",
+          "n0": 15015,
+          "n1": 14948,
+          "raw_status": "PASS",
+          "repeat_class_mean_deltas": [
+            525.9418819309212,
+            -906.8421061695553,
+            -317.8182832682505
+          ],
+          "t_score": -1.4806972454816294,
+          "timing_signal": "no-signal-observed",
+          "timing_validity": "valid"
+        }
+      ],
+      "risk_on_any_measured_host": false,
+      "target": "c_fndsa1024_native_fp"
+    },
+    {
+      "axis": "sk",
+      "combined_status": "no-finding-observed",
+      "component": "falcon-contrast",
+      "family": "FN-DSA/prospective-512-integer-fpr",
+      "harness": "sign",
+      "host_heterogeneity": {
+        "applicability": "not-applicable-single-host",
+        "cochran_q": null,
+        "degrees_of_freedom": 0,
+        "effect_metric": "class1-minus-class0-mean-cycles-per-process-repeat",
+        "host_mean_effects": {
+          "host-a": 2269.630584117025
+        },
+        "i2_percent": null,
+        "q_p_value": null,
+        "warning": false,
+        "warning_reasons": []
+      },
+      "host_results": [
+        {
+          "abs_t_score": 2.865111989273796,
+          "cpu_model": "Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz",
+          "host_id": "host-a",
+          "machine_id_sha256": "78fcac006d6ab71ac391a53b0e4b2e6353242e1b21730f44e0465002eb038fef",
+          "n0": 15059,
+          "n1": 14931,
+          "raw_status": "PASS",
+          "repeat_class_mean_deltas": [
+            -2124.361108383164,
+            7167.388792060316,
+            1765.8640686739236
+          ],
+          "t_score": -2.865111989273796,
+          "timing_signal": "no-signal-observed",
+          "timing_validity": "valid"
+        }
+      ],
+      "risk_on_any_measured_host": false,
+      "target": "c_fndsa512_fpr_emu"
+    },
+    {
+      "axis": "sk",
+      "combined_status": "no-finding-observed",
+      "component": "falcon-contrast",
+      "family": "FN-DSA/prospective-512-native-fp",
+      "harness": "sign",
+      "host_heterogeneity": {
+        "applicability": "not-applicable-single-host",
+        "cochran_q": null,
+        "degrees_of_freedom": 0,
+        "effect_metric": "class1-minus-class0-mean-cycles-per-process-repeat",
+        "host_mean_effects": {
+          "host-a": 245.30807275883853
+        },
+        "i2_percent": null,
+        "q_p_value": null,
+        "warning": false,
+        "warning_reasons": []
+      },
+      "host_results": [
+        {
+          "abs_t_score": 1.6423881935552846,
+          "cpu_model": "Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz",
+          "host_id": "host-a",
+          "machine_id_sha256": "78fcac006d6ab71ac391a53b0e4b2e6353242e1b21730f44e0465002eb038fef",
+          "n0": 15059,
+          "n1": 14931,
+          "raw_status": "PASS",
+          "repeat_class_mean_deltas": [
+            5.13802831992507,
+            524.6411586527247,
+            206.14503130386584
+          ],
+          "t_score": -1.6423881935552846,
+          "timing_signal": "no-signal-observed",
+          "timing_validity": "valid"
+        }
+      ],
+      "risk_on_any_measured_host": false,
+      "target": "c_fndsa512_native_fp"
+    },
+    {
+      "axis": "sk",
+      "combined_status": "no-finding-observed",
+      "component": "falcon-contrast",
+      "family": "Falcon/reference-1024",
+      "harness": "sign",
+      "host_heterogeneity": {
+        "applicability": "not-applicable-single-host",
+        "cochran_q": null,
+        "degrees_of_freedom": 0,
+        "effect_metric": "class1-minus-class0-mean-cycles-per-process-repeat",
+        "host_mean_effects": {
+          "host-a": 37.20620693018039
+        },
+        "i2_percent": null,
+        "q_p_value": null,
+        "warning": false,
+        "warning_reasons": []
+      },
+      "host_results": [
+        {
+          "abs_t_score": 1.8117704632902178,
+          "cpu_model": "Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz",
+          "host_id": "host-a",
+          "machine_id_sha256": "78fcac006d6ab71ac391a53b0e4b2e6353242e1b21730f44e0465002eb038fef",
+          "n0": 10003,
+          "n1": 9977,
+          "raw_status": "PASS",
+          "repeat_class_mean_deltas": [
+            -1636.939961336553,
+            -1525.430867485702,
+            3273.9894496127963
+          ],
+          "t_score": -1.8117704632902178,
+          "timing_signal": "no-signal-observed",
+          "timing_validity": "valid"
+        }
+      ],
+      "risk_on_any_measured_host": false,
+      "target": "pqclean_falcon1024_reference"
+    },
+    {
+      "axis": "sk",
+      "combined_status": "no-finding-observed",
+      "component": "falcon-contrast",
+      "family": "Falcon/reference-512",
+      "harness": "sign",
+      "host_heterogeneity": {
+        "applicability": "not-applicable-single-host",
+        "cochran_q": null,
+        "degrees_of_freedom": 0,
+        "effect_metric": "class1-minus-class0-mean-cycles-per-process-repeat",
+        "host_mean_effects": {
+          "host-a": -560.2610930725932
+        },
+        "i2_percent": null,
+        "q_p_value": null,
+        "warning": false,
+        "warning_reasons": []
+      },
+      "host_results": [
+        {
+          "abs_t_score": 2.1526145395692797,
+          "cpu_model": "Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz",
+          "host_id": "host-a",
+          "machine_id_sha256": "78fcac006d6ab71ac391a53b0e4b2e6353242e1b21730f44e0465002eb038fef",
+          "n0": 15045,
+          "n1": 14911,
+          "raw_status": "PASS",
+          "repeat_class_mean_deltas": [
+            -2064.6951691284776,
+            -1750.1444952785969,
+            2134.056385189295
+          ],
+          "t_score": 2.1526145395692797,
+          "timing_signal": "no-signal-observed",
+          "timing_validity": "valid"
+        }
+      ],
+      "risk_on_any_measured_host": false,
+      "target": "pqclean_falcon512_reference"
+    },
+    {
+      "axis": "operand_bin",
+      "combined_status": "no-finding-observed",
+      "component": "kyberslash-contrast",
+      "family": "KyberSlash1/direct-operand/patched-v3",
+      "harness": "operand_bin",
+      "host_heterogeneity": {
+        "applicability": "not-applicable-single-host",
+        "cochran_q": null,
+        "degrees_of_freedom": 0,
+        "effect_metric": "class1-minus-class0-mean-cycles-per-process-repeat",
+        "host_mean_effects": {
+          "host-a": 0.8780840565239222
+        },
+        "i2_percent": null,
+        "q_p_value": null,
+        "warning": false,
+        "warning_reasons": []
+      },
+      "host_results": [
+        {
+          "abs_t_score": 1.6864575359984477,
+          "cpu_model": "Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz",
+          "host_id": "host-a",
+          "machine_id_sha256": "78fcac006d6ab71ac391a53b0e4b2e6353242e1b21730f44e0465002eb038fef",
+          "n0": 10330,
+          "n1": 10250,
+          "raw_status": "PASS",
+          "repeat_class_mean_deltas": [
+            1.7952729321272898,
+            -1.5404518498145023,
+            2.379431087258979
+          ],
+          "t_score": 1.6864575359984477,
+          "timing_signal": "no-signal-observed",
+          "timing_validity": "valid"
+        }
+      ],
+      "risk_on_any_measured_host": false,
+      "target": "kyberslash_operand_ks1_patched"
+    },
+    {
+      "axis": "operand_bin",
+      "combined_status": "no-finding-observed",
+      "component": "kyberslash-contrast",
+      "family": "KyberSlash1/direct-operand/vulnerable-v3",
+      "harness": "operand_bin",
+      "host_heterogeneity": {
+        "applicability": "not-applicable-single-host",
+        "cochran_q": null,
+        "degrees_of_freedom": 0,
+        "effect_metric": "class1-minus-class0-mean-cycles-per-process-repeat",
+        "host_mean_effects": {
+          "host-a": 0.7482835339961866
+        },
+        "i2_percent": null,
+        "q_p_value": null,
+        "warning": false,
+        "warning_reasons": []
+      },
+      "host_results": [
+        {
+          "abs_t_score": 2.133233187468798,
+          "cpu_model": "Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz",
+          "host_id": "host-a",
+          "machine_id_sha256": "78fcac006d6ab71ac391a53b0e4b2e6353242e1b21730f44e0465002eb038fef",
+          "n0": 12176,
+          "n1": 12127,
+          "raw_status": "PASS",
+          "repeat_class_mean_deltas": [
+            -2.2290051889249014,
+            -0.9915817036884675,
+            5.465437494601929
+          ],
+          "t_score": -2.133233187468798,
+          "timing_signal": "no-signal-observed",
+          "timing_validity": "valid"
+        }
+      ],
+      "risk_on_any_measured_host": false,
+      "target": "kyberslash_operand_ks1_vulnerable"
+    },
+    {
+      "axis": "operand_bin",
+      "combined_status": "no-finding-observed",
+      "component": "kyberslash-contrast",
+      "family": "KyberSlash2-poly/direct-operand/patched-v3",
+      "harness": "operand_bin",
+      "host_heterogeneity": {
+        "applicability": "not-applicable-single-host",
+        "cochran_q": null,
+        "degrees_of_freedom": 0,
+        "effect_metric": "class1-minus-class0-mean-cycles-per-process-repeat",
+        "host_mean_effects": {
+          "host-a": -2.379839050648807
+        },
+        "i2_percent": null,
+        "q_p_value": null,
+        "warning": false,
+        "warning_reasons": []
+      },
+      "host_results": [
+        {
+          "abs_t_score": 1.145023230320593,
+          "cpu_model": "Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz",
+          "host_id": "host-a",
+          "machine_id_sha256": "78fcac006d6ab71ac391a53b0e4b2e6353242e1b21730f44e0465002eb038fef",
+          "n0": 14385,
+          "n1": 14251,
+          "raw_status": "PASS",
+          "repeat_class_mean_deltas": [
+            -10.63799379294889,
+            0.6957848303943308,
+            2.802691810608138
+          ],
+          "t_score": 1.145023230320593,
+          "timing_signal": "no-signal-observed",
+          "timing_validity": "valid"
+        }
+      ],
+      "risk_on_any_measured_host": false,
+      "target": "kyberslash_operand_ks2_poly_patched"
+    },
+    {
+      "axis": "operand_bin",
+      "combined_status": "no-finding-observed",
+      "component": "kyberslash-contrast",
+      "family": "KyberSlash2-poly/direct-operand/vulnerable-v3",
+      "harness": "operand_bin",
+      "host_heterogeneity": {
+        "applicability": "not-applicable-single-host",
+        "cochran_q": null,
+        "degrees_of_freedom": 0,
+        "effect_metric": "class1-minus-class0-mean-cycles-per-process-repeat",
+        "host_mean_effects": {
+          "host-a": 1.388892916084842
+        },
+        "i2_percent": null,
+        "q_p_value": null,
+        "warning": false,
+        "warning_reasons": []
+      },
+      "host_results": [
+        {
+          "abs_t_score": 2.70739502584077,
+          "cpu_model": "Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz",
+          "host_id": "host-a",
+          "machine_id_sha256": "78fcac006d6ab71ac391a53b0e4b2e6353242e1b21730f44e0465002eb038fef",
+          "n0": 14640,
+          "n1": 14567,
+          "raw_status": "PASS",
+          "repeat_class_mean_deltas": [
+            3.4987459190362813,
+            0.8043271451068392,
+            -0.13639431588859452
+          ],
+          "t_score": -2.70739502584077,
+          "timing_signal": "no-signal-observed",
+          "timing_validity": "valid"
+        }
+      ],
+      "risk_on_any_measured_host": false,
+      "target": "kyberslash_operand_ks2_poly_vulnerable"
+    },
+    {
+      "axis": "operand_bin",
+      "combined_status": "no-finding-observed",
+      "component": "kyberslash-contrast",
+      "family": "KyberSlash2-polyvec/direct-operand/patched-v3",
+      "harness": "operand_bin",
+      "host_heterogeneity": {
+        "applicability": "not-applicable-single-host",
+        "cochran_q": null,
+        "degrees_of_freedom": 0,
+        "effect_metric": "class1-minus-class0-mean-cycles-per-process-repeat",
+        "host_mean_effects": {
+          "host-a": 0.6532208576816553
+        },
+        "i2_percent": null,
+        "q_p_value": null,
+        "warning": false,
+        "warning_reasons": []
+      },
+      "host_results": [
+        {
+          "abs_t_score": 1.4214343583860205,
+          "cpu_model": "Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz",
+          "host_id": "host-a",
+          "machine_id_sha256": "78fcac006d6ab71ac391a53b0e4b2e6353242e1b21730f44e0465002eb038fef",
+          "n0": 14741,
+          "n1": 14666,
+          "raw_status": "PASS",
+          "repeat_class_mean_deltas": [
+            11.711119566767508,
+            -10.082013961123636,
+            0.33055696740109397
+          ],
+          "t_score": 1.4214343583860205,
+          "timing_signal": "no-signal-observed",
+          "timing_validity": "valid"
+        }
+      ],
+      "risk_on_any_measured_host": false,
+      "target": "kyberslash_operand_ks2_polyvec_patched"
+    },
+    {
+      "axis": "operand_bin",
+      "combined_status": "no-finding-observed",
+      "component": "kyberslash-contrast",
+      "family": "KyberSlash2-polyvec/direct-operand/vulnerable-v3",
+      "harness": "operand_bin",
+      "host_heterogeneity": {
+        "applicability": "not-applicable-single-host",
+        "cochran_q": null,
+        "degrees_of_freedom": 0,
+        "effect_metric": "class1-minus-class0-mean-cycles-per-process-repeat",
+        "host_mean_effects": {
+          "host-a": 3.1607600087095875
+        },
+        "i2_percent": null,
+        "q_p_value": null,
+        "warning": false,
+        "warning_reasons": []
+      },
+      "host_results": [
+        {
+          "abs_t_score": 1.9319914358572714,
+          "cpu_model": "Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz",
+          "host_id": "host-a",
+          "machine_id_sha256": "78fcac006d6ab71ac391a53b0e4b2e6353242e1b21730f44e0465002eb038fef",
+          "n0": 10078,
+          "n1": 10110,
+          "raw_status": "PASS",
+          "repeat_class_mean_deltas": [
+            6.316059923049039,
+            0.5256127891969413,
+            2.640607313882782
+          ],
+          "t_score": -1.9319914358572714,
+          "timing_signal": "no-signal-observed",
+          "timing_validity": "valid"
+        }
+      ],
+      "risk_on_any_measured_host": false,
+      "target": "kyberslash_operand_ks2_polyvec_vulnerable"
+    },
+    {
+      "axis": "chosen_ct",
+      "combined_status": "no-finding-observed",
+      "component": "kyberslash-contrast",
+      "family": "ML-KEM/KyberSlash-stock-fixed-sk-chosen-ct",
+      "harness": "kem_dec_chosen_ct",
+      "host_heterogeneity": {
+        "applicability": "not-applicable-single-host",
+        "cochran_q": null,
+        "degrees_of_freedom": 0,
+        "effect_metric": "class1-minus-class0-mean-cycles-per-process-repeat",
+        "host_mean_effects": {
+          "host-a": -29.72359576637003
+        },
+        "i2_percent": null,
+        "q_p_value": null,
+        "warning": false,
+        "warning_reasons": []
+      },
+      "host_results": [
+        {
+          "abs_t_score": 2.4491446100706424,
+          "cpu_model": "Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz",
+          "host_id": "host-a",
+          "machine_id_sha256": "78fcac006d6ab71ac391a53b0e4b2e6353242e1b21730f44e0465002eb038fef",
+          "n0": 15032,
+          "n1": 14958,
+          "raw_status": "PASS",
+          "repeat_class_mean_deltas": [
+            108.25866926275194,
+            -78.40610290213954,
+            -119.02335365972249
+          ],
+          "t_score": -2.4491446100706424,
+          "timing_signal": "no-signal-observed",
+          "timing_validity": "valid"
+        }
+      ],
+      "risk_on_any_measured_host": false,
+      "target": "pqclean_mlkem768"
+    },
+    {
+      "axis": "chosen_ct",
+      "combined_status": "no-finding-observed",
+      "component": "kyberslash-contrast",
+      "family": "ML-KEM/KyberSlash1+2-fixed-sk-chosen-ct",
+      "harness": "kem_dec_chosen_ct",
+      "host_heterogeneity": {
+        "applicability": "not-applicable-single-host",
+        "cochran_q": null,
+        "degrees_of_freedom": 0,
+        "effect_metric": "class1-minus-class0-mean-cycles-per-process-repeat",
+        "host_mean_effects": {
+          "host-a": 127.35759002942359
+        },
+        "i2_percent": null,
+        "q_p_value": null,
+        "warning": false,
+        "warning_reasons": []
+      },
+      "host_results": [
+        {
+          "abs_t_score": 2.2996089082369626,
+          "cpu_model": "Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz",
+          "host_id": "host-a",
+          "machine_id_sha256": "78fcac006d6ab71ac391a53b0e4b2e6353242e1b21730f44e0465002eb038fef",
+          "n0": 15032,
+          "n1": 14958,
+          "raw_status": "PASS",
+          "repeat_class_mean_deltas": [
+            146.69980891572777,
+            113.02457007567864,
+            122.34839109686436
+          ],
+          "t_score": -2.2996089082369626,
+          "timing_signal": "no-signal-observed",
+          "timing_validity": "valid"
+        }
+      ],
+      "risk_on_any_measured_host": false,
+      "target": "pqclean_mlkem768_kyberslash"
+    },
+    {
+      "axis": "chosen_ct",
+      "combined_status": "no-finding-observed",
+      "component": "kyberslash-contrast",
+      "family": "ML-KEM/KyberSlash1-fixed-sk-chosen-ct",
+      "harness": "kem_dec_chosen_ct",
+      "host_heterogeneity": {
+        "applicability": "not-applicable-single-host",
+        "cochran_q": null,
+        "degrees_of_freedom": 0,
+        "effect_metric": "class1-minus-class0-mean-cycles-per-process-repeat",
+        "host_mean_effects": {
+          "host-a": -55.03498937562108
+        },
+        "i2_percent": null,
+        "q_p_value": null,
+        "warning": false,
+        "warning_reasons": []
+      },
+      "host_results": [
+        {
+          "abs_t_score": 1.8907978905606915,
+          "cpu_model": "Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz",
+          "host_id": "host-a",
+          "machine_id_sha256": "78fcac006d6ab71ac391a53b0e4b2e6353242e1b21730f44e0465002eb038fef",
+          "n0": 14967,
+          "n1": 14903,
+          "raw_status": "PASS",
+          "repeat_class_mean_deltas": [
+            -82.40279819298303,
+            -159.50584413984325,
+            76.80367420596303
+          ],
+          "t_score": 1.8907978905606915,
+          "timing_signal": "no-signal-observed",
+          "timing_validity": "valid"
+        }
+      ],
+      "risk_on_any_measured_host": false,
+      "target": "pqclean_mlkem768_kyberslash1"
+    },
+    {
+      "axis": "chosen_ct",
+      "combined_status": "no-finding-observed",
+      "component": "kyberslash-contrast",
+      "family": "ML-KEM/KyberSlash2-fixed-sk-chosen-ct",
+      "harness": "kem_dec_chosen_ct",
+      "host_heterogeneity": {
+        "applicability": "not-applicable-single-host",
+        "cochran_q": null,
+        "degrees_of_freedom": 0,
+        "effect_metric": "class1-minus-class0-mean-cycles-per-process-repeat",
+        "host_mean_effects": {
+          "host-a": -14.959242934225282
+        },
+        "i2_percent": null,
+        "q_p_value": null,
+        "warning": false,
+        "warning_reasons": []
+      },
+      "host_results": [
+        {
+          "abs_t_score": 1.693688557931597,
+          "cpu_model": "Intel(R) Core(TM) i7-10875H CPU @ 2.30GHz",
+          "host_id": "host-a",
+          "machine_id_sha256": "78fcac006d6ab71ac391a53b0e4b2e6353242e1b21730f44e0465002eb038fef",
+          "n0": 14975,
+          "n1": 14918,
+          "raw_status": "PASS",
+          "repeat_class_mean_deltas": [
+            8.370505321014207,
+            -70.44897615886293,
+            17.20074203517288
+          ],
+          "t_score": -1.693688557931597,
+          "timing_signal": "no-signal-observed",
+          "timing_validity": "valid"
+        }
+      ],
+      "risk_on_any_measured_host": false,
+      "target": "pqclean_mlkem768_kyberslash2"
+    }
+  ],
+  "schema_version": "1.0",
+  "signature_length_associations": [
+    {
+      "component": "committed-corpus-refresh",
+      "harness": "sign",
+      "host_id": "host-a",
+      "maximum_output_length": 665,
+      "minimum_output_length": 647,
+      "p_value": 0.9407171145230434,
+      "pearson_r": 0.00024789868310708476,
+      "retained_samples": 90000,
+      "return_code_column": "signature_return_code",
+      "runtime_contract": {
+        "contract": "bounded",
+        "maximum": 752,
+        "minimum": 1
+      },
+      "slope_cycles_per_byte": 12.00389226015334,
+      "status": "variable-length",
+      "target": "pqclean_falcon512_reference",
+      "unique_output_lengths": 19,
+      "within_class_p_value": 0.9407426727079767,
+      "within_class_pearson_r": 0.00024779298808489455
+    },
+    {
+      "component": "committed-corpus-refresh",
+      "harness": "sign",
+      "host_id": "host-a",
+      "maximum_output_length": 2420,
+      "minimum_output_length": 2420,
+      "p_value": null,
+      "pearson_r": null,
+      "retained_samples": 90000,
+      "return_code_column": "signature_return_code",
+      "runtime_contract": {
+        "contract": "fixed",
+        "maximum": 2420,
+        "minimum": 2420
+      },
+      "slope_cycles_per_byte": null,
+      "status": "constant-length",
+      "target": "pqclean_mldsa44",
+      "unique_output_lengths": 1,
+      "within_class_p_value": null,
+      "within_class_pearson_r": null
+    },
+    {
+      "component": "committed-corpus-refresh",
+      "harness": "sign",
+      "host_id": "host-a",
+      "maximum_output_length": 3309,
+      "minimum_output_length": 3309,
+      "p_value": null,
+      "pearson_r": null,
+      "retained_samples": 90000,
+      "return_code_column": "signature_return_code",
+      "runtime_contract": {
+        "contract": "fixed",
+        "maximum": 3309,
+        "minimum": 3309
+      },
+      "slope_cycles_per_byte": null,
+      "status": "constant-length",
+      "target": "pqclean_mldsa65",
+      "unique_output_lengths": 1,
+      "within_class_p_value": null,
+      "within_class_pearson_r": null
+    },
+    {
+      "component": "committed-corpus-refresh",
+      "harness": "sign",
+      "host_id": "host-a",
+      "maximum_output_length": 4627,
+      "minimum_output_length": 4627,
+      "p_value": null,
+      "pearson_r": null,
+      "retained_samples": 90000,
+      "return_code_column": "signature_return_code",
+      "runtime_contract": {
+        "contract": "fixed",
+        "maximum": 4627,
+        "minimum": 4627
+      },
+      "slope_cycles_per_byte": null,
+      "status": "constant-length",
+      "target": "pqclean_mldsa87",
+      "unique_output_lengths": 1,
+      "within_class_p_value": null,
+      "within_class_pearson_r": null
+    },
+    {
+      "component": "committed-corpus-refresh",
+      "harness": "sign",
+      "host_id": "host-a",
+      "maximum_output_length": 17088,
+      "minimum_output_length": 17088,
+      "p_value": null,
+      "pearson_r": null,
+      "retained_samples": 90000,
+      "return_code_column": "signature_return_code",
+      "runtime_contract": {
+        "contract": "fixed",
+        "maximum": 17088,
+        "minimum": 17088
+      },
+      "slope_cycles_per_byte": null,
+      "status": "constant-length",
+      "target": "pqclean_sphincs_sha2_128f_simple",
+      "unique_output_lengths": 1,
+      "within_class_p_value": null,
+      "within_class_pearson_r": null
+    },
+    {
+      "component": "diverse-lineages",
+      "harness": "sign",
+      "host_id": "host-a",
+      "maximum_output_length": 3309,
+      "minimum_output_length": 3309,
+      "p_value": null,
+      "pearson_r": null,
+      "retained_samples": 90000,
+      "return_code_column": "signature_return_code",
+      "runtime_contract": {
+        "contract": "fixed",
+        "maximum": 3309,
+        "minimum": 3309
+      },
+      "slope_cycles_per_byte": null,
+      "status": "constant-length",
+      "target": "mldsa_native_65_portable",
+      "unique_output_lengths": 1,
+      "within_class_p_value": null,
+      "within_class_pearson_r": null
+    },
+    {
+      "component": "diverse-lineages",
+      "harness": "sign",
+      "host_id": "host-a",
+      "maximum_output_length": 3309,
+      "minimum_output_length": 3309,
+      "p_value": null,
+      "pearson_r": null,
+      "retained_samples": 90000,
+      "return_code_column": "signature_return_code",
+      "runtime_contract": {
+        "contract": "fixed",
+        "maximum": 3309,
+        "minimum": 3309
+      },
+      "slope_cycles_per_byte": null,
+      "status": "constant-length",
+      "target": "mldsa_native_65_x86_64",
+      "unique_output_lengths": 1,
+      "within_class_p_value": null,
+      "within_class_pearson_r": null
+    },
+    {
+      "component": "falcon-contrast",
+      "harness": "sign",
+      "host_id": "host-a",
+      "maximum_output_length": 1280,
+      "minimum_output_length": 1280,
+      "p_value": null,
+      "pearson_r": null,
+      "retained_samples": 90000,
+      "return_code_column": "signature_return_code",
+      "runtime_contract": {
+        "contract": "fixed",
+        "maximum": 1280,
+        "minimum": 1280
+      },
+      "slope_cycles_per_byte": null,
+      "status": "constant-length",
+      "target": "c_fndsa1024_fpr_emu",
+      "unique_output_lengths": 1,
+      "within_class_p_value": null,
+      "within_class_pearson_r": null
+    },
+    {
+      "component": "falcon-contrast",
+      "harness": "sign",
+      "host_id": "host-a",
+      "maximum_output_length": 1280,
+      "minimum_output_length": 1280,
+      "p_value": null,
+      "pearson_r": null,
+      "retained_samples": 90000,
+      "return_code_column": "signature_return_code",
+      "runtime_contract": {
+        "contract": "fixed",
+        "maximum": 1280,
+        "minimum": 1280
+      },
+      "slope_cycles_per_byte": null,
+      "status": "constant-length",
+      "target": "c_fndsa1024_native_fp",
+      "unique_output_lengths": 1,
+      "within_class_p_value": null,
+      "within_class_pearson_r": null
+    },
+    {
+      "component": "falcon-contrast",
+      "harness": "sign",
+      "host_id": "host-a",
+      "maximum_output_length": 666,
+      "minimum_output_length": 666,
+      "p_value": null,
+      "pearson_r": null,
+      "retained_samples": 90000,
+      "return_code_column": "signature_return_code",
+      "runtime_contract": {
+        "contract": "fixed",
+        "maximum": 666,
+        "minimum": 666
+      },
+      "slope_cycles_per_byte": null,
+      "status": "constant-length",
+      "target": "c_fndsa512_fpr_emu",
+      "unique_output_lengths": 1,
+      "within_class_p_value": null,
+      "within_class_pearson_r": null
+    },
+    {
+      "component": "falcon-contrast",
+      "harness": "sign",
+      "host_id": "host-a",
+      "maximum_output_length": 666,
+      "minimum_output_length": 666,
+      "p_value": null,
+      "pearson_r": null,
+      "retained_samples": 90000,
+      "return_code_column": "signature_return_code",
+      "runtime_contract": {
+        "contract": "fixed",
+        "maximum": 666,
+        "minimum": 666
+      },
+      "slope_cycles_per_byte": null,
+      "status": "constant-length",
+      "target": "c_fndsa512_native_fp",
+      "unique_output_lengths": 1,
+      "within_class_p_value": null,
+      "within_class_pearson_r": null
+    },
+    {
+      "component": "falcon-contrast",
+      "harness": "sign",
+      "host_id": "host-a",
+      "maximum_output_length": 1284,
+      "minimum_output_length": 1257,
+      "p_value": 0.97840324184738,
+      "pearson_r": 9.023734799749142e-05,
+      "retained_samples": 90000,
+      "return_code_column": "signature_return_code",
+      "runtime_contract": {
+        "contract": "bounded",
+        "maximum": 1462,
+        "minimum": 1
+      },
+      "slope_cycles_per_byte": 5.987268120146616,
+      "status": "variable-length",
+      "target": "pqclean_falcon1024_reference",
+      "unique_output_lengths": 28,
+      "within_class_p_value": 0.9785568615601371,
+      "within_class_pearson_r": 8.959582414775735e-05
+    },
+    {
+      "component": "falcon-contrast",
+      "harness": "sign",
+      "host_id": "host-a",
+      "maximum_output_length": 665,
+      "minimum_output_length": 647,
+      "p_value": 0.48673657837309714,
+      "pearson_r": -0.002318391325105283,
+      "retained_samples": 90000,
+      "return_code_column": "signature_return_code",
+      "runtime_contract": {
+        "contract": "bounded",
+        "maximum": 752,
+        "minimum": 1
+      },
+      "slope_cycles_per_byte": -117.0614964727354,
+      "status": "variable-length",
+      "target": "pqclean_falcon512_reference",
+      "unique_output_lengths": 19,
+      "within_class_p_value": 0.4866328693837976,
+      "within_class_pearson_r": -0.002318956064240025
+    }
+  ],
+  "summary": {
+    "axis_count": 28,
+    "combined_status_counts": {
+      "inconclusive": 0,
+      "needs-review": 0,
+      "no-finding-observed": 25,
+      "risk-detected": 3
+    },
+    "heterogeneity_warning_count": 0,
+    "pairwise_contrast_count": 17,
+    "signature_host_axis_count": 13
+  },
+  "verification_commit": "1aeadb97e0409227aa203ba825a6bfc1d90445bc"
+}
